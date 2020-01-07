@@ -48,8 +48,8 @@ import org.junit.runner.RunWith;
 import org.junit.runners.Suite;
 import org.junit.runners.Suite.SuiteClasses;
 
-import io.sarl.lang.util.SynchronizedCollection;
-import io.sarl.lang.util.SynchronizedSet;
+import io.sarl.lang.core.util.SynchronizedCollection;
+import io.sarl.lang.core.util.SynchronizedSet;
 import io.sarl.tests.api.AbstractSarlTest;
 import io.sarl.util.concurrent.Collections3;
 

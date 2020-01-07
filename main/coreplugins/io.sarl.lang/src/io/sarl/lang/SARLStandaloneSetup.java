@@ -37,6 +37,7 @@ import org.eclipse.xtend.core.XtendStandaloneSetup;
  * @mavengroupid $GroupId$
  * @mavenartifactid $ArtifactId$
  */
+@SuppressWarnings("restriction")
 public class SARLStandaloneSetup extends SARLStandaloneSetupGenerated {
 
 	/** Set up the EMF modules for the SARL language.

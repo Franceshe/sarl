@@ -64,9 +64,9 @@ import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
 
 import io.sarl.lang.SARLStandaloneSetup;
-import io.sarl.lang.SARLVersion;
 import io.sarl.lang.compiler.batch.CleaningPolicy;
 import io.sarl.lang.compiler.batch.SarlBatchCompiler;
+import io.sarl.lang.core.SARLVersion;
 import io.sarl.tests.api.AbstractSarlTest;
 
 /** Class for testing the examples.

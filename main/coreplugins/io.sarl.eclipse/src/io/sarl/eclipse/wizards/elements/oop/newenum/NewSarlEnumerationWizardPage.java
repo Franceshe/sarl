@@ -43,6 +43,7 @@ import io.sarl.lang.codebuilder.builders.ISarlEnumerationBuilder;
  * @mavengroupid $GroupId$
  * @mavenartifactid $ArtifactId$
  */
+@SuppressWarnings("restriction")
 public class NewSarlEnumerationWizardPage extends AbstractNewSarlElementWizardPage {
 
 	private static final String IMAGE_HEADER =

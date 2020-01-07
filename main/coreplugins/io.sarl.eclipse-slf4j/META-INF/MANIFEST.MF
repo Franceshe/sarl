@@ -4,7 +4,7 @@ Bundle-Name: %Bundle-Name
 Bundle-SymbolicName: io.sarl.eclipse-slf4j;singleton:=true
 Automatic-Module-Name: io.sarl.eclipse-slf4j
 Bundle-Version: 0.11.0.qualifier
-Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Bundle-RequiredExecutionEnvironment: JavaSE-11
 Bundle-Vendor: %Bundle-Vendor
 Bundle-Activator: io.sarl.eclipse.slf4j.EclipseSLF4JLoggerPlugin
 Export-Package: io.sarl.eclipse.slf4j

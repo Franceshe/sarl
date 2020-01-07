@@ -30,6 +30,7 @@ package io.sarl.lang.validation;
  * @mavenartifactid $ArtifactId$
  * @see org.eclipse.xtend.core.validation.IssueCodes
  */
+@SuppressWarnings("restriction")
 public final class IssueCodes {
 
 	/** Prefix related to SARL for the issue codes.

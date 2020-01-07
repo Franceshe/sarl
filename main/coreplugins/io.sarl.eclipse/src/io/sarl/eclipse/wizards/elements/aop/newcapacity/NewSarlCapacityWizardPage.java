@@ -50,6 +50,7 @@ import io.sarl.lang.core.Capacity;
  * @mavengroupid $GroupId$
  * @mavenartifactid $ArtifactId$
  */
+@SuppressWarnings("restriction")
 public class NewSarlCapacityWizardPage extends AbstractNewSarlElementWizardPage {
 
 	/** Construct a wizard page.

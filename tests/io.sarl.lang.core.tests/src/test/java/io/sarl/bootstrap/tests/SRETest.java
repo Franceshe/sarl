@@ -33,9 +33,9 @@ import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 
-import io.sarl.bootstrap.SRE;
-import io.sarl.bootstrap.SREBootstrap;
 import io.sarl.lang.core.Agent;
+import io.sarl.lang.core.bootstrap.SRE;
+import io.sarl.lang.core.bootstrap.SREBootstrap;
 import io.sarl.tests.api.AbstractSarlTest;
 
 /**

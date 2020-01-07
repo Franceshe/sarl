@@ -37,6 +37,7 @@ import org.eclipse.xtext.xbase.typesystem.util.ExtendedEarlyExitComputer;
  * @mavenartifactid $ArtifactId$
  */
 @Singleton
+@SuppressWarnings("restriction")
 public class ExtendedSARLEarlyExitComputer extends ExtendedEarlyExitComputer {
 
 	@Inject

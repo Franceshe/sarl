@@ -65,6 +65,7 @@ import org.eclipse.xtext.xbase.annotations.ui.outline.XbaseWithAnnotationsOutlin
 import org.eclipse.xtext.xbase.typesystem.references.LightweightTypeReference;
 import org.eclipse.xtext.xbase.typesystem.util.CommonTypeComputationServices;
 
+import io.sarl.lang.core.util.OutParameter;
 import io.sarl.lang.jvmmodel.SarlJvmModelAssociations;
 import io.sarl.lang.sarl.SarlAction;
 import io.sarl.lang.sarl.SarlBehaviorUnit;
@@ -73,7 +74,6 @@ import io.sarl.lang.sarl.SarlConstructor;
 import io.sarl.lang.sarl.SarlField;
 import io.sarl.lang.sarl.SarlRequiredCapacity;
 import io.sarl.lang.sarl.SarlScript;
-import io.sarl.lang.util.OutParameter;
 import io.sarl.lang.util.Utils;
 
 /**
@@ -85,7 +85,7 @@ import io.sarl.lang.util.Utils;
  * @mavenartifactid $ArtifactId$
  * @see "https://www.eclipse.org/Xtext/documentation/304_ide_concepts.html#outline"
  */
-@SuppressWarnings("checkstyle:classfanoutcomplexity")
+@SuppressWarnings({"restriction", "checkstyle:classfanoutcomplexity"})
 public class SARLOutlineTreeProvider extends XbaseWithAnnotationsOutlineTreeProvider {
 
 	@Inject

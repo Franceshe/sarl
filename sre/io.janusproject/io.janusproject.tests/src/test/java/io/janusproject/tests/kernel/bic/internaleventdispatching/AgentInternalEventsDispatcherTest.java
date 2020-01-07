@@ -44,9 +44,9 @@ import io.janusproject.kernel.bic.internaleventdispatching.AgentInternalEventsDi
 import io.janusproject.kernel.services.jdk.executors.JdkExecutorService;
 import io.janusproject.services.executor.ExecutorService;
 
-import io.sarl.lang.annotation.PerceptGuardEvaluator;
 import io.sarl.lang.core.Agent;
 import io.sarl.lang.core.Event;
+import io.sarl.lang.core.annotation.PerceptGuardEvaluator;
 import io.sarl.tests.api.AbstractSarlTest;
 import io.sarl.tests.api.Nullable;
 

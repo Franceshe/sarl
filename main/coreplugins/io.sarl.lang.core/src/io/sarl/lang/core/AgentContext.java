@@ -25,7 +25,7 @@ import java.util.UUID;
 
 import org.eclipse.xtext.xbase.lib.Pure;
 
-import io.sarl.lang.util.SynchronizedIterable;
+import io.sarl.lang.core.util.SynchronizedIterable;
 
 /**
  * An AgentContext defines the boundary of a sub-system, and gathers a collection of Spaces.
@@ -113,7 +113,7 @@ public interface AgentContext {
 	 * @see #getSpace(UUID)
 	 * @deprecated see {@link #getOrCreateSpaceWithSpec(Class, UUID, Object...)}
 	 */
-	@Deprecated
+	@Deprecated(since = "0.6", forRemoval = true)
 	default <S extends Space> S getOrCreateSpace(Class<? extends SpaceSpecification<S>> spec,
 			UUID spaceUUID, Object... creationParams) {
 		return getOrCreateSpaceWithSpec(spec, spaceUUID, creationParams);
@@ -169,7 +169,7 @@ public interface AgentContext {
 	 * @see #getSpace(UUID)
 	 * @deprecated see {@link #getOrCreateSpaceWithID(Class, UUID, Object...)}
 	 */
-	@Deprecated
+	@Deprecated(since = "0.6", forRemoval = true)
 	default <S extends Space> S getOrCreateSpaceWithID(UUID spaceUUID,
 			Class<? extends SpaceSpecification<S>> spec, Object... creationParams) {
 		return getOrCreateSpaceWithID(spec, spaceUUID, creationParams);

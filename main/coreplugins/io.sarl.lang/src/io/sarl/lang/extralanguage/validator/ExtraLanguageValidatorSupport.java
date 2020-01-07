@@ -47,6 +47,7 @@ import org.eclipse.xtext.xtype.XtypePackage;
  * @mavenartifactid $ArtifactId$
  * @since 0.6
  */
+@SuppressWarnings("restriction")
 public class ExtraLanguageValidatorSupport extends AbstractDeclarativeValidator {
 
 	@Inject

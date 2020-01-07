@@ -34,9 +34,9 @@ import io.janusproject.services.network.NetworkUtil;
 import io.janusproject.tests.testutils.AbstractJanusRunTest;
 
 import io.sarl.core.Lifecycle;
-import io.sarl.lang.SARLVersion;
-import io.sarl.lang.annotation.SarlSpecification;
 import io.sarl.lang.core.BuiltinCapacitiesProvider;
+import io.sarl.lang.core.SARLVersion;
+import io.sarl.lang.core.annotation.SarlSpecification;
 
 /**
  * Unit test for the issue #84: Problem with calling killMe in Initialize behavior of an agent.

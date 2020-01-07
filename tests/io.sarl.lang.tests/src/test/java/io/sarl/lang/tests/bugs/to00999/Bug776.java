@@ -36,7 +36,7 @@ import org.eclipse.xtext.xbase.typesystem.util.CommonTypeComputationServices;
 import org.eclipse.xtext.xbase.validation.UIStrings;
 import org.junit.Test;
 
-import io.sarl.lang.SARLVersion;
+import io.sarl.lang.core.SARLVersion;
 import io.sarl.lang.sarl.SarlField;
 import io.sarl.lang.sarl.SarlPackage;
 import io.sarl.lang.sarl.SarlScript;

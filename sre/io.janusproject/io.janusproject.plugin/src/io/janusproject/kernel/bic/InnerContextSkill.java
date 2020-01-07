@@ -43,9 +43,9 @@ import io.sarl.lang.core.EventListener;
 import io.sarl.lang.core.Skill;
 import io.sarl.lang.core.Space;
 import io.sarl.lang.core.SpaceID;
-import io.sarl.lang.util.ClearableReference;
-import io.sarl.lang.util.SynchronizedIterable;
-import io.sarl.lang.util.SynchronizedSet;
+import io.sarl.lang.core.util.ClearableReference;
+import io.sarl.lang.core.util.SynchronizedIterable;
+import io.sarl.lang.core.util.SynchronizedSet;
 import io.sarl.util.concurrent.Collections3;
 import io.sarl.util.concurrent.NoReadWriteLock;
 
@@ -127,7 +127,7 @@ public class InnerContextSkill extends BuiltinSkill implements InnerContextAcces
 	 * @deprecated since 0.10
 	 */
 	@Override
-	@Deprecated
+	@Deprecated(since = "0.10", forRemoval = true)
 	public int getInstallationOrder() {
 		if (installationOrder < 0) {
 			installationOrder = installationOrder(this);

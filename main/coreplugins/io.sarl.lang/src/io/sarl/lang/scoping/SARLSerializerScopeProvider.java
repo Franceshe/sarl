@@ -33,6 +33,7 @@ import org.eclipse.xtend.core.serializer.XtendSerializerScopeProvider;
  * @mavengroupid $GroupId$
  * @mavenartifactid $ArtifactId$
  */
+@SuppressWarnings("restriction")
 public class SARLSerializerScopeProvider extends XtendSerializerScopeProvider {
 	//
 }

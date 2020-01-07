@@ -44,6 +44,7 @@ import org.eclipse.xtext.xbase.typesystem.references.LightweightTypeReference;
  * @since 0.8
  */
 @Singleton
+@SuppressWarnings("restriction")
 public class DefaultImmutableTypeValidator implements IImmutableTypeValidator {
 
 	private static final Class<?>[] IMMUTABLE_TYPES = {

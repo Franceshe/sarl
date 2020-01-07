@@ -28,7 +28,7 @@ import org.arakhne.afc.vmutil.FileSystem;
 import org.eclipse.xtext.util.Strings;
 import org.junit.Test;
 
-import io.sarl.lang.SARLVersion;
+import io.sarl.lang.core.SARLVersion;
 import io.sarl.lang.sarl.SarlPackage;
 import io.sarl.tests.api.AbstractSarlTest;
 

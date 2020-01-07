@@ -37,6 +37,7 @@ import org.eclipse.xtext.common.types.JvmTypeReference;
  * @mavengroupid $GroupId$
  * @mavenartifactid $ArtifactId$
  */
+@SuppressWarnings("restriction")
 public class FormalParameterListComparator implements Comparator<EList<? extends XtendParameter>>, Serializable {
 	private static final long serialVersionUID = 1565477564314061872L;
 

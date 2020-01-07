@@ -42,6 +42,7 @@ import io.sarl.lang.mwe2.externalspec.IStyleAppendable;
  * @mavenartifactid $ArtifactId$
  * @see "https://www.gnu.org/software/src-highlite/"
  */
+@SuppressWarnings("restriction")
 public class GnuSrcHighlightGenerator2 extends AbstractScriptHighlightingFragment2 {
 
 	/** The default basename pattern for {@link MessageFormat}.

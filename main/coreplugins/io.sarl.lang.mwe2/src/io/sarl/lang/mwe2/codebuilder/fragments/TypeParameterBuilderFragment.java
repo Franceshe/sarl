@@ -48,6 +48,7 @@ import io.sarl.lang.mwe2.codebuilder.extractor.CodeElementExtractor;
  * @mavengroupid $GroupId$
  * @mavenartifactid $ArtifactId$
  */
+@SuppressWarnings("restriction")
 public class TypeParameterBuilderFragment extends AbstractSubCodeBuilderFragment {
 
 	/** Replies the implementation for the type parameter builder.

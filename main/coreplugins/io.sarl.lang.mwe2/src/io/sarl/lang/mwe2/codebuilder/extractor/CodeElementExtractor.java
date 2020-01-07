@@ -42,6 +42,7 @@ import io.sarl.lang.mwe2.keywords.GrammarKeywordAccessFragment2;
  * @mavengroupid $GroupId$
  * @mavenartifactid $ArtifactId$
  */
+@SuppressWarnings("restriction")
 @ImplementedBy(NoBacktrackGrammarCodeElementExtractor.class)
 public interface CodeElementExtractor {
 

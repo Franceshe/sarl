@@ -50,6 +50,7 @@ import io.sarl.lang.sarl.SarlPackage;
  * @mavenartifactid $ArtifactId$
  * @since 0.9
  */
+@SuppressWarnings("restriction")
 public class CastOperatorLinkingCandidate extends AbstractPendingLinkingCandidate<XCastedExpression> implements ICastOperatorLinkingCandidate {
 
 	private XExpression receiver;

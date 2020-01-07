@@ -48,6 +48,7 @@ import org.eclipse.xtext.xbase.lib.Exceptions;
  * @mavengroupid $GroupId$
  * @mavenartifactid $ArtifactId$
  */
+@SuppressWarnings("restriction")
 public class SARLSourceViewer extends RichStringAwareSourceViewer {
 
 	@Inject

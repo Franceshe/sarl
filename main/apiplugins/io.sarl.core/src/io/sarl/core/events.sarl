@@ -144,7 +144,7 @@ final event AgentSpawned {
 	 *
 	 * @deprecated since 0.5, See {@link #agentIdentifiers}.
 	 */
-	@Deprecated
+	@Deprecated(since = "0.5", forRemoval = true)
 	val agentID : UUID
 
 	/** Identifiers of the spawned agents.
@@ -163,7 +163,7 @@ final event AgentSpawned {
 	 * @param agentType fully qualified name of the type of the agent.
 	 * @deprecated
 	 */
-	@Deprecated
+	@Deprecated(since = "0.5", forRemoval = true)
 	new (source : Address, agentID : UUID, agentType : String) {
 		setSource(source)
 		this.agentIdentifiers = Collections::singleton(agentID)
@@ -217,7 +217,7 @@ final event AgentKilled {
 	/** The identifier of the killed agent.
 	 * @deprecated since 0.7, See the event source.
 	 */
-	@Deprecated
+	@Deprecated(since = "0.7", forRemoval = true)
 	val agentID : UUID
 
 	/** The fully qualified name of the type of the killed agent.
@@ -312,7 +312,7 @@ final event MemberJoined {
 	/** The identifier of the context that the member joined.
 	 * @deprecated See the event source
 	 */
-	@Deprecated
+	@Deprecated(since = "0.7", forRemoval = true)
 	val parentContextID : UUID
 
 	/** The identifier of the agent that has joined the context.
@@ -356,7 +356,7 @@ final event MemberExcluded {
 	/** The identifier of the context from which the member was excluded.
 	 * @deprecated See source
 	 */
-	@Deprecated
+	@Deprecated(since = "0.7", forRemoval = true)
 	val parentContextID : UUID
 
 	/** The identifier of the agent that was excluded from the context.

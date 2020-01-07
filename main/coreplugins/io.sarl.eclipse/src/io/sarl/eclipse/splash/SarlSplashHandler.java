@@ -28,7 +28,7 @@ import org.eclipse.swt.widgets.Shell;
 import org.eclipse.ui.internal.splash.EclipseSplashHandler;
 
 import io.sarl.eclipse.SARLEclipsePlugin;
-import io.sarl.lang.SARLVersion;
+import io.sarl.lang.core.SARLVersion;
 
 /**
  * Dynamic splash screen that add the "BETA" picture when the product is in unstable state.
@@ -39,6 +39,7 @@ import io.sarl.lang.SARLVersion;
  * @mavenartifactid $ArtifactId$
  * @see io.sarl.lang.SARLConfig
  */
+@SuppressWarnings("restriction")
 public class SarlSplashHandler extends EclipseSplashHandler {
 
 	private static final String BETA_PNG = "icons/splash/beta-decoration.png"; //$NON-NLS-1$

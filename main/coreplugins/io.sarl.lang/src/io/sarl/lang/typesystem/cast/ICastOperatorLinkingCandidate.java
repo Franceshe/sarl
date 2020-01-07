@@ -33,6 +33,7 @@ import org.eclipse.xtext.xbase.typesystem.computation.ILinkingCandidate;
 * @mavenartifactid $ArtifactId$
 * @since 0.9
 */
+@SuppressWarnings("restriction")
 public interface ICastOperatorLinkingCandidate extends ILinkingCandidate {
 
 	/**

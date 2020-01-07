@@ -47,6 +47,7 @@ import org.eclipse.xtext.ui.IImageHelper.IImageDescriptorHelper;
  * @mavengroupid $GroupId$
  * @mavenartifactid $ArtifactId$
  */
+@SuppressWarnings("restriction")
 public abstract class AbstractNewSarlElementWizard extends NewElementWizard {
 
 	private final AbstractNewSarlElementWizardPage page;

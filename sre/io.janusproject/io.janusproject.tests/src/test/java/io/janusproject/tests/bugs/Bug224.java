@@ -36,13 +36,13 @@ import io.sarl.core.Initialize;
 import io.sarl.core.InnerContextAccess;
 import io.sarl.core.Lifecycle;
 import io.sarl.core.Schedules;
-import io.sarl.lang.SARLVersion;
-import io.sarl.lang.annotation.PerceptGuardEvaluator;
-import io.sarl.lang.annotation.SarlSpecification;
 import io.sarl.lang.core.Agent;
 import io.sarl.lang.core.Behavior;
 import io.sarl.lang.core.BuiltinCapacitiesProvider;
 import io.sarl.lang.core.Event;
+import io.sarl.lang.core.SARLVersion;
+import io.sarl.lang.core.annotation.PerceptGuardEvaluator;
+import io.sarl.lang.core.annotation.SarlSpecification;
 
 /**
  * Unit test for the issue #224: Equivalent of Skill.install for the Behavior class.

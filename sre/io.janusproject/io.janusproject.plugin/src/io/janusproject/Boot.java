@@ -61,10 +61,10 @@ import io.janusproject.services.executor.ExecutorService;
 import io.janusproject.services.network.NetworkConfig;
 import io.janusproject.util.LoggerCreator;
 
-import io.sarl.bootstrap.SRE;
-import io.sarl.bootstrap.SREBootstrap;
-import io.sarl.lang.SARLVersion;
 import io.sarl.lang.core.Agent;
+import io.sarl.lang.core.SARLVersion;
+import io.sarl.lang.core.bootstrap.SRE;
+import io.sarl.lang.core.bootstrap.SREBootstrap;
 
 /**
  * This is the class that permits to boot the Janus platform.
@@ -999,7 +999,7 @@ public final class Boot {
 		final Class<? extends Module> startupModule = JanusConfig.getSystemPropertyAsClass(Module.class, JanusConfig.INJECTION_MODULE_NAME,
 					JanusConfig.INJECTION_MODULE_NAME_VALUE);
 		assert startupModule != null : "No platform injection module"; //$NON-NLS-1$
-		return internalStartJanus(startupModule.newInstance(), agentId, agentCls, params);
+		return internalStartJanus(startupModule.getConstructor().newInstance(), agentId, agentCls, params);
 	}
 
 	/**
@@ -1033,7 +1033,7 @@ public final class Boot {
 					JanusConfig.INJECTION_MODULE_NAME_VALUE);
 		}
 		assert startupModule != null : "No platform injection module"; //$NON-NLS-1$
-		return internalStartJanus(startupModule.newInstance(), null, agentCls, params);
+		return internalStartJanus(startupModule.getConstructor().newInstance(), null, agentCls, params);
 	}
 
 	/**
@@ -1115,7 +1115,7 @@ public final class Boot {
 				JanusConfig.INJECTION_MODULE_NAME_VALUE);
 		assert startupModule != null : "No platform injection module"; //$NON-NLS-1$
 		try {
-			return startWithoutAgent(startupModule.newInstance());
+			return startWithoutAgent(startupModule.getConstructor().newInstance());
 		} catch (Exception exception) {
 			throw new IllegalStateException(exception);
 		}

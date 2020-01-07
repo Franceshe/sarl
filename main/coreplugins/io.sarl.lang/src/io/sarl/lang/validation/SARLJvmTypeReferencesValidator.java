@@ -41,6 +41,7 @@ import org.eclipse.xtext.xbase.validation.JvmTypeReferencesValidator;
  * @mavengroupid $GroupId$
  * @mavenartifactid $ArtifactId$
  */
+@SuppressWarnings("restriction")
 public class SARLJvmTypeReferencesValidator extends JvmTypeReferencesValidator {
 
 	@Inject

@@ -58,6 +58,7 @@ import io.sarl.lang.mwe2.codebuilder.fragments.ScriptBuilderFragment;
  * @mavengroupid $GroupId$
  * @mavenartifactid $ArtifactId$
  */
+@SuppressWarnings("restriction")
 public class CodeBuilderFragment2 extends AbstractStubGeneratingFragment {
 
 	private static final Logger LOG = Logger.getLogger(CodeBuilderFragment2.class);

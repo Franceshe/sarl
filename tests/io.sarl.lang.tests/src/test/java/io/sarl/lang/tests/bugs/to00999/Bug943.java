@@ -23,7 +23,7 @@ package io.sarl.lang.tests.bugs.to00999;
 
 import org.junit.Test;
 
-import io.sarl.lang.SARLVersion;
+import io.sarl.lang.core.SARLVersion;
 import io.sarl.lang.sarl.SarlPackage;
 import io.sarl.lang.sarl.SarlScript;
 import io.sarl.tests.api.AbstractSarlTest;

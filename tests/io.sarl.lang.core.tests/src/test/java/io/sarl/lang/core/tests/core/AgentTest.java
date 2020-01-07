@@ -40,7 +40,7 @@ import io.sarl.lang.core.DefaultSkill;
 import io.sarl.lang.core.Event;
 import io.sarl.lang.core.Skill;
 import io.sarl.lang.core.UnimplementedCapacityException;
-import io.sarl.lang.util.ClearableReference;
+import io.sarl.lang.core.util.ClearableReference;
 import io.sarl.tests.api.AbstractSarlTest;
 
 /**

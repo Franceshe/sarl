@@ -57,7 +57,7 @@ import io.sarl.lang.core.EventSpaceSpecification;
 import io.sarl.lang.core.Scope;
 import io.sarl.lang.core.Skill;
 import io.sarl.lang.core.SpaceID;
-import io.sarl.lang.util.ClearableReference;
+import io.sarl.lang.core.util.ClearableReference;
 import io.sarl.tests.api.Nullable;
 import io.sarl.util.Scopes;
 

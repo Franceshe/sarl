@@ -37,8 +37,8 @@ import org.eclipse.xtext.xbase.XBlockExpression;
 import org.eclipse.xtext.xbase.XExpression;
 import org.eclipse.xtext.xbase.validation.IssueCodes;
 
-import io.sarl.lang.annotation.EarlyExit;
 import io.sarl.lang.controlflow.ISarlEarlyExitComputer;
+import io.sarl.lang.core.annotation.EarlyExit;
 
 /** Validation of the early-exit control flow.
  *
@@ -48,6 +48,7 @@ import io.sarl.lang.controlflow.ISarlEarlyExitComputer;
  * @mavenartifactid $ArtifactId$
  */
 @Singleton
+@SuppressWarnings("restriction")
 public class SARLEarlyExitValidator extends XtendEarlyExitValidator {
 
 	@Inject

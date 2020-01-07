@@ -69,15 +69,15 @@ import org.eclipse.xtext.xbase.XMemberFeatureCall;
 import org.eclipse.xtext.xbase.XbaseFactory;
 
 import io.sarl.eclipse.SARLEclipsePlugin;
-import io.sarl.lang.annotation.DefaultValue;
-import io.sarl.lang.annotation.Generated;
-import io.sarl.lang.annotation.SarlSourceCode;
-import io.sarl.lang.annotation.SyntheticMember;
 import io.sarl.lang.codebuilder.builders.IBlockExpressionBuilder;
 import io.sarl.lang.codebuilder.builders.IExpressionBuilder;
 import io.sarl.lang.codebuilder.builders.IFormalParameterBuilder;
 import io.sarl.lang.codebuilder.builders.ISarlActionBuilder;
 import io.sarl.lang.codebuilder.builders.ISarlConstructorBuilder;
+import io.sarl.lang.core.annotation.DefaultValue;
+import io.sarl.lang.core.annotation.Generated;
+import io.sarl.lang.core.annotation.SarlSourceCode;
+import io.sarl.lang.core.annotation.SyntheticMember;
 import io.sarl.lang.sarl.actionprototype.ActionParameterTypes;
 import io.sarl.lang.sarl.actionprototype.ActionPrototype;
 import io.sarl.lang.sarl.actionprototype.FormalParameterProvider;
@@ -95,7 +95,7 @@ import io.sarl.lang.util.Utils;
  * @mavenartifactid $ArtifactId$
  */
 @Singleton
-@SuppressWarnings({"static-method", "checkstyle:classfanoutcomplexity"})
+@SuppressWarnings({"restriction", "static-method", "checkstyle:classfanoutcomplexity"})
 public class Jdt2Ecore {
 
 	@Inject

@@ -57,6 +57,7 @@ import io.sarl.lang.sarl.actionprototype.IActionPrototypeProvider;
  * @mavengroupid $GroupId$
  * @mavenartifactid $ArtifactId$
  */
+@SuppressWarnings("restriction")
 abstract class GenerationContext {
 
 	private JvmDeclaredType target;

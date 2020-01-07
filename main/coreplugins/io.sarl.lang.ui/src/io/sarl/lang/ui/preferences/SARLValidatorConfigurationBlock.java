@@ -36,6 +36,7 @@ import io.sarl.lang.validation.IssueCodes;
  * @mavengroupid $GroupId$
  * @mavenartifactid $ArtifactId$
  */
+@SuppressWarnings("restriction")
 public class SARLValidatorConfigurationBlock extends XtendValidatorConfigurationBlock {
 
 	private static final String SECTION_NAME = SARLValidatorConfigurationBlock.class.getName();

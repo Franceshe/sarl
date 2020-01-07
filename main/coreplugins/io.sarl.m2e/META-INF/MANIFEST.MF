@@ -1,11 +1,11 @@
 Manifest-Version: 1.0
+Automatic-Module-Name: io.sarl.m2e
 Bundle-ManifestVersion: 2
 Bundle-Name: %Bundle-Name
 Bundle-Vendor: %Bundle-Vendor
 Bundle-Version: 0.11.0.qualifier
 Bundle-SymbolicName: io.sarl.m2e;singleton:=true
-Automatic-Module-Name: io.sarl.m2e
-Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Bundle-RequiredExecutionEnvironment: JavaSE-11
 Bundle-ActivationPolicy: lazy
 Bundle-Activator: io.sarl.m2e.SARLMavenEclipsePlugin
 Require-Bundle: io.sarl.eclipse;bundle-version="0.11.0",

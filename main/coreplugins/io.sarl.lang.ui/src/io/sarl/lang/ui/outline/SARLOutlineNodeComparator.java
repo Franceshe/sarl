@@ -50,6 +50,7 @@ import org.eclipse.xtext.ui.editor.outline.impl.EStructuralFeatureNode;
  * @mavengroupid $GroupId$
  * @mavenartifactid $ArtifactId$
  */
+@SuppressWarnings("restriction")
 public class SARLOutlineNodeComparator extends DefaultComparator {
 
 	private static final int SCRIPT_PRIORITY = 0;

@@ -31,14 +31,14 @@ import io.janusproject.tests.testutils.AbstractJanusRunTest;
 
 import io.sarl.core.DefaultContextInteractions;
 import io.sarl.core.OpenEventSpace;
-import io.sarl.lang.SARLVersion;
-import io.sarl.lang.annotation.SarlSpecification;
 import io.sarl.lang.core.AgentContext;
 import io.sarl.lang.core.EventSpace;
+import io.sarl.lang.core.SARLVersion;
 import io.sarl.lang.core.Space;
 import io.sarl.lang.core.SpaceID;
 import io.sarl.lang.core.SpaceSpecification;
-import io.sarl.lang.util.SynchronizedSet;
+import io.sarl.lang.core.annotation.SarlSpecification;
+import io.sarl.lang.core.util.SynchronizedSet;
 import io.sarl.util.DefaultSpace;
 import io.sarl.util.concurrent.Collections3;
 

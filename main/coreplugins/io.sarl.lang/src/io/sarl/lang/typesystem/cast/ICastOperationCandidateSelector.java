@@ -36,6 +36,7 @@ import org.eclipse.xtext.xbase.typesystem.references.LightweightTypeReference;
  */
 @FunctionalInterface
 @ImplementedBy(ObjectAndPrimitiveBasedCastOperationCandidateSelector.class)
+@SuppressWarnings("restriction")
 public interface ICastOperationCandidateSelector {
 
 	/** Replies if the given description is a valid candidate for a cast linked operation.

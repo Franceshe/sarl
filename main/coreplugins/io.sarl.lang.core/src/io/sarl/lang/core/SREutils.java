@@ -25,9 +25,9 @@ import java.util.concurrent.ConcurrentMap;
 
 import org.eclipse.xtext.xbase.lib.Pure;
 
-import io.sarl.lang.annotation.PrivateAPI;
 import io.sarl.lang.core.Skill.UninstallationStage;
-import io.sarl.lang.util.ClearableReference;
+import io.sarl.lang.core.annotation.PrivateAPI;
+import io.sarl.lang.core.util.ClearableReference;
 
 /** Utilities for accessing to the part of the SARL API that is dedicated to the
  * SARL run-time environments (SRE).
@@ -163,7 +163,7 @@ public final class SREutils {
 	 * @see #createSkillMappingGetOld(Agent, Class, Skill)
 	 * @deprecated since 0.10, no replacement
 	 */
-	@Deprecated
+	@Deprecated(since = "0.10", forRemoval = true)
 	public static ClearableReference<Skill> createSkillMapping(Agent agent, Class<? extends Capacity> capacity, Skill skill) {
 		return agent.$mapCapacityGetNew(capacity, skill);
 	}
@@ -181,7 +181,7 @@ public final class SREutils {
 	 * @see #createSkillMapping(Agent, Class, Skill)
 	 * @deprecated since 0.10, no replacement
 	 */
-	@Deprecated
+	@Deprecated(since = "0.10", forRemoval = true)
 	public static ClearableReference<Skill> createSkillMappingGetOld(Agent agent, Class<? extends Capacity> capacity, Skill skill) {
 		return agent.$mapCapacityGetOld(capacity, skill);
 	}

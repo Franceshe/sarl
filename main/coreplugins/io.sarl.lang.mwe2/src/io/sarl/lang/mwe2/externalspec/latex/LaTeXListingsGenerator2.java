@@ -50,6 +50,7 @@ import io.sarl.lang.mwe2.externalspec.IStyleAppendable;
  * @mavengroupid $GroupId$
  * @mavenartifactid $ArtifactId$
  */
+@SuppressWarnings("restriction")
 public class LaTeXListingsGenerator2 extends AbstractExternalHighlightingFragment2<IStyleAppendable> {
 
 	/** The default basename pattern for {@link MessageFormat}.

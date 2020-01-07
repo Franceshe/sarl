@@ -25,7 +25,7 @@ import org.eclipse.xtext.xbase.XbasePackage;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 
-import io.sarl.lang.SARLVersion;
+import io.sarl.lang.core.SARLVersion;
 import io.sarl.lang.sarl.SarlPackage;
 import io.sarl.lang.sarl.SarlScript;
 import io.sarl.lang.validation.IssueCodes;

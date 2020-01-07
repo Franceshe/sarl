@@ -22,9 +22,9 @@ package io.sarl.bootstrap.tests;
 
 import java.util.UUID;
 
-import io.sarl.bootstrap.SREBootstrap;
 import io.sarl.lang.core.Agent;
 import io.sarl.lang.core.AgentContext;
+import io.sarl.lang.core.bootstrap.SREBootstrap;
 
 /**
  * @author $Author: sgalland$

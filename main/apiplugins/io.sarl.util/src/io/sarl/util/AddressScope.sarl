@@ -35,7 +35,7 @@ import io.sarl.lang.core.Scope
  * @mavenartifactid $ArtifactId$
  * @Deprecated since 0.7, replaced by closure expressions.
  */
-@Deprecated
+@Deprecated(since = "0.7", forRemoval = true)
 class AddressScope implements Scope<Address> {
 
 	static val SCOPE_ID = "aid://"
@@ -83,7 +83,7 @@ class AddressScope implements Scope<Address> {
 	 * @return the scope restricted to the given addresses.
 	 * @deprecated see {@link Scopes#addresses(Address...)}.
 	 */
-	@Deprecated
+	@Deprecated(since = "0.8", forRemoval = true)
 	static final def getScope(addresses : Address*) : Scope<Address> {
 		Scopes::addresses(addresses)
 	}

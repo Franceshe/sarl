@@ -34,6 +34,7 @@ import io.sarl.lang.sarl.SarlAction;
  * @mavengroupid $GroupId$
  * @mavenartifactid $ArtifactId$
  */
+@SuppressWarnings("restriction")
 public class ActionComparator implements Comparator<SarlAction>, Serializable {
 	private static final long serialVersionUID = 6693376551313660666L;
 

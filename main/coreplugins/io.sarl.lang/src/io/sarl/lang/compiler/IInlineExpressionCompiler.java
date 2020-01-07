@@ -39,6 +39,7 @@ import org.eclipse.xtext.xbase.lib.Inline;
  * @see Inline
  */
 @ImplementedBy(JavaInlineExpressionCompiler.class)
+@SuppressWarnings("restriction")
 public interface IInlineExpressionCompiler {
 
 	/** Append the inline annotation to the given operation.

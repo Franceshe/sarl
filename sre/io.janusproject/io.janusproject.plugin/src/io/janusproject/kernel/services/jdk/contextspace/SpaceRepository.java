@@ -52,7 +52,7 @@ import io.sarl.core.OpenEventSpace;
 import io.sarl.lang.core.Space;
 import io.sarl.lang.core.SpaceID;
 import io.sarl.lang.core.SpaceSpecification;
-import io.sarl.lang.util.SynchronizedCollection;
+import io.sarl.lang.core.util.SynchronizedCollection;
 import io.sarl.util.DefaultSpace;
 import io.sarl.util.concurrent.Collections3;
 
@@ -546,14 +546,12 @@ public class SpaceRepository {
 			//
 		}
 
-		@SuppressWarnings("synthetic-access")
 		@Override
 		public void entryAdded(SpaceID key, Object[] value) {
 			assert SpaceRepository.this.spaceIDs.containsKey(key);
 			ensureLocalSpaceDefinition(key, value);
 		}
 
-		@SuppressWarnings("synthetic-access")
 		@Override
 		public void entryRemoved(SpaceID key, Object[] value) {
 			assert !SpaceRepository.this.spaceIDs.containsKey(key);

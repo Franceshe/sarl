@@ -41,6 +41,7 @@ import io.sarl.lang.jvmmodel.IDefaultVisibilityProvider;
  * @mavengroupid $GroupId$
  * @mavenartifactid $ArtifactId$
  */
+@SuppressWarnings("restriction")
 public class SarlEnumerationImplCustom extends SarlEnumerationImpl {
 
 	/**

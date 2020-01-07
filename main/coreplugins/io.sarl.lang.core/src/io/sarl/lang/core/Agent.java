@@ -38,10 +38,9 @@ import org.eclipse.xtext.xbase.lib.Procedures.Procedure1;
 import org.eclipse.xtext.xbase.lib.Pure;
 import org.eclipse.xtext.xbase.lib.util.ToStringBuilder;
 
-import io.sarl.lang.SARLVersion;
-import io.sarl.lang.annotation.SarlSpecification;
-import io.sarl.lang.util.ClearableReference;
-import io.sarl.lang.util.OutParameter;
+import io.sarl.lang.core.annotation.SarlSpecification;
+import io.sarl.lang.core.util.ClearableReference;
+import io.sarl.lang.core.util.OutParameter;
 
 
 /**
@@ -79,7 +78,7 @@ public class Agent extends AgentProtectedAPIObject implements Identifiable {
 	 *                  <code>null</code> for computing it randomly.
 	 * @deprecated See {@link #Agent(UUID, UUID, DynamicSkillProvider)}.
 	 */
-	@Deprecated
+	@Deprecated(since = "0.6", forRemoval = true)
 	@Inject
 	public Agent(
 			BuiltinCapacitiesProvider provider,
@@ -231,7 +230,7 @@ public class Agent extends AgentProtectedAPIObject implements Identifiable {
 	 * @deprecated since 0.4, see {@link #setSkill(Skill, Class...)}
 	 */
 	@Inline("setSkill($2, $1)")
-	@Deprecated
+	@Deprecated(since = "0.4", forRemoval = true)
 	protected <S extends Skill> S setSkill(Class<? extends Capacity> capacity, S skill) {
 		return setSkill(skill, capacity);
 	}

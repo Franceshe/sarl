@@ -212,15 +212,16 @@ import org.eclipse.xtext.xbase.validation.ProxyAwareUIStrings;
 import org.eclipse.xtext.xbase.validation.UIStrings;
 import org.eclipse.xtext.xtype.XComputedTypeReference;
 
-import io.sarl.lang.SARLVersion;
-import io.sarl.lang.annotation.EarlyExit;
 import io.sarl.lang.controlflow.ISarlEarlyExitComputer;
 import io.sarl.lang.core.Agent;
 import io.sarl.lang.core.Behavior;
 import io.sarl.lang.core.Capacity;
 import io.sarl.lang.core.DefaultSkill;
 import io.sarl.lang.core.Event;
+import io.sarl.lang.core.SARLVersion;
 import io.sarl.lang.core.Skill;
+import io.sarl.lang.core.annotation.EarlyExit;
+import io.sarl.lang.core.util.OutParameter;
 import io.sarl.lang.extralanguage.validator.ExtraLanguageValidatorSupport;
 import io.sarl.lang.jvmmodel.IDefaultVisibilityProvider;
 import io.sarl.lang.jvmmodel.SARLReadAndWriteTracking;
@@ -256,7 +257,6 @@ import io.sarl.lang.typesystem.IImmutableTypeValidator;
 import io.sarl.lang.typesystem.IOperationHelper;
 import io.sarl.lang.typesystem.InheritanceHelper;
 import io.sarl.lang.typesystem.SARLExpressionHelper;
-import io.sarl.lang.util.OutParameter;
 import io.sarl.lang.util.Utils;
 import io.sarl.lang.util.Utils.SarlLibraryErrorCode;
 
@@ -275,24 +275,20 @@ import io.sarl.lang.util.Utils.SarlLibraryErrorCode;
  * @mavenartifactid $ArtifactId$
  * @see "https://www.eclipse.org/Xtext/documentation/303_runtime_concepts.html#validation"
  */
-@SuppressWarnings({"checkstyle:classfanoutcomplexity", "checkstyle:methodcount"})
+@SuppressWarnings({"checkstyle:classfanoutcomplexity", "checkstyle:methodcount", "restriction"})
 @ComposedChecks(validators = {ExtraLanguageValidatorSupport.class})
 public class SARLValidator extends AbstractSARLValidator {
 
-	@SuppressWarnings("synthetic-access")
 	private final SARLModifierValidator constructorModifierValidatorForSpecialContainer = new SARLModifierValidator(
 			newArrayList(SARLValidator.this.visibilityModifers));
 
-	@SuppressWarnings("synthetic-access")
 	private final SARLModifierValidator staticConstructorModifierValidator = new SARLModifierValidator(
 			newArrayList("static")); //$NON-NLS-1$
 
-	@SuppressWarnings("synthetic-access")
 	private final SARLModifierValidator agentModifierValidator = new SARLModifierValidator(
 			newArrayList("public", "package", "abstract", //$NON-NLS-1$//$NON-NLS-2$//$NON-NLS-3$
 					"final")); //$NON-NLS-1$
 
-	@SuppressWarnings("synthetic-access")
 	private final SARLModifierValidator methodInAgentModifierValidator = new SARLModifierValidator(
 			newArrayList(
 					"package",  //$NON-NLS-1$
@@ -300,19 +296,16 @@ public class SARLValidator extends AbstractSARLValidator {
 					"abstract", "dispatch", "final", //$NON-NLS-1$//$NON-NLS-2$//$NON-NLS-3$
 					"def", "override", "synchronized")); //$NON-NLS-1$//$NON-NLS-2$//$NON-NLS-3$
 
-	@SuppressWarnings("synthetic-access")
 	private final SARLModifierValidator fieldInAgentModifierValidator = new SARLModifierValidator(
 			newArrayList(
 					"package",  //$NON-NLS-1$
 					"protected", "private", //$NON-NLS-1$//$NON-NLS-2$
 					"final", "val", "var")); //$NON-NLS-1$//$NON-NLS-2$//$NON-NLS-3$
 
-	@SuppressWarnings("synthetic-access")
 	private final SARLModifierValidator behaviorModifierValidator = new SARLModifierValidator(
 			newArrayList("public", "package", "abstract", //$NON-NLS-1$//$NON-NLS-2$//$NON-NLS-3$
 					"final")); //$NON-NLS-1$
 
-	@SuppressWarnings("synthetic-access")
 	private final SARLModifierValidator methodInBehaviorModifierValidator = new SARLModifierValidator(
 			newArrayList(
 					"public", "package", //$NON-NLS-1$ //$NON-NLS-2$
@@ -320,38 +313,31 @@ public class SARLValidator extends AbstractSARLValidator {
 					"abstract", "dispatch", "final", //$NON-NLS-1$//$NON-NLS-2$//$NON-NLS-3$
 					"def", "override", "synchronized")); //$NON-NLS-1$//$NON-NLS-2$//$NON-NLS-3$
 
-	@SuppressWarnings("synthetic-access")
 	private final SARLModifierValidator fieldInBehaviorModifierValidator = new SARLModifierValidator(
 			newArrayList(
 					"public", "package", //$NON-NLS-1$//$NON-NLS-2$
 					"protected", "private", //$NON-NLS-1$//$NON-NLS-2$
 					"final", "val", "var")); //$NON-NLS-1$//$NON-NLS-2$//$NON-NLS-3$
 
-	@SuppressWarnings("synthetic-access")
 	private final SARLModifierValidator capacityModifierValidator = new SARLModifierValidator(
 			newArrayList("public", "package")); //$NON-NLS-1$//$NON-NLS-2$
 
-	@SuppressWarnings("synthetic-access")
 	private final SARLModifierValidator methodInCapacityModifierValidator = new SARLModifierValidator(
 			newArrayList(
 					"public", "def", "override")); //$NON-NLS-1$//$NON-NLS-2$//$NON-NLS-3$
 
-	@SuppressWarnings("synthetic-access")
 	private final SARLModifierValidator eventModifierValidator = new SARLModifierValidator(
 			newArrayList("public", "package", "final")); //$NON-NLS-1$//$NON-NLS-2$//$NON-NLS-3$
 
-	@SuppressWarnings("synthetic-access")
 	private final SARLModifierValidator fieldInEventModifierValidator = new SARLModifierValidator(
 			newArrayList(
 					"public", //$NON-NLS-1$
 					"final", "val", "var")); //$NON-NLS-1$//$NON-NLS-2$//$NON-NLS-3$
 
-	@SuppressWarnings("synthetic-access")
 	private final SARLModifierValidator skillModifierValidator = new SARLModifierValidator(
 			newArrayList("public", "package", "abstract", //$NON-NLS-1$//$NON-NLS-2$//$NON-NLS-3$
 					"final")); //$NON-NLS-1$
 
-	@SuppressWarnings("synthetic-access")
 	private final SARLModifierValidator methodInSkillModifierValidator = new SARLModifierValidator(
 			newArrayList(
 					"public", "package", //$NON-NLS-1$ //$NON-NLS-2$
@@ -359,33 +345,28 @@ public class SARLValidator extends AbstractSARLValidator {
 					"abstract", "dispatch", "final", //$NON-NLS-1$//$NON-NLS-2$//$NON-NLS-3$
 					"def", "override", "synchronized")); //$NON-NLS-1$//$NON-NLS-2$//$NON-NLS-3$
 
-	@SuppressWarnings("synthetic-access")
 	private final SARLModifierValidator fieldInSkillModifierValidator = new SARLModifierValidator(
 			newArrayList(
 					"public", "package", //$NON-NLS-1$ //$NON-NLS-2$
 					"protected", "private", //$NON-NLS-1$//$NON-NLS-2$
 					"final", "val", "var")); //$NON-NLS-1$//$NON-NLS-2$//$NON-NLS-3$
 
-	@SuppressWarnings("synthetic-access")
 	private final SARLModifierValidator nestedClassInAgentModifierValidator = new SARLModifierValidator(
 			newArrayList(
 					"package", "protected", //$NON-NLS-1$ //$NON-NLS-2$
 					"private", "static", "final", //$NON-NLS-1$ //$NON-NLS-2$ //$NON-NLS-3$
 					"abstract")); //$NON-NLS-1$
 
-	@SuppressWarnings("synthetic-access")
 	private final SARLModifierValidator nestedInterfaceInAgentModifierValidator = new SARLModifierValidator(
 			newArrayList(
 					"package", "protected", "private", //$NON-NLS-1$ //$NON-NLS-2$ //$NON-NLS-3$
 					"static", "abstract")); //$NON-NLS-1$ //$NON-NLS-2$
 
-	@SuppressWarnings("synthetic-access")
 	private final SARLModifierValidator nestedEnumerationInAgentModifierValidator = new SARLModifierValidator(
 			newArrayList(
 					"package", "protected", "private", //$NON-NLS-1$ //$NON-NLS-2$ //$NON-NLS-3$
 					"static")); //$NON-NLS-1$
 
-	@SuppressWarnings("synthetic-access")
 	private final SARLModifierValidator nestedAnnotationTypeInAgentModifierValidator = new SARLModifierValidator(
 			newArrayList(
 					"package", "protected", "private", //$NON-NLS-1$ //$NON-NLS-2$ //$NON-NLS-3$
@@ -2445,10 +2426,10 @@ public class SARLValidator extends AbstractSARLValidator {
 						isVariadic = false;
 					}
 				}
-				if (arguments != null && hasSideEffects) {
-					assert parameters != null;
+				if (arguments != null && hasSideEffects && parameters != null) {
+					final boolean isEmp = parameters.isEmpty();
 					final int index = arguments.indexOf(directContainerChild.get());
-					if (index >= 0 && !parameters.isEmpty()) {
+					if (index >= 0 && !isEmp) {
 						final boolean isPrimitive;
 						final int endIndex = parameters.size() - 1;
 						if (index < endIndex || (!isVariadic && index == endIndex)) {
@@ -3159,28 +3140,24 @@ public class SARLValidator extends AbstractSARLValidator {
 		}
 
 		@Override
-		@SuppressWarnings("synthetic-access")
 		protected boolean isPrivateByDefault(XtendMember member) {
 			final JvmVisibility defaultVisibility = SARLValidator.this.defaultVisibilityProvider.getDefaultJvmVisibility(member);
 			return defaultVisibility == JvmVisibility.PRIVATE;
 		}
 
 		@Override
-		@SuppressWarnings("synthetic-access")
 		protected boolean isProtectedByDefault(XtendMember member) {
 			final JvmVisibility defaultVisibility = SARLValidator.this.defaultVisibilityProvider.getDefaultJvmVisibility(member);
 			return defaultVisibility == JvmVisibility.PROTECTED;
 		}
 
 		@Override
-		@SuppressWarnings("synthetic-access")
 		protected boolean isPackageByDefault(XtendMember member) {
 			final JvmVisibility defaultVisibility = SARLValidator.this.defaultVisibilityProvider.getDefaultJvmVisibility(member);
 			return defaultVisibility == JvmVisibility.DEFAULT;
 		}
 
 		@Override
-		@SuppressWarnings("synthetic-access")
 		protected boolean isPublicByDefault(XtendMember member) {
 			final JvmVisibility defaultVisibility = SARLValidator.this.defaultVisibilityProvider.getDefaultJvmVisibility(member);
 			return defaultVisibility == JvmVisibility.PUBLIC;

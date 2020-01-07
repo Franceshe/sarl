@@ -32,7 +32,7 @@ import io.sarl.lang.core.EventSpace;
 import io.sarl.lang.core.Scope;
 import io.sarl.lang.core.Space;
 import io.sarl.lang.core.SpaceID;
-import io.sarl.lang.util.SynchronizedIterable;
+import io.sarl.lang.core.util.SynchronizedIterable;
 
 /**
  * @author $Author: sgalland$

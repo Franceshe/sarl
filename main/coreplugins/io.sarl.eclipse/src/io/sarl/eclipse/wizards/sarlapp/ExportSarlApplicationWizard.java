@@ -39,6 +39,7 @@ import org.eclipse.xtext.xbase.lib.util.ReflectExtensions;
  * @mavenartifactid $ArtifactId$
  * @since 0.8
  */
+@SuppressWarnings("restriction")
 public class ExportSarlApplicationWizard extends FixedFatJarExportWizard {
 
 	@Inject

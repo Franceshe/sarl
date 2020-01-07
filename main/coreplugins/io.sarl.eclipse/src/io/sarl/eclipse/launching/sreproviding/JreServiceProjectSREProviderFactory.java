@@ -49,6 +49,7 @@ import io.sarl.eclipse.runtime.SARLRuntime;
  * @since 0.7
  * @see EclipseIDEProjectSREProvider
  */
+@SuppressWarnings("restriction")
 public class JreServiceProjectSREProviderFactory implements ProjectSREProviderFactory {
 
 	/** Construct a factory of SRE provider.

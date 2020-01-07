@@ -26,7 +26,7 @@ import java.util.concurrent.TimeUnit;
 
 import org.junit.Test;
 
-import io.sarl.lang.scoping.extensions.time.TimeExtensions;
+import io.sarl.lang.core.scoping.extensions.time.TimeExtensions;
 
 /**
  * @author $Author: sgalland$

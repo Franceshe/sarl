@@ -173,7 +173,6 @@ public class BootModule extends AbstractModule {
      */
     private static class PublicURIProvider implements Provider<String> {
 
-        @SuppressWarnings("synthetic-access")
         @Override
         public String get() {
             return getPUBURIAsString();

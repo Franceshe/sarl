@@ -35,6 +35,7 @@ import org.eclipse.xtext.xtext.generator.CodeConfig;
  * @mavenartifactid $ArtifactId$
  * @since 0.6
  */
+@SuppressWarnings("restriction")
 public abstract class AbstractScriptHighlightingFragment2 extends AbstractExternalHighlightingFragment2<IStyleAppendable> {
 
 	@Override

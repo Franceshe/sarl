@@ -31,11 +31,11 @@ import org.eclipse.core.variables.VariablesPlugin;
 import org.eclipse.debug.core.ILaunch;
 import org.eclipse.debug.core.ILaunchConfiguration;
 
-import io.sarl.bootstrap.SRE;
 import io.sarl.eclipse.SARLEclipseConfig;
 import io.sarl.eclipse.launching.config.RootContextIdentifierType;
 import io.sarl.eclipse.runtime.ISREInstall;
 import io.sarl.eclipse.runtime.SREConstants;
+import io.sarl.lang.core.bootstrap.SRE;
 
 /**
  * Implementation of an eclipse LauncConfigurationDelegate to launch SARL agent.

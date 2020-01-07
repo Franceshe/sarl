@@ -37,6 +37,7 @@ import io.sarl.lang.mwe2.externalspec.IStyleAppendable;
  * @mavengroupid $GroupId$
  * @mavenartifactid $ArtifactId$
  */
+@SuppressWarnings("restriction")
 public class LaTeXBeamerGenerator2 extends LaTeXListingsGenerator2 {
 
 	/** The default basename pattern for {@link MessageFormat}.

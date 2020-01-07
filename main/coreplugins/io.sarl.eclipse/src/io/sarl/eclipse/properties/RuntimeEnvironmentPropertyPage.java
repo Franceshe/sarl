@@ -43,6 +43,7 @@ import io.sarl.eclipse.runtime.SREConfigurationBlock;
  * @mavengroupid $GroupId$
  * @mavenartifactid $ArtifactId$
  */
+@SuppressWarnings("restriction")
 public class RuntimeEnvironmentPropertyPage extends PropertyAndPreferencePage {
 
 	/** Identifier of the property page.

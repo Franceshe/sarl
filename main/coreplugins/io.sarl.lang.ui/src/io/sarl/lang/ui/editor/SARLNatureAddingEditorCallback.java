@@ -39,6 +39,7 @@ import org.eclipse.xtext.ui.resource.UriValidator;
  * @mavenartifactid $ArtifactId$
  * @since 0.8
  */
+@SuppressWarnings("restriction")
 public class SARLNatureAddingEditorCallback extends IXtextEditorCallback.NullImpl {
 
 	@Inject

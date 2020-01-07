@@ -129,20 +129,6 @@ import org.eclipse.xtext.xbase.typesystem.util.CommonTypeComputationServices;
 import org.eclipse.xtext.xbase.validation.ReadAndWriteTracking;
 import org.eclipse.xtext.xtype.XComputedTypeReference;
 
-import io.sarl.lang.SARLVersion;
-import io.sarl.lang.annotation.DefaultValue;
-import io.sarl.lang.annotation.DefaultValueSource;
-import io.sarl.lang.annotation.DefaultValueUse;
-import io.sarl.lang.annotation.EarlyExit;
-import io.sarl.lang.annotation.FiredEvent;
-import io.sarl.lang.annotation.Generated;
-import io.sarl.lang.annotation.ImportedCapacityFeature;
-import io.sarl.lang.annotation.NoEqualityTestFunctionsGeneration;
-import io.sarl.lang.annotation.PerceptGuardEvaluator;
-import io.sarl.lang.annotation.SarlElementType;
-import io.sarl.lang.annotation.SarlSourceCode;
-import io.sarl.lang.annotation.SarlSpecification;
-import io.sarl.lang.annotation.SyntheticMember;
 import io.sarl.lang.compiler.IInlineExpressionCompiler;
 import io.sarl.lang.compiler.SARLJvmGenerator;
 import io.sarl.lang.compiler.SarlCompiler;
@@ -152,7 +138,22 @@ import io.sarl.lang.core.AgentTrait;
 import io.sarl.lang.core.Behavior;
 import io.sarl.lang.core.Capacity;
 import io.sarl.lang.core.Event;
+import io.sarl.lang.core.SARLVersion;
 import io.sarl.lang.core.Skill;
+import io.sarl.lang.core.annotation.DefaultValue;
+import io.sarl.lang.core.annotation.DefaultValueSource;
+import io.sarl.lang.core.annotation.DefaultValueUse;
+import io.sarl.lang.core.annotation.EarlyExit;
+import io.sarl.lang.core.annotation.FiredEvent;
+import io.sarl.lang.core.annotation.Generated;
+import io.sarl.lang.core.annotation.ImportedCapacityFeature;
+import io.sarl.lang.core.annotation.NoEqualityTestFunctionsGeneration;
+import io.sarl.lang.core.annotation.PerceptGuardEvaluator;
+import io.sarl.lang.core.annotation.SarlElementType;
+import io.sarl.lang.core.annotation.SarlSourceCode;
+import io.sarl.lang.core.annotation.SarlSpecification;
+import io.sarl.lang.core.annotation.SyntheticMember;
+import io.sarl.lang.core.util.ClearableReference;
 import io.sarl.lang.sarl.SarlAction;
 import io.sarl.lang.sarl.SarlAgent;
 import io.sarl.lang.sarl.SarlArtifact;
@@ -183,7 +184,6 @@ import io.sarl.lang.typesystem.IOperationHelper;
 import io.sarl.lang.typesystem.InheritanceHelper;
 import io.sarl.lang.typesystem.SARLAnnotationUtil;
 import io.sarl.lang.typesystem.SARLReentrantTypeResolver;
-import io.sarl.lang.util.ClearableReference;
 import io.sarl.lang.util.JvmVisibilityComparator;
 import io.sarl.lang.util.Utils;
 
@@ -206,7 +206,7 @@ import io.sarl.lang.util.Utils;
  * @mavengroupid $GroupId$
  * @mavenartifactid $ArtifactId$
  */
-@SuppressWarnings({"checkstyle:classfanoutcomplexity", "checkstyle:methodcount"})
+@SuppressWarnings({"restriction", "checkstyle:classfanoutcomplexity", "checkstyle:methodcount"})
 @Singleton
 public class SARLJvmModelInferrer extends XtendJvmModelInferrer {
 
@@ -602,7 +602,7 @@ public class SARLJvmModelInferrer extends XtendJvmModelInferrer {
 		try {
 			// Autowrap the provided runnable elements in order to avoid the internal exceptions
 			// to stop the JVM generation too early.
-			final List<Runnable> doLaterExceptionSafe = new AbstractList<Runnable>() {
+			final List<Runnable> doLaterExceptionSafe = new AbstractList<>() {
 				@Override
 				public void add(int index, Runnable element) {
 					doLater.add(index, wrap(element));
@@ -3123,7 +3123,6 @@ public class SARLJvmModelInferrer extends XtendJvmModelInferrer {
 		this.associator.associate(sarlElement, param);
 		result.getParameters().add(param);
 		setBody(result, new Procedures.Procedure1<ITreeAppendable>() {
-			@SuppressWarnings("synthetic-access")
 			@Override
 			public void apply(ITreeAppendable it) {
 				boolean firstAttr = true;
@@ -3163,7 +3162,7 @@ public class SARLJvmModelInferrer extends XtendJvmModelInferrer {
 				it.append("(obj);"); //$NON-NLS-1$
 			}
 
-			@SuppressWarnings({"checkstyle:booleanexpressioncomplexity", "checkstyle:cyclomaticcomplexity", "synthetic-access"})
+			@SuppressWarnings({"checkstyle:booleanexpressioncomplexity", "checkstyle:cyclomaticcomplexity"})
 			private void generateToEqualForField(ITreeAppendable it, JvmField field) {
 				final TypeReferences refs = SARLJvmModelInferrer.this.typeReferences;
 				final JvmTypeReference type = field.getType();

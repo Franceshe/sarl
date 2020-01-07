@@ -54,7 +54,7 @@ public abstract class BuiltinSkill extends Skill {
 	 * @return the installation order.
 	 * @deprecated since 0.10
 	 */
-	@Deprecated
+	@Deprecated(since = "0.10", forRemoval = true)
 	protected static int installationOrder(Skill skill) {
 		final int len = StandardBuiltinCapacitiesProvider.SKILL_INSTALLATION_ORDER.length;
 		if (skill instanceof BuiltinSkill) {
@@ -73,7 +73,7 @@ public abstract class BuiltinSkill extends Skill {
 	 * @return the order.
 	 * @deprecated since 0.10
 	 */
-	@Deprecated
+	@Deprecated(since = "0.10", forRemoval = true)
 	public abstract int getInstallationOrder();
 
 }

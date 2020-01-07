@@ -55,6 +55,7 @@ import org.eclipse.xtext.xbase.annotations.typing.XAnnotationUtil;
  * @see AnnotationLookup for retreiving annotations.
  */
 @Singleton
+@SuppressWarnings("restriction")
 public class SARLAnnotationUtil {
 
 	@Inject

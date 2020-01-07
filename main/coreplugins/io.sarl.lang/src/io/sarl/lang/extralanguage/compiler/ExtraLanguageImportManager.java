@@ -36,6 +36,7 @@ import org.eclipse.xtext.xbase.compiler.ImportManager;
  * @mavenartifactid $ArtifactId$
  * @since 0.6
  */
+@SuppressWarnings("restriction")
 public class ExtraLanguageImportManager extends ImportManager {
 
 	private final ExtraLanguageTypeConverter converter;

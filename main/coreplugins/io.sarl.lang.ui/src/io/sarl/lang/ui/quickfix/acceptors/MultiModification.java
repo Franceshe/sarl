@@ -42,6 +42,7 @@ import io.sarl.lang.ui.quickfix.SARLQuickfixProvider;
  * @mavengroupid $GroupId$
  * @mavenartifactid $ArtifactId$
  */
+@SuppressWarnings("restriction")
 public final class MultiModification extends SARLSemanticModification {
 
 	private final Map<Class<?>, Class<? extends SARLSemanticModification>> modificationTypes = new HashMap<>();
@@ -90,7 +91,7 @@ public final class MultiModification extends SARLSemanticModification {
 		}
 
 		if (selected != null) {
-			final SARLSemanticModification modification = selected.newInstance();
+			final SARLSemanticModification modification = selected.getConstructor().newInstance();
 			modification.setIssue(getIssue());
 			modification.setTools(getTools());
 			modification.apply(element, context);

@@ -41,6 +41,7 @@ import org.eclipse.xtext.tasks.TaskTags;
  * @mavengroupid $GroupId$
  * @mavenartifactid $ArtifactId$
  */
+@SuppressWarnings("restriction")
 public class SarlTaskTagProvider implements ITaskTagProvider {
 
 	@Inject

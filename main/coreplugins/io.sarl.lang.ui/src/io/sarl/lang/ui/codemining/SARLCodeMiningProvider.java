@@ -77,6 +77,7 @@ import io.sarl.lang.services.SARLGrammarKeywordAccess;
  * @since 0.8
  * @see "https://blogs.itemis.com/en/code-mining-support-in-xtext"
  */
+@SuppressWarnings("restriction")
 public class SARLCodeMiningProvider extends AbstractXtextCodeMiningProvider {
 
 	@Inject

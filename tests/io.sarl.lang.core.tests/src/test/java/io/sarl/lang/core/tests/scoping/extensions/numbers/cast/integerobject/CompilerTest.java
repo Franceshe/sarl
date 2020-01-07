@@ -21,7 +21,7 @@
 
 package io.sarl.lang.core.tests.scoping.extensions.numbers.cast.integerobject;
 
-import io.sarl.lang.SARLVersion;
+import io.sarl.lang.core.SARLVersion;
 import io.sarl.lang.sarl.SarlPackage;
 import io.sarl.tests.api.AbstractMassiveCompilationTest;
 import io.sarl.tests.api.AbstractMassiveCompilationTest.DifferedTest;

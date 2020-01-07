@@ -58,7 +58,7 @@ import io.sarl.lang.core.SpaceID;
  * @mavenartifactid $ArtifactId$
  * @deprecated Replacement is {@link DynamicSkillProvider} since 0.6
  */
-@Deprecated
+@Deprecated(since = "0.6", forRemoval = true)
 public class StandardBuiltinCapacitiesProvider implements BuiltinCapacitiesProvider {
 
 	/** Order of installation of the BIC skills.

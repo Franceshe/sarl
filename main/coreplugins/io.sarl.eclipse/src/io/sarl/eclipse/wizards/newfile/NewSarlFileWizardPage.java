@@ -48,6 +48,7 @@ import io.sarl.lang.services.SARLGrammarKeywordAccess;
  * @mavengroupid $GroupId$
  * @mavenartifactid $ArtifactId$
  */
+@SuppressWarnings("restriction")
 public class NewSarlFileWizardPage extends WizardNewFileCreationPage {
 
 	@Inject

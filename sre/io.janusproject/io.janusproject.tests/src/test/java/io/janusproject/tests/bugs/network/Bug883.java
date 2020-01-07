@@ -31,11 +31,11 @@ import io.janusproject.tests.testutils.AbstractJanusRunTest;
 import io.sarl.core.DefaultContextInteractions;
 import io.sarl.core.Logging;
 import io.sarl.core.Schedules;
-import io.sarl.lang.SARLVersion;
-import io.sarl.lang.annotation.PerceptGuardEvaluator;
-import io.sarl.lang.annotation.SarlElementType;
-import io.sarl.lang.annotation.SarlSpecification;
 import io.sarl.lang.core.Event;
+import io.sarl.lang.core.SARLVersion;
+import io.sarl.lang.core.annotation.PerceptGuardEvaluator;
+import io.sarl.lang.core.annotation.SarlElementType;
+import io.sarl.lang.core.annotation.SarlSpecification;
 import io.sarl.lang.sarl.SarlPackage;
 
 /** Tests for issue #883: Agent cannot receive event over network.

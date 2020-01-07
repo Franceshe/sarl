@@ -57,7 +57,7 @@ import io.sarl.eclipse.runtime.ProjectProvider;
 import io.sarl.eclipse.runtime.ProjectSREProviderFactory;
 import io.sarl.eclipse.runtime.SARLRuntime;
 import io.sarl.eclipse.runtime.SREConfigurationBlock;
-import io.sarl.lang.SARLVersion;
+import io.sarl.lang.core.SARLVersion;
 import io.sarl.lang.util.Utils;
 
 /**
@@ -69,6 +69,7 @@ import io.sarl.lang.util.Utils;
  * @mavenartifactid $ArtifactId$
  * @see JavaJRETab
  */
+@SuppressWarnings("restriction")
 public class SARLRuntimeEnvironmentTab extends JavaJRETab {
 
 	private final boolean resetJvaMainClass;

@@ -23,7 +23,7 @@ package io.sarl.lang.core.tests.scoping.extensions.cast;
 
 import org.junit.Test;
 
-import io.sarl.lang.scoping.extensions.cast.PrimitiveCastExtensions;
+import io.sarl.lang.core.scoping.extensions.cast.PrimitiveCastExtensions;
 import io.sarl.tests.api.AbstractSarlTest;
 
 /**

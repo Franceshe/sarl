@@ -58,7 +58,7 @@ public interface InternalEventBusCapacity extends Capacity {
 	 * @param listener the listener on the SARL events.
 	 * @deprecated see {@link #registerEventListener(Object, boolean, Function1, Object[])}.
 	 */
-	@Deprecated
+	@Deprecated(since = "0.8", forRemoval = true)
 	void registerEventListener(Object listener);
 
 	/**
@@ -84,7 +84,7 @@ public interface InternalEventBusCapacity extends Capacity {
 	 * @param listener the listener on the SARL events.
 	 * @deprecated see {@link #unregisterEventListener(Object, boolean)}.
 	 */
-	@Deprecated
+	@Deprecated(since = "0.8", forRemoval = true)
 	void unregisterEventListener(Object listener);
 
 	/**
@@ -240,7 +240,7 @@ public interface InternalEventBusCapacity extends Capacity {
 		 * @deprecated see {@link #getRegisteredEventListeners(Class, Collection)}
 		 */
 		@Override
-		@Deprecated
+		@Deprecated(since = "0.8", forRemoval = true)
 		public void registerEventListener(Object listener) {
 			try {
 				ensureCallerInLocalThread();
@@ -266,7 +266,7 @@ public interface InternalEventBusCapacity extends Capacity {
 		 * @deprecated see {@link #unregisterEventListener(Object, boolean)}
 		 */
 		@Override
-		@Deprecated
+		@Deprecated(since = "0.8", forRemoval = true)
 		public void unregisterEventListener(Object listener) {
 			try {
 				ensureCallerInLocalThread();

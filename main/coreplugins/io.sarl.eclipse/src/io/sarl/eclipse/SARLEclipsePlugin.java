@@ -53,6 +53,7 @@ import org.osgi.service.prefs.BackingStoreException;
  * @mavengroupid $GroupId$
  * @mavenartifactid $ArtifactId$
  */
+@SuppressWarnings("restriction")
 public class SARLEclipsePlugin extends AbstractUIPlugin {
 
 	/** Identifier of the plugin.

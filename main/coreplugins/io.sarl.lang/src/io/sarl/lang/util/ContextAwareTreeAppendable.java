@@ -35,6 +35,7 @@ import org.eclipse.xtext.xbase.compiler.output.ITreeAppendable;
  * @mavenartifactid $ArtifactId$
  * @since 0.8.6
  */
+@SuppressWarnings("restriction")
 public class ContextAwareTreeAppendable extends DelegateTreeAppendable {
 
 	private final Map<String, Object> values;

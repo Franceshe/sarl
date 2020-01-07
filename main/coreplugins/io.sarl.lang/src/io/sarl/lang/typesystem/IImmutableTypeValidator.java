@@ -36,6 +36,7 @@ import org.eclipse.xtext.xbase.typesystem.references.LightweightTypeReference;
  * @since 0.8
  */
 @ImplementedBy(DefaultImmutableTypeValidator.class)
+@SuppressWarnings("restriction")
 public interface IImmutableTypeValidator {
 
 	/** Replies if the given type is associated to an immutable type.

@@ -45,6 +45,7 @@ import io.sarl.lang.SARLConfig;
  * @mavengroupid $GroupId$
  * @mavenartifactid $ArtifactId$
  */
+@SuppressWarnings("restriction")
 public final class Utilities {
 
 	/** Empty string.

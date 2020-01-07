@@ -50,6 +50,7 @@ import io.sarl.lang.core.Behavior;
  * @mavengroupid $GroupId$
  * @mavenartifactid $ArtifactId$
  */
+@SuppressWarnings("restriction")
 public class NewSarlBehaviorWizardPage extends AbstractNewSarlElementWizardPage {
 
 	/** Construct a wizard page.

@@ -50,6 +50,7 @@ import io.sarl.lang.jvmmodel.SarlJvmModelAssociations;
  * @mavenartifactid $ArtifactId$
  * @since 0.7
  */
+@SuppressWarnings("restriction")
 public class OpenTypeHierarchyHandler extends AbstractHandler {
 
 	@Inject

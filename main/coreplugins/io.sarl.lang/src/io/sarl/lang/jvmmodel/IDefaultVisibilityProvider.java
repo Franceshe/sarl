@@ -41,6 +41,7 @@ import io.sarl.lang.sarl.SarlEvent;
  * @mavenartifactid $ArtifactId$
  */
 @ImplementedBy(DefaultVisibilityProvider.class)
+@SuppressWarnings("restriction")
 public interface IDefaultVisibilityProvider {
 
 	/** Replies the default visibility modifier of the given element.

@@ -43,6 +43,7 @@ import io.sarl.lang.codebuilder.builders.ISarlAnnotationTypeBuilder;
  * @mavengroupid $GroupId$
  * @mavenartifactid $ArtifactId$
  */
+@SuppressWarnings("restriction")
 public class NewSarlAnnotationWizardPage extends AbstractNewSarlElementWizardPage {
 
 	private static final String IMAGE_HEADER =

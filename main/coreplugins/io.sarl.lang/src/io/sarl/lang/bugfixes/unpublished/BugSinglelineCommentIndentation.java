@@ -42,6 +42,7 @@ import org.eclipse.xtext.util.Strings;
  * @mavenartifactid $ArtifactId$
  */
 @Singleton
+@SuppressWarnings("restriction")
 public class BugSinglelineCommentIndentation {
 
 	/** Fixing the bug.

@@ -968,7 +968,7 @@ public class ProgrammaticWrappingProxyInstaller implements ProxyInstaller {
 		 * @deprecated no info
 		 */
 		@Override
-		@Deprecated
+		@Deprecated(since = "0.10", forRemoval = true)
 		public ClassDoc[] importedClasses() {
 			return wrap(this.delegate.importedClasses());
 		}
@@ -978,7 +978,7 @@ public class ProgrammaticWrappingProxyInstaller implements ProxyInstaller {
 		 * @deprecated no info
 		 */
 		@Override
-		@Deprecated
+		@Deprecated(since = "0.10", forRemoval = true)
 		public PackageDoc[] importedPackages() {
 			return wrap(this.delegate.importedPackages());
 		}
@@ -1431,7 +1431,7 @@ public class ProgrammaticWrappingProxyInstaller implements ProxyInstaller {
 		 * @deprecated no info.
 		 */
 		@Override
-		@Deprecated
+		@Deprecated(since = "0.10", forRemoval = true)
 		public ClassDoc[] importedClasses() {
 			return wrap(this.delegate.importedClasses());
 		}
@@ -1440,7 +1440,7 @@ public class ProgrammaticWrappingProxyInstaller implements ProxyInstaller {
 		 * @deprecated noinfo
 		 */
 		@Override
-		@Deprecated
+		@Deprecated(since = "0.10", forRemoval = true)
 		public PackageDoc[] importedPackages() {
 			return wrap(this.delegate.importedPackages());
 		}

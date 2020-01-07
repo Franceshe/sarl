@@ -35,6 +35,7 @@ import io.sarl.lang.ui.codemining.SARLCodeminingPreferenceAccess;
  * @mavenartifactid $ArtifactId$
  * @since 0.8
  */
+@SuppressWarnings("restriction")
 public class SARLStandardEditor extends SARLEditor {
 
 	@Override

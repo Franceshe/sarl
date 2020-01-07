@@ -39,6 +39,7 @@ import io.sarl.eclipse.SARLEclipseConfig;
  * @mavenartifactid $ArtifactId$
  * @see SARLEclipseConfig#ID_SARL_DEBUG_PERSPECTIVE
  */
+@SuppressWarnings("restriction")
 public class SARLDebugPerspectiveFactory implements IPerspectiveFactory {
 
 	private static final float NAVIGATION_PANEL_RATIO = 0.45f;

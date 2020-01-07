@@ -53,7 +53,7 @@ import io.sarl.lang.core.Scope;
 import io.sarl.lang.core.Skill;
 import io.sarl.lang.core.Space;
 import io.sarl.lang.core.SpaceID;
-import io.sarl.lang.util.ClearableReference;
+import io.sarl.lang.core.util.ClearableReference;
 import io.sarl.tests.api.Nullable;
 import io.sarl.util.Scopes;
 
@@ -176,7 +176,7 @@ public class DefaultContextInteractionsSkillTest extends AbstractJanusTest {
 	}
 
 	@Test
-	@Deprecated
+	@Deprecated(since = "0.10", forRemoval = true)
 	public void spawn() throws Exception {
 		this.reflect.invoke(this.skill, "install");
 		this.skill.spawn(Agent.class, "a", "b", "c"); //$NON-NLS-1$//$NON-NLS-2$//$NON-NLS-3$

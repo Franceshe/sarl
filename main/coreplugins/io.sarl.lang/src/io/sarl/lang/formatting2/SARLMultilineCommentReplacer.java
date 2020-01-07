@@ -40,6 +40,7 @@ import io.sarl.lang.documentation.IDocumentationFormatter;
  * @mavengroupid $GroupId$
  * @mavenartifactid $ArtifactId$
  */
+@SuppressWarnings("restriction")
 public class SARLMultilineCommentReplacer extends CommentReplacer {
 
 	private static final int MIN_NUMBER_OF_LINES_BEFORE_COMMENT = 1;

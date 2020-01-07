@@ -39,6 +39,7 @@ import io.sarl.lang.ui.quickfix.SARLQuickfixProvider;
  * @mavengroupid $GroupId$
  * @mavenartifactid $ArtifactId$
  */
+@SuppressWarnings("restriction")
 public final class SuperTypeRemoveModification extends SARLSemanticModification {
 
 	/** Construct a modification description.

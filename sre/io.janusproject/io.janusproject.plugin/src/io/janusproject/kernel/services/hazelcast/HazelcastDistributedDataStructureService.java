@@ -575,7 +575,7 @@ public class HazelcastDistributedDataStructureService extends AbstractDependentS
 			@Override
 			public Iterator<K> iterator() {
 				final Iterator<Map.Entry<K, V>> entries = MultiMapView.this.entries().iterator();
-				return new Iterator<K>() {
+				return new Iterator<>() {
 					@Override
 					public boolean hasNext() {
 						return entries.hasNext();

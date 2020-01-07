@@ -59,6 +59,7 @@ import io.sarl.lang.sarl.SarlSpace;
  * @mavenartifactid $ArtifactId$
  */
 @ImplementedBy(SarlJvmModelAssociations.Impl.class)
+@SuppressWarnings("restriction")
 public interface SarlJvmModelAssociations extends IXtendJvmAssociations {
 
 	/** Replies the SARL event associated to the given type.

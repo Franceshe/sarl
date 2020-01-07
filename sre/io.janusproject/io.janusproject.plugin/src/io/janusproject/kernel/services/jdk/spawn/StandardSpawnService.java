@@ -64,8 +64,8 @@ import io.sarl.lang.core.BuiltinCapacitiesProvider;
 import io.sarl.lang.core.EventSpace;
 import io.sarl.lang.core.SREutils;
 import io.sarl.lang.core.Scope;
-import io.sarl.lang.util.SynchronizedIterable;
-import io.sarl.lang.util.SynchronizedSet;
+import io.sarl.lang.core.util.SynchronizedIterable;
+import io.sarl.lang.core.util.SynchronizedSet;
 import io.sarl.sarlspecification.SarlSpecificationChecker;
 import io.sarl.util.concurrent.Collections3;
 

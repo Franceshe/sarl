@@ -48,6 +48,7 @@ import org.eclipse.xtext.xbase.lib.Pure;
  * @since 0.8
  */
 @Singleton
+@SuppressWarnings("restriction")
 public class PyGeneratorConfigurationProvider implements IPyGeneratorConfigurationProvider {
 
 	@Inject

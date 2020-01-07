@@ -112,7 +112,7 @@ public abstract class Skill extends AgentTrait {
 	 *
 	 * @deprecated see {@link #uninstall(UninstallationStage)} with {@link UninstallationStage#POST_DESTROY_EVENT} argument.
 	 */
-	@Deprecated
+	@Deprecated(since = "0.5", forRemoval = true)
 	protected void uninstall() {
 		//
 	}

@@ -40,6 +40,7 @@ import io.sarl.lang.sarl.SarlPackage;
  * @mavenartifactid $ArtifactId$
  * @since 0.9
  */
+@SuppressWarnings("restriction")
 public class CastScopeSession extends AbstractNestedFeatureScopeSession {
 
 	/** Constructor.

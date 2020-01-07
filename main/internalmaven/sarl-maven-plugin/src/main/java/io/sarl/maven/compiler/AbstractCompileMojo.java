@@ -40,8 +40,8 @@ import org.apache.maven.plugin.MojoExecutionException;
 import org.apache.maven.plugin.MojoFailureException;
 import org.apache.maven.plugins.annotations.Parameter;
 
-import io.sarl.lang.SARLVersion;
 import io.sarl.lang.compiler.batch.OptimizationLevel;
+import io.sarl.lang.core.SARLVersion;
 
 /** Abstract Mojo for compiling SARL (standard en test).
  *
@@ -60,6 +60,12 @@ public abstract class AbstractCompileMojo extends AbstractSarlBatchCompilerMojo 
 	@Parameter(defaultValue = SARLVersion.MINIMAL_JDK_VERSION_IN_SARL_PROJECT_CLASSPATH, required = false)
 	private String source;
 
+	/** Version of the Java specification used for the class files.
+	 * @since 0.11
+	 */
+	@Parameter(required = false)
+	private String target;
+
 	/** Encoding.
 	 */
 	@Parameter(required = false)
@@ -75,7 +81,7 @@ public abstract class AbstractCompileMojo extends AbstractSarlBatchCompilerMojo 
 	 * @deprecated see {@link #javaCompiler} for replacement.
 	 */
 	@Parameter(defaultValue = "true", required = false)
-	@Deprecated
+	@Deprecated(since = "0.10", forRemoval = true)
 	private boolean runJavaCompiler;
 
 	/** Indicates the Java compiler to be invoked by the SARL maven plugin.
@@ -161,6 +167,14 @@ public abstract class AbstractCompileMojo extends AbstractSarlBatchCompilerMojo 
 	@Override
 	protected String getSourceVersion() {
 		return this.source;
+	}
+
+	@Override
+	protected String getTargetVersion() {
+		if (Strings.isNullOrEmpty(this.target)) {
+			return getSourceVersion();
+		}
+		return this.target;
 	}
 
 	@Override

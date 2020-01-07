@@ -62,6 +62,7 @@ import io.sarl.lang.sarl.SarlScript;
  * @mavenartifactid $ArtifactId$
  * @since 0.6
  */
+@SuppressWarnings("restriction")
 public class SARLJdtPackageRenameParticipant extends AbstractProcessorBasedRenameParticipant {
 
 	@Inject

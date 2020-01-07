@@ -37,22 +37,22 @@ import io.sarl.core.DefaultContextInteractions;
 import io.sarl.core.Initialize;
 import io.sarl.core.Lifecycle;
 import io.sarl.core.Logging;
-import io.sarl.lang.SARLVersion;
-import io.sarl.lang.annotation.ImportedCapacityFeature;
-import io.sarl.lang.annotation.PerceptGuardEvaluator;
-import io.sarl.lang.annotation.SarlElementType;
-import io.sarl.lang.annotation.SarlSpecification;
-import io.sarl.lang.annotation.SyntheticMember;
 import io.sarl.lang.core.Address;
 import io.sarl.lang.core.Agent;
 import io.sarl.lang.core.BuiltinCapacitiesProvider;
 import io.sarl.lang.core.DynamicSkillProvider;
 import io.sarl.lang.core.Event;
+import io.sarl.lang.core.SARLVersion;
 import io.sarl.lang.core.Scope;
 import io.sarl.lang.core.Skill;
+import io.sarl.lang.core.annotation.ImportedCapacityFeature;
+import io.sarl.lang.core.annotation.PerceptGuardEvaluator;
+import io.sarl.lang.core.annotation.SarlElementType;
+import io.sarl.lang.core.annotation.SarlSpecification;
+import io.sarl.lang.core.annotation.SyntheticMember;
+import io.sarl.lang.core.util.ClearableReference;
 import io.sarl.lang.sarl.SarlPackage;
 import io.sarl.lang.sarl.SarlScript;
-import io.sarl.lang.util.ClearableReference;
 
 /** Tests for issue #861: Cannot use emit function in the Initialize handler.
  *
@@ -626,7 +626,7 @@ public class Bug861 extends AbstractJanusRunTest {
 		}
 
 		@SyntheticMember
-		@Deprecated
+		@Deprecated(since = "0.6", forRemoval = true)
 		@Inject
 		public EmptyAgent(final BuiltinCapacitiesProvider arg0, final UUID arg1, final UUID arg2) {
 			super(arg0, arg1, arg2);

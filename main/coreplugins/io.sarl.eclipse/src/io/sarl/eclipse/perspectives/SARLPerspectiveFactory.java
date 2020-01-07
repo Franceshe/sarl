@@ -43,6 +43,7 @@ import io.sarl.eclipse.explorer.SARLPackageExplorerPart;
  * @mavenartifactid $ArtifactId$
  * @see SARLEclipseConfig#ID_SARL_PERSPECTIVE
  */
+@SuppressWarnings("restriction")
 public class SARLPerspectiveFactory implements IPerspectiveFactory {
 
 	private static final float LEFT_PANEL_RATIO = 0.25f;

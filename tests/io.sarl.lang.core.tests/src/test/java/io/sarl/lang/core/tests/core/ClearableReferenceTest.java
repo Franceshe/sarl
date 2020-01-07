@@ -27,7 +27,7 @@ import org.junit.Before;
 import org.junit.Test;
 import org.mockito.Mock;
 
-import io.sarl.lang.util.ClearableReference;
+import io.sarl.lang.core.util.ClearableReference;
 import io.sarl.tests.api.AbstractSarlTest;
 
 /**

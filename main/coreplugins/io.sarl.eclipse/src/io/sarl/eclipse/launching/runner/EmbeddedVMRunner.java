@@ -52,6 +52,7 @@ import io.sarl.eclipse.SARLEclipsePlugin;
  * @mavengroupid $GroupId$
  * @mavenartifactid $ArtifactId$
  */
+@SuppressWarnings("restriction")
 public class EmbeddedVMRunner implements IVMRunner {
 
 	private static final String JAR_EXTENSION = ".jar"; //$NON-NLS-1$
@@ -79,6 +80,7 @@ public class EmbeddedVMRunner implements IVMRunner {
 			});
 			monitor.done();
 			final Job myJob = new Job(launch.getLaunchConfiguration().getName()) {
+				@SuppressWarnings("resource")
 				@Override
 				public IStatus run(IProgressMonitor monitor) {
 					monitor.subTask(MessageFormat.format(Messages.EmbeddedVMRunner_0, launch.getLaunchConfiguration().getName()));

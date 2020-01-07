@@ -54,8 +54,8 @@ import io.janusproject.util.TwoStepConstruction;
 import io.sarl.lang.core.AgentContext;
 import io.sarl.lang.core.Space;
 import io.sarl.lang.core.SpaceID;
-import io.sarl.lang.util.SynchronizedCollection;
-import io.sarl.lang.util.SynchronizedSet;
+import io.sarl.lang.core.util.SynchronizedCollection;
+import io.sarl.lang.core.util.SynchronizedSet;
 import io.sarl.util.concurrent.Collections3;
 
 /**

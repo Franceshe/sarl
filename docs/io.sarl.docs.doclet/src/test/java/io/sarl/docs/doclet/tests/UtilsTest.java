@@ -26,7 +26,7 @@ import static org.junit.Assert.assertEquals;
 import org.junit.Test;
 
 import io.sarl.docs.doclet.utils.Utils;
-import io.sarl.lang.annotation.DefaultValue;
+import io.sarl.lang.core.annotation.DefaultValue;
 
 /**
  * @author $Author: sgalland$

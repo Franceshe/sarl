@@ -69,7 +69,7 @@ import io.sarl.lang.mwe2.codebuilder.extractor.CodeElementExtractor;
  * @mavengroupid $GroupId$
  * @mavenartifactid $ArtifactId$
  */
-@SuppressWarnings("checkstyle:methodcount")
+@SuppressWarnings({"checkstyle:methodcount", "restriction"})
 public abstract class AbstractSubCodeBuilderFragment extends AbstractStubGeneratingFragment {
 
 	@Inject
@@ -615,7 +615,7 @@ public abstract class AbstractSubCodeBuilderFragment extends AbstractStubGenerat
 	 * @return the fully qualified name for the given classifier.
 	 * @deprecated see {@link CodeElementExtractor#newTypeReference(EClassifier)}
 	 */
-	@Deprecated
+	@Deprecated(since = "0.6", forRemoval = true)
 	protected TypeReference newTypeReference(EClassifier classifier) {
 		return getCodeElementExtractor().newTypeReference(classifier);
 	}

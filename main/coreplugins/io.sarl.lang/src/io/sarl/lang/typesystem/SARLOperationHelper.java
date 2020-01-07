@@ -108,7 +108,7 @@ import io.sarl.lang.util.Utils;
  * @since 0.6
  */
 @Singleton
-@SuppressWarnings("checkstyle:classfanoutcomplexity")
+@SuppressWarnings({"restriction", "checkstyle:classfanoutcomplexity"})
 public class SARLOperationHelper implements IOperationHelper {
 
 	@Inject
@@ -134,7 +134,7 @@ public class SARLOperationHelper implements IOperationHelper {
 	/** Constructor.
 	 */
 	public SARLOperationHelper() {
-		this.hasSideEffectsDispatcher = new PolymorphicDispatcher<Boolean>(
+		this.hasSideEffectsDispatcher = new PolymorphicDispatcher<>(
 				"_hasSideEffects", 2, 2, //$NON-NLS-1$
 				Collections.singletonList(this)) {
 			@Override

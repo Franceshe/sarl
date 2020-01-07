@@ -37,8 +37,8 @@ import io.sarl.lang.core.EventListener;
 import io.sarl.lang.core.EventSpace;
 import io.sarl.lang.core.Scope;
 import io.sarl.lang.core.Skill;
-import io.sarl.lang.util.ClearableReference;
-import io.sarl.lang.util.SynchronizedIterable;
+import io.sarl.lang.core.util.ClearableReference;
+import io.sarl.lang.core.util.SynchronizedIterable;
 import io.sarl.util.concurrent.Collections3;
 import io.sarl.util.concurrent.NoReadWriteLock;
 
@@ -111,7 +111,7 @@ public class BehaviorsSkill extends BuiltinSkill implements Behaviors {
 	 * @deprecated since 0.10
 	 */
 	@Override
-	@Deprecated
+	@Deprecated(since = "0.10", forRemoval = true)
 	public int getInstallationOrder() {
 		if (installationOrder < 0) {
 			installationOrder = installationOrder(this);

@@ -61,20 +61,20 @@
    <extension point="org.eclipse.ui.perspectiveExtensions">
       <perspectiveExtension
             targetID="io.sarl.eclipse.perspective.devel">
-         <newWizardShortcut id="io.sarl.m2e.wizard.newSarlMavenProject"/>
+         <newWizardShortcut id="io.sarl.m2e.wizard.newSarlMavenProject.1"/>
       </perspectiveExtension>
       <perspectiveExtension
             targetID="org.eclipse.jdt.ui.JavaPerspective">
-         <newWizardShortcut id="io.sarl.m2e.wizard.newSarlMavenProject"/>
+         <newWizardShortcut id="io.sarl.m2e.wizard.newSarlMavenProject.1"/>
       </perspectiveExtension>
       <perspectiveExtension
             targetID="org.eclipse.jdt.ui.JavaBrowsingPerspective">
-         <newWizardShortcut id="io.sarl.m2e.wizard.newSarlMavenProject"/>
+         <newWizardShortcut id="io.sarl.m2e.wizard.newSarlMavenProject.1"/>
       </perspectiveExtension>
    </extension>
    <extension point="org.eclipse.ui.intro.quicklinks">
          <command
-          	id="org.eclipse.ui.newWizard(newWizardId=io.sarl.m2e.wizard.newSarlMavenProject)"
+          	id="org.eclipse.ui.newWizard(newWizardId=io.sarl.m2e.wizard.newSarlMavenProject.1)"
             description="%wizard.description.newSarlMavenProject.long"
             label="%wizard.description.newSarlMavenProject.short"
             icon="platform:/plugin/org.eclipse.ui.intro.universal/themes/solstice/graphics/icons/ctool/new-project.png">

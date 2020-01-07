@@ -39,7 +39,7 @@ import org.eclipse.xtext.xbase.lib.Pure;
  * @mavenartifactid $ArtifactId$
  * @deprecated Replacement is {@link DynamicSkillProvider} since 0.6
  */
-@Deprecated
+@Deprecated(since = "0.6", forRemoval = true)
 @FunctionalInterface
 public interface BuiltinCapacitiesProvider {
 

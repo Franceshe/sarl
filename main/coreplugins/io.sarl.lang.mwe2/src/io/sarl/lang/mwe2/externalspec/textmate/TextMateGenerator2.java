@@ -56,6 +56,7 @@ import io.sarl.lang.mwe2.externalspec.AbstractExternalHighlightingFragment2;
  * @see "https://manual.macromates.com/en/language_grammars"
  * @see "https://github.com/staltz/SublimeXtend/"
  */
+@SuppressWarnings("restriction")
 public class TextMateGenerator2 extends AbstractExternalHighlightingFragment2<ITmStyleAppendable> {
 
 	/** The default basename pattern for {@link MessageFormat}.

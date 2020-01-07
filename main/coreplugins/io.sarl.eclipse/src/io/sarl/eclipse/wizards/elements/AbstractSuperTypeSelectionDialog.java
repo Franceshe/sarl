@@ -58,6 +58,7 @@ import io.sarl.eclipse.util.Utilities;
  * @mavengroupid $GroupId$
  * @mavenartifactid $ArtifactId$
  */
+@SuppressWarnings("restriction")
 public abstract class AbstractSuperTypeSelectionDialog<T extends NewTypeWizardPage> extends OpenTypeSelectionDialog {
 
 	private static final String JAVA_ELEMENT_DELIMITERS = TextProcessor.getDefaultDelimiters() + "<>(),?{} "; //$NON-NLS-1$

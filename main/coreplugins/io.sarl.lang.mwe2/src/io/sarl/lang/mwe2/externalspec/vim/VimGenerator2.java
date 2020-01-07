@@ -52,6 +52,7 @@ import io.sarl.lang.mwe2.externalspec.IStyleAppendable;
  * @see "http://vimdoc.sourceforge.net/htmldoc/syntax.html"
  * @see "http://vim.wikia.com/wiki/Creating_your_own_syntax_files"
  */
+@SuppressWarnings("restriction")
 public class VimGenerator2 extends AbstractExternalHighlightingFragment2<IStyleAppendable> {
 
 	/** File extension.

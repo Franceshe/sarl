@@ -71,6 +71,7 @@ import org.eclipse.xtext.xtext.generator.model.TypeReference;
  * @mavengroupid $GroupId$
  * @mavenartifactid $ArtifactId$
  */
+@SuppressWarnings("restriction")
 public class GrammarKeywordAccessFragment2 extends AbstractXtextGeneratorFragment {
 
 	private static final Logger LOG = Logger.getLogger(GrammarKeywordAccessFragment2.class);
@@ -427,7 +428,6 @@ public class GrammarKeywordAccessFragment2 extends AbstractXtextGeneratorFragmen
 	@SuppressWarnings("checkstyle:anoninnerlength")
 	protected StringConcatenationClient generateAccessors(Set<String> addedKeywords, Map<String, String> getters) {
 		return new StringConcatenationClient() {
-			@SuppressWarnings("synthetic-access")
 			@Override
 			protected void appendTo(TargetStringConcatenation it) {
 				it.append("\tprivate "); //$NON-NLS-1$

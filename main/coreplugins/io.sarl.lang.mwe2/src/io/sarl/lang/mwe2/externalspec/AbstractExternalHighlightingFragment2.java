@@ -68,6 +68,7 @@ import io.sarl.lang.mwe2.keywords.GrammarKeywordAccessConfig;
  * @mavengroupid $GroupId$
  * @mavenartifactid $ArtifactId$
  */
+@SuppressWarnings("restriction")
 public abstract class AbstractExternalHighlightingFragment2<T extends IStyleAppendable> extends AbstractXtextGeneratorFragment {
 
 	private static final Logger LOG = Logger.getLogger(AbstractExternalHighlightingFragment2.class);
@@ -780,7 +781,7 @@ public abstract class AbstractExternalHighlightingFragment2<T extends IStyleAppe
 		/** {@inheritDoc}.
 		 * @deprecated Deprecated
 		 */
-		@Deprecated
+		@Deprecated(since = "0.6", forRemoval = true)
 		@Override
 		public List<String> getImports() {
 			return Collections.emptyList();

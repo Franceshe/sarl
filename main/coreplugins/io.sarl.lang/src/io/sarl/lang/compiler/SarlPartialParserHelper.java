@@ -37,6 +37,7 @@ import org.eclipse.xtend.core.parser.XtendPartialParsingHelper;
  * @mavenartifactid $ArtifactId$
  * @since 0.9
  */
+@SuppressWarnings("restriction")
 public class SarlPartialParserHelper extends XtendPartialParsingHelper {
 	//
 }

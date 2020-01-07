@@ -43,6 +43,7 @@ import io.sarl.lang.sarl.actionprototype.IActionPrototypeProvider;
  * @mavenartifactid $ArtifactId$
  * @since 0.6
  */
+@SuppressWarnings("restriction")
 public interface IExtraLanguageGeneratorContext extends IGeneratorContext {
 
 	/** Replies an identifier for the generation.

@@ -38,6 +38,7 @@ import io.sarl.lang.documentation.IDocumentationFormatter;
  * @mavengroupid $GroupId$
  * @mavenartifactid $ArtifactId$
  */
+@SuppressWarnings("restriction")
 public class SARLSinglelineCommentReplacer extends CommentReplacer {
 
 	@Inject

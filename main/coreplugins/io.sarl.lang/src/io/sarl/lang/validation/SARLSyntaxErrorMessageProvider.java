@@ -42,6 +42,7 @@ import io.sarl.lang.services.SARLGrammarKeywordAccess;
  * @mavengroupid $GroupId$
  * @mavenartifactid $ArtifactId$
  */
+@SuppressWarnings("restriction")
 public class SARLSyntaxErrorMessageProvider extends CardinalityAwareSyntaxErrorMessageProvider {
 
 	@Inject

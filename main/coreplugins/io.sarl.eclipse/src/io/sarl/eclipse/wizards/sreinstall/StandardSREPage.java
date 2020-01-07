@@ -59,6 +59,7 @@ import io.sarl.eclipse.util.Utilities;
  * @mavengroupid $GroupId$
  * @mavenartifactid $ArtifactId$
  */
+@SuppressWarnings("restriction")
 public class StandardSREPage extends AbstractSREInstallPage {
 
 	private Text sreLibraryTextField;
@@ -113,7 +114,6 @@ public class StandardSREPage extends AbstractSREInstallPage {
 
 		//add the listeners now to prevent them from monkeying with initialized settings
 		this.sreNameTextField.addModifyListener(new ModifyListener() {
-			@SuppressWarnings("synthetic-access")
 			@Override
 			public void modifyText(ModifyEvent event) {
 				StandardSREPage.this.workingCopy.setName(
@@ -123,7 +123,6 @@ public class StandardSREPage extends AbstractSREInstallPage {
 			}
 		});
 		this.sreMainClassTextField.addModifyListener(new ModifyListener() {
-			@SuppressWarnings("synthetic-access")
 			@Override
 			public void modifyText(ModifyEvent event) {
 				StandardSREPage.this.workingCopy.setMainClass(

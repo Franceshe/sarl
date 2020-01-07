@@ -58,6 +58,7 @@ import io.sarl.eclipse.SARLEclipsePlugin;
  * @mavenartifactid $ArtifactId$
  * @since 0.5
  */
+@SuppressWarnings("restriction")
 public class IssueInformationPage extends WizardPage {
 
 	/** Preference key that stores the Github login.
@@ -103,7 +104,6 @@ public class IssueInformationPage extends WizardPage {
 			gd.horizontalSpan = 2;
 			linkWidget.setLayoutData(gd);
 			linkWidget.addSelectionListener(new SelectionAdapter() {
-				@SuppressWarnings("synthetic-access")
 				@Override
 				public void widgetSelected(SelectionEvent event) {
 					try {

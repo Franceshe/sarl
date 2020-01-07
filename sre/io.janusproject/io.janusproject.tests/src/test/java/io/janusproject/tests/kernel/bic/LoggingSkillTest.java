@@ -51,7 +51,7 @@ import io.sarl.lang.core.Agent;
 import io.sarl.lang.core.BuiltinCapacitiesProvider;
 import io.sarl.lang.core.Capacity;
 import io.sarl.lang.core.Skill;
-import io.sarl.lang.util.ClearableReference;
+import io.sarl.lang.core.util.ClearableReference;
 import io.sarl.tests.api.ManualMocking;
 import io.sarl.tests.api.Nullable;
 

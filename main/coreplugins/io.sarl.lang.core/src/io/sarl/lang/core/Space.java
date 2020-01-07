@@ -26,7 +26,7 @@ import java.util.UUID;
 import org.eclipse.xtext.xbase.lib.Inline;
 import org.eclipse.xtext.xbase.lib.Pure;
 
-import io.sarl.lang.util.SynchronizedSet;
+import io.sarl.lang.core.util.SynchronizedSet;
 
 /**
  * Agents in SARL can interact only via Interaction Spaces. A space is the support of the event-driven interaction between agents respecting the rules
@@ -46,7 +46,7 @@ public interface Space {
      * @deprecated replaced by {@link #getSpaceID()}, to increase readability in the SARL code
      */
     @Pure
-    @Deprecated
+    @Deprecated(since = "0.4", forRemoval = true)
     @Inline("getSpaceID()")
     default SpaceID getID() {
     	return getSpaceID();

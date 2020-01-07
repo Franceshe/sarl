@@ -60,6 +60,7 @@ import io.sarl.m2e.SARLMavenEclipsePlugin;
  * @mavenartifactid $ArtifactId$
  * @since 0.8
  */
+@SuppressWarnings("restriction")
 public final class MavenImportUtils {
 
 	private static final String POM_FILE = "pom.xml"; //$NON-NLS-1$
@@ -87,7 +88,6 @@ public final class MavenImportUtils {
 		// Solution: Create a simple project, and switch to a real SARL project.
 
 		final WorkspaceJob bugFixJob = new WorkspaceJob("Creating Simple Maven project") { //$NON-NLS-1$
-			@SuppressWarnings("synthetic-access")
 			@Override
 			public IStatus runInWorkspace(IProgressMonitor monitor) throws CoreException {
 			    try {
@@ -137,7 +137,6 @@ public final class MavenImportUtils {
 						// Monitor
 						submon.newChild(1));
 				final WorkspaceJob job = new WorkspaceJob("Creating Maven project") { //$NON-NLS-1$
-					@SuppressWarnings("synthetic-access")
 					@Override
 					public IStatus runInWorkspace(IProgressMonitor monitor) throws CoreException {
 						try {

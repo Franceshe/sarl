@@ -33,6 +33,7 @@ import org.eclipse.xtext.xbase.compiler.ISourceAppender;
  * @mavenartifactid $ArtifactId$
  * @since 0.6
  */
+@SuppressWarnings("restriction")
 public interface IStyleAppendable extends ISourceAppender {
 
 	/** Append a comment.

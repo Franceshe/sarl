@@ -51,6 +51,7 @@ import org.eclipse.xtext.scoping.impl.MultimapBasedSelectable;
  * @mavenartifactid $ArtifactId$
  */
 @Singleton
+@SuppressWarnings("restriction")
 public class SARLImportedNamespaceScopeProvider extends XtendImportedNamespaceScopeProvider {
 
 	@Override

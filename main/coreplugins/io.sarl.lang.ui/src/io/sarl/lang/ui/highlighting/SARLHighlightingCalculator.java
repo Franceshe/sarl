@@ -51,6 +51,7 @@ import io.sarl.lang.typesystem.InheritanceHelper;
  * @mavengroupid $GroupId$
  * @mavenartifactid $ArtifactId$
  */
+@SuppressWarnings("restriction")
 public class SARLHighlightingCalculator extends XtendHighlightingCalculator {
 
 	@Inject

@@ -42,6 +42,7 @@ import io.sarl.lang.sarl.SarlSkill;
  * @mavenartifactid $ArtifactId$
  * @since 0.9
  */
+@SuppressWarnings("restriction")
 public class SarlActiveAnnotationContextProvider extends ActiveAnnotationContextProvider {
 
 	@Override

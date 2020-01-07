@@ -44,6 +44,7 @@ import io.sarl.lang.ui.extralanguage.preferences.ExtensionPointExtraLanguagePref
  * @mavenartifactid $ArtifactId$
  */
 @Singleton
+@SuppressWarnings("restriction")
 public class SARLPreferenceStoreInitializer implements IPreferenceStoreInitializer, IPropertyChangeListener {
 
 	private IPreferenceStoreAccess preferenceStoreAccess;

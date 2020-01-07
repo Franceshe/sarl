@@ -71,8 +71,8 @@ import io.sarl.eclipse.SARLEclipsePlugin;
 import io.sarl.eclipse.buildpath.SARLClasspathContainerInitializer;
 import io.sarl.eclipse.util.BundleUtil;
 import io.sarl.lang.SARLConfig;
+import io.sarl.lang.core.util.OutParameter;
 import io.sarl.lang.ui.preferences.SARLPreferences;
-import io.sarl.lang.util.OutParameter;
 
 /**
  * Configurator for a SARL project.
@@ -82,6 +82,7 @@ import io.sarl.lang.util.OutParameter;
  * @mavengroupid $GroupId$
  * @mavenartifactid $ArtifactId$
  */
+@SuppressWarnings("restriction")
 public class SARLProjectConfigurator implements ProjectConfigurator, IProjectUnconfigurator {
 
 	private final String fileExtension;

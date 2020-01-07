@@ -65,6 +65,7 @@ import io.sarl.lang.validation.IssueCodes;
  * @mavenartifactid $ArtifactId$
  * @since 0.5
  */
+@SuppressWarnings("restriction")
 public class SARLTypeComputer extends XtendTypeComputer {
 
 	@Inject

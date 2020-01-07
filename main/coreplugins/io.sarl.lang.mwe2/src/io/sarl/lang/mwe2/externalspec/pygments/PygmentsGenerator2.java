@@ -40,6 +40,7 @@ import io.sarl.lang.mwe2.externalspec.IStyleAppendable;
  * @mavenartifactid $ArtifactId$
  * @see "http://pygments.org/"
  */
+@SuppressWarnings("restriction")
 public class PygmentsGenerator2 extends AbstractScriptHighlightingFragment2 {
 
 	/** The default basename pattern for {@link MessageFormat}.

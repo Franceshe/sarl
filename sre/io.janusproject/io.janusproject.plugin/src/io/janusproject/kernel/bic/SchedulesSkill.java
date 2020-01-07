@@ -60,8 +60,8 @@ import io.sarl.lang.core.Behavior;
 import io.sarl.lang.core.Capacities;
 import io.sarl.lang.core.SREutils;
 import io.sarl.lang.core.Skill;
-import io.sarl.lang.util.ClearableReference;
-import io.sarl.lang.util.SynchronizedSet;
+import io.sarl.lang.core.util.ClearableReference;
+import io.sarl.lang.core.util.SynchronizedSet;
 import io.sarl.util.concurrent.Collections3;
 
 /**
@@ -128,7 +128,7 @@ public class SchedulesSkill extends BuiltinSkill implements Schedules {
 	 * @deprecated since 0.10
 	 */
 	@Override
-	@Deprecated
+	@Deprecated(since = "0.10", forRemoval = true)
 	public int getInstallationOrder() {
 		if (installationOrder < 0) {
 			installationOrder = installationOrder(this);
@@ -578,7 +578,6 @@ public class SchedulesSkill extends BuiltinSkill implements Schedules {
 	 * @mavengroupid $GroupId$
 	 * @mavenartifactid $ArtifactId$
 	 */
-	@SuppressWarnings("synthetic-access")
 	private class AgentTaskRunner extends JanusRunnable {
 
 		private final WeakReference<AgentTask> agentTaskRef;
@@ -663,7 +662,6 @@ public class SchedulesSkill extends BuiltinSkill implements Schedules {
 	 * @mavengroupid $GroupId$
 	 * @mavenartifactid $ArtifactId$
 	 */
-	@SuppressWarnings("synthetic-access")
 	private class AgentInfiniteLoopTask extends JanusRunnable {
 		private WeakReference<AgentTask> agentTaskRef;
 

@@ -47,8 +47,8 @@ import org.eclipse.xtext.common.types.util.AnnotationLookup;
 import org.eclipse.xtext.common.types.util.TypeReferences;
 import org.eclipse.xtext.xbase.lib.Pair;
 
-import io.sarl.lang.annotation.DefaultValue;
-import io.sarl.lang.annotation.SarlSourceCode;
+import io.sarl.lang.core.annotation.DefaultValue;
+import io.sarl.lang.core.annotation.SarlSourceCode;
 import io.sarl.lang.sarl.SarlFormalParameter;
 import io.sarl.lang.services.SARLGrammarKeywordAccess;
 import io.sarl.lang.typesystem.SARLAnnotationUtil;
@@ -65,6 +65,7 @@ import io.sarl.lang.util.Utils;
  * @mavengroupid $GroupId$
  * @mavenartifactid $ArtifactId$
  */
+@SuppressWarnings("restriction")
 public class DefaultActionPrototypeProvider implements IActionPrototypeProvider {
 
 	@Inject

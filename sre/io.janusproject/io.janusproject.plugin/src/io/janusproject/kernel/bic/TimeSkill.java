@@ -25,7 +25,7 @@ import java.util.concurrent.TimeUnit;
 
 import io.sarl.core.Time;
 import io.sarl.lang.core.Agent;
-import io.sarl.lang.scoping.extensions.time.TimeExtensions;
+import io.sarl.lang.core.scoping.extensions.time.TimeExtensions;
 
 /**
  * Janus implementation of SARL's {@link Time} built-in capacity.
@@ -51,7 +51,7 @@ public class TimeSkill extends BuiltinSkill implements Time {
 	 * @deprecated since 0.10
 	 */
 	@Override
-	@Deprecated
+	@Deprecated(since = "0.10", forRemoval = true)
 	public int getInstallationOrder() {
 		if (installationOrder < 0) {
 			installationOrder = installationOrder(this);

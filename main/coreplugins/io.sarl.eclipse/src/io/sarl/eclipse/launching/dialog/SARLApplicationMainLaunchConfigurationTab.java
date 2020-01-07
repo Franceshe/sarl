@@ -56,6 +56,7 @@ import io.sarl.eclipse.launching.config.ILaunchConfigurationConfigurator;
  * @mavenartifactid $ArtifactId$
  * @since 0.7
  */
+@SuppressWarnings("restriction")
 public class SARLApplicationMainLaunchConfigurationTab extends JavaMainTab {
 
 	private volatile SoftReference<Image> image;

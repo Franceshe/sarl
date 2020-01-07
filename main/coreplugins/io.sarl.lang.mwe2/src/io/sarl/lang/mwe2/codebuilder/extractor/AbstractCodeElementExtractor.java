@@ -48,6 +48,7 @@ import io.sarl.lang.mwe2.codebuilder.config.CodeBuilderConfig;
  * @mavengroupid $GroupId$
  * @mavenartifactid $ArtifactId$
  */
+@SuppressWarnings("restriction")
 public abstract class AbstractCodeElementExtractor implements CodeElementExtractor {
 
 	private static final String ANNOTATION_INFO_FIELD_NAME = "annotationInfo"; //$NON-NLS-1$

@@ -61,6 +61,7 @@ import io.sarl.lang.mwe2.codebuilder.extractor.CodeElementExtractor;
  * @mavengroupid $GroupId$
  * @mavenartifactid $ArtifactId$
  */
+@SuppressWarnings("restriction")
 public abstract class AbstractMemberBuilderFragment extends AbstractSubCodeBuilderFragment {
 
 	/** Replies the members to generate.

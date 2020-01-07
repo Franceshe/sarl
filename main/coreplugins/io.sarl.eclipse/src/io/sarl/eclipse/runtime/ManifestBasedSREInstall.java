@@ -90,6 +90,7 @@ import io.sarl.eclipse.util.Utilities;
  * @mavengroupid $GroupId$
  * @mavenartifactid $ArtifactId$
  */
+@SuppressWarnings("restriction")
 public class ManifestBasedSREInstall extends AbstractSREInstall {
 
 	private IPath jarFile;

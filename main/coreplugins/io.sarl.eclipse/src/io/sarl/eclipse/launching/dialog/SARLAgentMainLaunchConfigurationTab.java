@@ -79,6 +79,7 @@ import io.sarl.eclipse.util.Utilities;
  * @mavengroupid $GroupId$
  * @mavenartifactid $ArtifactId$
  */
+@SuppressWarnings("restriction")
 public class SARLAgentMainLaunchConfigurationTab extends AbstractJavaMainTab {
 
 	private volatile SoftReference<Image> image;

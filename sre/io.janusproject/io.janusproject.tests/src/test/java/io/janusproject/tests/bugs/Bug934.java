@@ -31,12 +31,12 @@ import io.sarl.core.Lifecycle;
 import io.sarl.core.OpenEventSpace;
 import io.sarl.core.OpenEventSpaceSpecification;
 import io.sarl.core.Schedules;
-import io.sarl.lang.SARLVersion;
-import io.sarl.lang.annotation.SarlElementType;
-import io.sarl.lang.annotation.SarlSpecification;
 import io.sarl.lang.core.AgentContext;
 import io.sarl.lang.core.EventSpace;
+import io.sarl.lang.core.SARLVersion;
 import io.sarl.lang.core.Space;
+import io.sarl.lang.core.annotation.SarlElementType;
+import io.sarl.lang.core.annotation.SarlSpecification;
 import io.sarl.lang.sarl.SarlPackage;
 
 /** Tests for issue #934: Agents communication enabled through space without being registered to it.

@@ -163,7 +163,6 @@ public class StandardKernelDiscoveryService extends AbstractDependentService
 			//
 		}
 
-		@SuppressWarnings("synthetic-access")
 		@Override
 		public void running() {
 			// Outside the synchronizing statement to avoid deadlock

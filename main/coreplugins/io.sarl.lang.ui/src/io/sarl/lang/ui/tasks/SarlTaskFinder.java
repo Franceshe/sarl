@@ -39,6 +39,7 @@ import io.sarl.lang.services.SARLGrammarAccess;
  * @mavenartifactid $ArtifactId$
  * @since 0.9
  */
+@SuppressWarnings("restriction")
 public class SarlTaskFinder extends DefaultTaskFinder {
 
 	@Inject

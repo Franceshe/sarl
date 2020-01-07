@@ -41,11 +41,11 @@ import org.mockito.Mockito;
 
 import io.sarl.eventdispatching.BehaviorGuardEvaluator;
 import io.sarl.eventdispatching.BehaviorGuardEvaluatorRegistry;
-import io.sarl.lang.annotation.PerceptGuardEvaluator;
 import io.sarl.lang.core.Agent;
 import io.sarl.lang.core.Behavior;
 import io.sarl.lang.core.Event;
 import io.sarl.lang.core.EventListener;
+import io.sarl.lang.core.annotation.PerceptGuardEvaluator;
 import io.sarl.tests.api.AbstractSarlTest;
 import io.sarl.tests.api.Nullable;
 

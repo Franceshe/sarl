@@ -82,6 +82,7 @@ import io.sarl.eclipse.runtime.SARLRuntime;
  * @mavenartifactid $ArtifactId$
  * @since 0.7
  */
+@SuppressWarnings("restriction")
 public abstract class AbstractSARLLaunchConfigurationDelegate extends AbstractJavaLaunchConfigurationDelegate {
 
 	private static final String OPTION_ENABLEASSERTIONS = "-ea"; //$NON-NLS-1$
@@ -960,7 +961,6 @@ public abstract class AbstractSARLLaunchConfigurationDelegate extends AbstractJa
 		 * @param monitor the progress monitor.
 		 * @throws CoreException if a parameter cannot be extracted.
 		 */
-		@SuppressWarnings("synthetic-access")
 		private void postValidation(IProgressMonitor monitor) throws CoreException {
 			monitor.subTask(
 					Messages.SARLLaunchConfigurationDelegate_7);

@@ -56,6 +56,7 @@ import io.sarl.lang.sarl.SarlSkill;
  * @see "http://www.eclipse.org/Xtext/documentation.html#labelProvider"
  */
 @Singleton
+@SuppressWarnings("restriction")
 public class SARLDescriptionLabelProvider extends XtendDescriptionLabelProvider {
 
 	@Inject

@@ -44,6 +44,7 @@ import io.sarl.lang.util.Utils;
  * @mavenartifactid $ArtifactId$
  * @since 0.5
  */
+@SuppressWarnings("restriction")
 public class SARLHoverSerializer extends XtendHoverSerializer {
 
 	@Override

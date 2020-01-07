@@ -21,13 +21,13 @@
 
 package io.sarl.lang.core.tests.scoping.extensions.numbers.comparison.shortprimitive;
 
-import static io.sarl.lang.scoping.extensions.numbers.comparison.PrimitiveShortComparisonExtensions.operator_equals;
-import static io.sarl.lang.scoping.extensions.numbers.comparison.PrimitiveShortComparisonExtensions.operator_greaterEqualsThan;
-import static io.sarl.lang.scoping.extensions.numbers.comparison.PrimitiveShortComparisonExtensions.operator_greaterThan;
-import static io.sarl.lang.scoping.extensions.numbers.comparison.PrimitiveShortComparisonExtensions.operator_lessEqualsThan;
-import static io.sarl.lang.scoping.extensions.numbers.comparison.PrimitiveShortComparisonExtensions.operator_lessThan;
-import static io.sarl.lang.scoping.extensions.numbers.comparison.PrimitiveShortComparisonExtensions.operator_notEquals;
-import static io.sarl.lang.scoping.extensions.numbers.comparison.PrimitiveShortComparisonExtensions.operator_spaceship;
+import static io.sarl.lang.core.scoping.extensions.numbers.comparison.PrimitiveShortComparisonExtensions.operator_equals;
+import static io.sarl.lang.core.scoping.extensions.numbers.comparison.PrimitiveShortComparisonExtensions.operator_greaterEqualsThan;
+import static io.sarl.lang.core.scoping.extensions.numbers.comparison.PrimitiveShortComparisonExtensions.operator_greaterThan;
+import static io.sarl.lang.core.scoping.extensions.numbers.comparison.PrimitiveShortComparisonExtensions.operator_lessEqualsThan;
+import static io.sarl.lang.core.scoping.extensions.numbers.comparison.PrimitiveShortComparisonExtensions.operator_lessThan;
+import static io.sarl.lang.core.scoping.extensions.numbers.comparison.PrimitiveShortComparisonExtensions.operator_notEquals;
+import static io.sarl.lang.core.scoping.extensions.numbers.comparison.PrimitiveShortComparisonExtensions.operator_spaceship;
 
 import java.util.concurrent.atomic.AtomicInteger;
 import java.util.concurrent.atomic.AtomicLong;

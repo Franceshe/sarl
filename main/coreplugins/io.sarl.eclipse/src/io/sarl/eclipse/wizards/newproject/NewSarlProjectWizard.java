@@ -72,7 +72,7 @@ import io.sarl.eclipse.properties.RuntimeEnvironmentPropertyPage;
 import io.sarl.eclipse.runtime.ISREInstall;
 import io.sarl.eclipse.util.Utilities;
 import io.sarl.lang.SARLConfig;
-import io.sarl.lang.SARLVersion;
+import io.sarl.lang.core.SARLVersion;
 import io.sarl.lang.ui.preferences.SARLPreferences;
 
 /**
@@ -85,6 +85,7 @@ import io.sarl.lang.ui.preferences.SARLPreferences;
  * @mavengroupid $GroupId$
  * @mavenartifactid $ArtifactId$
  */
+@SuppressWarnings("restriction")
 public class NewSarlProjectWizard extends NewElementWizard implements IExecutableExtension {
 
 	/** The base name of the file that contains a template of a pom file.

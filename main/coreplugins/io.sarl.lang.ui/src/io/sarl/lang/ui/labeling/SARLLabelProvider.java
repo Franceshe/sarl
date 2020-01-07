@@ -90,7 +90,7 @@ import io.sarl.lang.ui.validation.SARLUIStrings;
  * @mavenartifactid $ArtifactId$
  * @see "https://www.eclipse.org/Xtext/documentation/304_ide_concepts.html#label-provider"
  */
-@SuppressWarnings("checkstyle:classfanoutcomplexity")
+@SuppressWarnings({"restriction", "checkstyle:classfanoutcomplexity"})
 @Singleton
 public class SARLLabelProvider extends XtendLabelProvider implements IQualifiedNameImageProvider {
 

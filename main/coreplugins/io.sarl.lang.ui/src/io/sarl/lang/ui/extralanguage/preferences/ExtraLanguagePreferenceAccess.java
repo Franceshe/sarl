@@ -46,6 +46,7 @@ import io.sarl.lang.ui.extralanguage.properties.AbstractGeneratorConfigurationBl
  * @mavenartifactid $ArtifactId$
  * @since 0.6
  */
+@SuppressWarnings("restriction")
 public class ExtraLanguagePreferenceAccess {
 
 	/** Key for saving the enabling state of the extra language generator.

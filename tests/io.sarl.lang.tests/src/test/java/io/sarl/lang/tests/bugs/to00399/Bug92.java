@@ -34,7 +34,7 @@ import org.eclipse.xtext.xbase.XNumberLiteral;
 import org.eclipse.xtext.xbase.testing.CompilationTestHelper;
 import org.junit.Test;
 
-import io.sarl.lang.SARLVersion;
+import io.sarl.lang.core.SARLVersion;
 import io.sarl.lang.sarl.SarlAgent;
 import io.sarl.lang.sarl.SarlField;
 import io.sarl.lang.sarl.SarlPackage;

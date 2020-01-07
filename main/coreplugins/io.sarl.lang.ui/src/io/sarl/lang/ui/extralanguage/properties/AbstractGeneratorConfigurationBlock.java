@@ -77,7 +77,7 @@ import io.sarl.lang.ui.internal.LangActivator;
  * @mavenartifactid $ArtifactId$
  * @since 0.6
  */
-@SuppressWarnings({"checkstyle:classdataabstractioncoupling", "checkstyle:classfanoutcomplexity"})
+@SuppressWarnings({"restriction", "checkstyle:classdataabstractioncoupling", "checkstyle:classfanoutcomplexity"})
 public abstract class AbstractGeneratorConfigurationBlock extends OptionsConfigurationBlock implements IExtraControlController {
 
 	/** Section name.
@@ -639,7 +639,6 @@ public abstract class AbstractGeneratorConfigurationBlock extends OptionsConfigu
 				}
 			});
 			defaultDirectoryField.addModifyListener(new ModifyListener() {
-				@SuppressWarnings("synthetic-access")
 				@Override
 				public void modifyText(ModifyEvent exception) {
 					refreshItem(item);

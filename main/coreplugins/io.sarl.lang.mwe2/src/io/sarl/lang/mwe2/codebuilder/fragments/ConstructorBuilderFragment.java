@@ -43,6 +43,7 @@ import io.sarl.lang.mwe2.codebuilder.extractor.CodeElementExtractor;
  * @mavengroupid $GroupId$
  * @mavenartifactid $ArtifactId$
  */
+@SuppressWarnings("restriction")
 public class ConstructorBuilderFragment extends AbstractMemberBuilderFragment {
 
 	@Inject
@@ -95,7 +96,6 @@ public class ConstructorBuilderFragment extends AbstractMemberBuilderFragment {
 		final TypeReference containerBuilder = this.constructor.getContainerDescription().getBuilderInterfaceType();
 		// Generate the contribution.
 		this.builderFactoryContributions.addContribution(new StringConcatenationClient() {
-			@SuppressWarnings("synthetic-access")
 			@Override
 			protected void appendTo(TargetStringConcatenation it) {
 				it.append("\t/** Create the factory for a " + getLanguageName() + " constructor."); //$NON-NLS-1$ //$NON-NLS-2$

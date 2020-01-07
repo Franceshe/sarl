@@ -178,7 +178,7 @@ public class Address extends SRESpecificDataContainer implements Serializable, C
 	 * @deprecated since 0.7, see {@link #getSpaceID()} for replacement.
 	 */
 	@Pure
-	@Deprecated
+	@Deprecated(since = "0.7", forRemoval = true)
 	public SpaceID getSpaceId() {
 		return getSpaceID();
 	}

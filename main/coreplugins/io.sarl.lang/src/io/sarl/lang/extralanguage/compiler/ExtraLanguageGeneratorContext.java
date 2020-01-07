@@ -50,6 +50,7 @@ import io.sarl.lang.sarl.actionprototype.IActionPrototypeProvider;
  * @mavenartifactid $ArtifactId$
  * @since 0.6
  */
+@SuppressWarnings("restriction")
 public class ExtraLanguageGeneratorContext implements IExtraLanguageGeneratorContext {
 
 	private final UUID identifier;

@@ -24,7 +24,7 @@ package io.sarl.lang.core.tests.scoping.extensions.numbers.cast.floatobject;
 import org.eclipse.xtext.common.types.TypesPackage;
 import org.eclipse.xtext.xbase.validation.IssueCodes;
 
-import io.sarl.lang.SARLVersion;
+import io.sarl.lang.core.SARLVersion;
 import io.sarl.lang.sarl.SarlPackage;
 import io.sarl.tests.api.AbstractMassiveCompilationTest;
 import io.sarl.tests.api.AbstractMassiveCompilationTest.DifferedTest;

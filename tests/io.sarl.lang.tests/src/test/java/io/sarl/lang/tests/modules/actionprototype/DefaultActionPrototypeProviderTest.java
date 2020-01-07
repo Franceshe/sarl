@@ -53,7 +53,7 @@ import org.mockito.ArgumentMatchers;
 import org.mockito.invocation.InvocationOnMock;
 import org.mockito.stubbing.Answer;
 
-import io.sarl.lang.annotation.DefaultValue;
+import io.sarl.lang.core.annotation.DefaultValue;
 import io.sarl.lang.sarl.SarlAction;
 import io.sarl.lang.sarl.SarlAgent;
 import io.sarl.lang.sarl.SarlFormalParameter;

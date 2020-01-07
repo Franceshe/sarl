@@ -44,6 +44,7 @@ import org.eclipse.xtext.xtext.generator.model.GuiceModuleAccess.Binding;
  * @mavengroupid $GroupId$
  * @mavenartifactid $ArtifactId$
  */
+@SuppressWarnings("restriction")
 public class InjectionFragment2 extends AbstractXtextGeneratorFragment {
 
 	/** Logger.

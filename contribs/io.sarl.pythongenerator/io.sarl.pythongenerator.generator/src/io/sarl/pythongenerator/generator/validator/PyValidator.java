@@ -61,6 +61,7 @@ import io.sarl.pythongenerator.generator.generator.PyKeywordProvider;
  * @since 0.6
  */
 @Singleton
+@SuppressWarnings("restriction")
 public class PyValidator extends AbstractExtraLanguageValidator {
 
 	/** Error handler for the type conversions.

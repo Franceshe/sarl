@@ -37,6 +37,7 @@ import org.eclipse.xtext.validation.SeverityConverter;
  * @mavenartifactid $ArtifactId$
  */
 @Singleton
+@SuppressWarnings("restriction")
 public class StandardSarlConfigurableIssueCodesProvider extends XtendConfigurableIssueCodes {
 
 	/** Construct a provider of issue codes for Xtext tools.

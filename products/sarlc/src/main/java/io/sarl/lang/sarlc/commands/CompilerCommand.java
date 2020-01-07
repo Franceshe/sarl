@@ -38,10 +38,10 @@ import org.eclipse.core.runtime.IProgressMonitor;
 import org.eclipse.xtext.diagnostics.Severity;
 
 import io.sarl.lang.compiler.batch.SarlBatchCompiler;
+import io.sarl.lang.core.util.OutParameter;
 import io.sarl.lang.sarlc.configs.ProgressBarConfig;
 import io.sarl.lang.sarlc.configs.SarlcConfig;
 import io.sarl.lang.sarlc.tools.PathDetector;
-import io.sarl.lang.util.OutParameter;
 import io.sarl.maven.bootiqueapp.BootiqueMain;
 
 /**

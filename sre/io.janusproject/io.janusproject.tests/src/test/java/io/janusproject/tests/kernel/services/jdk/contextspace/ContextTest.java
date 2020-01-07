@@ -56,7 +56,7 @@ import io.sarl.core.SpaceCreated;
 import io.sarl.lang.core.Event;
 import io.sarl.lang.core.Space;
 import io.sarl.lang.core.SpaceID;
-import io.sarl.lang.util.SynchronizedCollection;
+import io.sarl.lang.core.util.SynchronizedCollection;
 import io.sarl.tests.api.Nullable;
 import io.sarl.util.concurrent.Collections3;
 import io.sarl.util.concurrent.NoReadWriteLock;

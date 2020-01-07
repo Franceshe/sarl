@@ -38,6 +38,7 @@ import io.sarl.lang.sarl.SarlCastedExpression;
  * @mavenartifactid $ArtifactId$
  * @since 0.9
  */
+@SuppressWarnings("restriction")
 public class SARLHoverProvider extends XtendHoverProvider {
 
 	@Override

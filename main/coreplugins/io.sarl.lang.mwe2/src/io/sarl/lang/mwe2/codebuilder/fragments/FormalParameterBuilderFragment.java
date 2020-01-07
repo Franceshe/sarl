@@ -56,6 +56,7 @@ import io.sarl.lang.mwe2.codebuilder.extractor.CodeElementExtractor;
  * @mavengroupid $GroupId$
  * @mavenartifactid $ArtifactId$
  */
+@SuppressWarnings("restriction")
 public class FormalParameterBuilderFragment extends AbstractSubCodeBuilderFragment {
 
 	/** Replies the implementation for the formal parameter builder.

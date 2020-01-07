@@ -386,7 +386,6 @@ public abstract class AbstractDMultiMapView<K, V> extends AbstractMapView<K, V>
 				return this.value;
 			}
 
-			@SuppressWarnings("synthetic-access")
 			@Override
 			public void remove() {
 				this.iterator.remove();
@@ -495,7 +494,6 @@ public abstract class AbstractDMultiMapView<K, V> extends AbstractMapView<K, V>
 				return this.value;
 			}
 
-			@SuppressWarnings("synthetic-access")
 			@Override
 			public void remove() {
 				this.iterator.remove();

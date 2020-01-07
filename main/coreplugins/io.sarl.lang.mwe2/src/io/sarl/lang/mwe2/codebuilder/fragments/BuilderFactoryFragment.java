@@ -58,6 +58,7 @@ import org.eclipse.xtext.xtext.generator.model.XtendFileAccess;
  * @mavengroupid $GroupId$
  * @mavenartifactid $ArtifactId$
  */
+@SuppressWarnings("restriction")
 public class BuilderFactoryFragment extends AbstractSubCodeBuilderFragment {
 
 	@Inject

@@ -54,6 +54,7 @@ import io.sarl.m2e.SARLMavenEclipsePlugin;
  * @mavenartifactid $ArtifactId$
  * @since 0.8
  */
+@SuppressWarnings("restriction")
 public class ImportMavenSarlProjectWizard extends MavenImportWizard {
 
 	private MavenImportWizardPage mainPageBuffer;

@@ -37,7 +37,7 @@ import io.sarl.lang.core.Scope
  * @since 0.6
  * @deprecated since 0.7, replaced by closure expressions.
  */
-@Deprecated
+@Deprecated(since = "0.7", forRemoval = true)
 class IdentifierScope implements Scope<Address> {
 
 	static val SCOPE_ID = "id://"

@@ -28,7 +28,7 @@ import io.janusproject.services.DependentService;
 
 import io.sarl.lang.core.Agent;
 import io.sarl.lang.core.AgentContext;
-import io.sarl.lang.util.SynchronizedSet;
+import io.sarl.lang.core.util.SynchronizedSet;
 
 /**
  * This service provides the tools to manage the life-cycle of the agents.

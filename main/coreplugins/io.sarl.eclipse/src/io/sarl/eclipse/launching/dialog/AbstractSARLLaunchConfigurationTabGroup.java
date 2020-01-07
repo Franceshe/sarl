@@ -45,6 +45,7 @@ import org.eclipse.jdt.launching.JavaRuntime;
  * @mavenartifactid $ArtifactId$
  * @since 0.7
  */
+@SuppressWarnings("restriction")
 public abstract class AbstractSARLLaunchConfigurationTabGroup extends AbstractLaunchConfigurationTabGroup {
 
 	@Inject
@@ -57,7 +58,7 @@ public abstract class AbstractSARLLaunchConfigurationTabGroup extends AbstractLa
 	}
 
 	@Override
-	protected void setTabs(ILaunchConfigurationTab[] tabs) {
+	protected void setTabs(ILaunchConfigurationTab... tabs) {
 		//Override the function for automatic injection within the tabs.
 		if (this.injector != null) {
 			for (final ILaunchConfigurationTab tab : tabs) {

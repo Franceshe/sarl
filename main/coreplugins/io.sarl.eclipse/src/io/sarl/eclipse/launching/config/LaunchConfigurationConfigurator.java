@@ -52,6 +52,7 @@ import io.sarl.eclipse.runtime.SARLRuntime;
  * @mavenartifactid $ArtifactId$
  */
 @Singleton
+@SuppressWarnings("restriction")
 public class LaunchConfigurationConfigurator implements ILaunchConfigurationConfigurator, ILaunchConfigurationAccessor {
 
 	/**

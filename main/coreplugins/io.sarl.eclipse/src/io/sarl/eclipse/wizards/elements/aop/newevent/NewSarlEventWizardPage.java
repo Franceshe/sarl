@@ -50,6 +50,7 @@ import io.sarl.lang.core.Event;
  * @mavengroupid $GroupId$
  * @mavenartifactid $ArtifactId$
  */
+@SuppressWarnings("restriction")
 public class NewSarlEventWizardPage extends AbstractNewSarlElementWizardPage {
 
 	/** Construct a wizard page.

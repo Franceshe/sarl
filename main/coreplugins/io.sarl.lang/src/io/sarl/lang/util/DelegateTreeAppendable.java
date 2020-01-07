@@ -43,6 +43,7 @@ import org.eclipse.xtext.xbase.typesystem.references.LightweightTypeReference;
  * @mavenartifactid $ArtifactId$
  * @since 0.8.6
  */
+@SuppressWarnings("restriction")
 public class DelegateTreeAppendable implements ITreeAppendable {
 
 	private final ITreeAppendable delegate;
@@ -60,7 +61,7 @@ public class DelegateTreeAppendable implements ITreeAppendable {
 	 * @deprecated imports are handled by external components.
 	 */
 	@Override
-	@Deprecated
+	@Deprecated(since = "0.10", forRemoval = true)
 	public List<String> getImports() {
 		return this.delegate.getImports();
 	}

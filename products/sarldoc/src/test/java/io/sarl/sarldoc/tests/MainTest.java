@@ -43,7 +43,7 @@ import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 
-import io.sarl.lang.SARLVersion;
+import io.sarl.lang.core.SARLVersion;
 import io.sarl.lang.sarl.SarlPackage;
 import io.sarl.lang.sarlc.configs.subconfigs.JavaCompiler;
 import io.sarl.maven.bootiqueapp.utils.SystemPath;

@@ -32,10 +32,10 @@ import org.junit.Test;
 
 import io.sarl.docs.doclet.utils.SARLFeatureAccess;
 import io.sarl.lang.SARLStandaloneSetup;
-import io.sarl.lang.annotation.DefaultValue;
-import io.sarl.lang.annotation.SarlElementType;
-import io.sarl.lang.annotation.SarlSourceCode;
-import io.sarl.lang.annotation.SyntheticMember;
+import io.sarl.lang.core.annotation.DefaultValue;
+import io.sarl.lang.core.annotation.SarlElementType;
+import io.sarl.lang.core.annotation.SarlSourceCode;
+import io.sarl.lang.core.annotation.SyntheticMember;
 import io.sarl.lang.sarl.SarlPackage;
 import io.sarl.lang.services.SARLGrammarKeywordAccess;
 

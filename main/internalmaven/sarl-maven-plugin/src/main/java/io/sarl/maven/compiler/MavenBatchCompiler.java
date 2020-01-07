@@ -82,12 +82,13 @@ final class MavenBatchCompiler implements IJavaBatchCompiler {
 	}
 
 	@Override
-	@SuppressWarnings({"checkstyle:parameternumber"})
+	@SuppressWarnings({"checkstyle:parameternumber", "checkstyle:npathcomplexity"})
 	public boolean compile(File classDirectory,
 			Iterable<File> sourcePathDirectories,
 			Iterable<File> classPathEntries,
 			List<File> bootClassPathEntries,
-			String javaVersion,
+			String sourceJavaVersion,
+			String targetJavaVersion,
 			String encoding,
 			boolean isCompilerMoreVerbose,
 			OptimizationLevel optimizationLevel,
@@ -123,12 +124,20 @@ final class MavenBatchCompiler implements IJavaBatchCompiler {
 
 					final Xpp3Dom specificConfiguration = new Xpp3Dom("configuration"); //$NON-NLS-1$
 					Xpp3Dom child;
-					if (!Strings.isEmpty(javaVersion)) {
+					if (!Strings.isEmpty(sourceJavaVersion)) {
 						child = new Xpp3Dom("source"); //$NON-NLS-1$
-						child.setValue(javaVersion);
+						child.setValue(sourceJavaVersion);
 						specificConfiguration.addChild(child);
 						child = new Xpp3Dom("target"); //$NON-NLS-1$
-						child.setValue(javaVersion);
+						if (Strings.isEmpty(targetJavaVersion)) {
+							child.setValue(sourceJavaVersion);
+						} else {
+							child.setValue(targetJavaVersion);
+						}
+						specificConfiguration.addChild(child);
+					} else if (!Strings.isEmpty(targetJavaVersion)) {
+						child = new Xpp3Dom("target"); //$NON-NLS-1$
+						child.setValue(targetJavaVersion);
 						specificConfiguration.addChild(child);
 					}
 					if (!Strings.isEmpty(encoding)) {

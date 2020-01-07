@@ -41,6 +41,7 @@ import org.eclipse.xtext.xbase.ui.templates.XbaseTemplateProposalProvider;
  * @mavengroupid $GroupId$
  * @mavenartifactid $ArtifactId$
  */
+@SuppressWarnings("restriction")
 public class SARLTemplateProposalProvider extends XbaseTemplateProposalProvider {
 
 	/** Construct the provider.

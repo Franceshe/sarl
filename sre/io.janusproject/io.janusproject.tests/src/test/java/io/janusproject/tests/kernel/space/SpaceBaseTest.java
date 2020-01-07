@@ -30,7 +30,7 @@ import io.sarl.core.OpenEventSpaceSpecification;
 import io.sarl.lang.core.Event;
 import io.sarl.lang.core.Scope;
 import io.sarl.lang.core.SpaceID;
-import io.sarl.lang.util.SynchronizedSet;
+import io.sarl.lang.core.util.SynchronizedSet;
 
 /**
  * @author $Author: sgalland$

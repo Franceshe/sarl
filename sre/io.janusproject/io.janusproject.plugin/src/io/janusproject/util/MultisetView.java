@@ -317,7 +317,7 @@ public class MultisetView<K, V> extends AbstractCollection<K> implements Multise
 		@Override
 		public Iterator<Entry<K>> iterator() {
 			final Iterator<K> backingEntries = getDelegatedObject().keySet().iterator();
-			return new Iterator<Entry<K>>() {
+			return new Iterator<>() {
 				private boolean canRemove;
 
 				@Override
@@ -330,7 +330,7 @@ public class MultisetView<K, V> extends AbstractCollection<K> implements Multise
 					final K entryKey = backingEntries.next();
 					final Collection<V> entryValues = getDelegatedObject().get(entryKey);
 					this.canRemove = true;
-					return new Entry<K>() {
+					return new Entry<>() {
 						@Override
 						public boolean equals(Object object) {
 							if (object instanceof Multiset.Entry) {

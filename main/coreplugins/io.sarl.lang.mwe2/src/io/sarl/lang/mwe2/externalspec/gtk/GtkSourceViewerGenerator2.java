@@ -44,6 +44,7 @@ import io.sarl.lang.mwe2.externalspec.IXmlStyleCloseable;
  * @mavenartifactid $ArtifactId$
  * @see "https://wiki.gnome.org/Projects/GtkSourceView"
  */
+@SuppressWarnings("restriction")
 public class GtkSourceViewerGenerator2 extends AbstractXmlHighlightingFragment2 {
 
 	/** The default basename pattern for {@link MessageFormat}.

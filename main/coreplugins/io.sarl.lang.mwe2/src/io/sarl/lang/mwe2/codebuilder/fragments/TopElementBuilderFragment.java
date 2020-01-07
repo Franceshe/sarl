@@ -67,6 +67,7 @@ import io.sarl.lang.mwe2.codebuilder.extractor.CodeElementExtractor;
  * @mavengroupid $GroupId$
  * @mavenartifactid $ArtifactId$
  */
+@SuppressWarnings("restriction")
 public class TopElementBuilderFragment extends AbstractSubCodeBuilderFragment {
 
 	@Inject

@@ -53,6 +53,7 @@ import io.sarl.lang.extralanguage.compiler.ExtraLanguageOutputConfigurations;
  * @mavengroupid $GroupId$
  * @mavenartifactid $ArtifactId$
  */
+@SuppressWarnings("restriction")
 public class SARLBuilderConfigurationBlock extends XbaseBuilderConfigurationBlock {
 
 	@Inject
@@ -89,7 +90,6 @@ public class SARLBuilderConfigurationBlock extends XbaseBuilderConfigurationBloc
 				PREF_GENERATE_SERIAL_NUMBER_FIELDS, BOOLEAN_VALUES, 0);
 
 		this.generateInlineButton.addSelectionListener(new SelectionAdapter() {
-			@SuppressWarnings("synthetic-access")
 			@Override
 			public void widgetSelected(SelectionEvent event) {
 				SARLBuilderConfigurationBlock.this.useExpressionInterpreter.setEnabled(

@@ -55,6 +55,7 @@ import io.sarl.lang.util.ReflectMethod;
  * @mavenartifactid $ArtifactId$
  * @since 0.9
  */
+@SuppressWarnings("restriction")
 public class CastedExpressionTypeComputationState extends ExpressionTypeComputationState {
 
 	private static ReflectMethod<ResolvedTypes, StackedResolvedTypes> pushTypesMethod

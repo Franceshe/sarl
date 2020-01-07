@@ -51,7 +51,7 @@ import io.sarl.lang.core.Behavior;
 import io.sarl.lang.core.Event;
 import io.sarl.lang.core.EventListener;
 import io.sarl.lang.core.Skill;
-import io.sarl.lang.util.ClearableReference;
+import io.sarl.lang.core.util.ClearableReference;
 
 /**
  * Janus implementation of an internal skill that provides an event dispatcher to notify the different components/behaviors of an
@@ -124,7 +124,7 @@ public class InternalEventBusSkill extends BuiltinSkill implements InternalEvent
 	 * @deprecated since 0.10
 	 */
 	@Override
-	@Deprecated
+	@Deprecated(since = "0.10", forRemoval = true)
 	public int getInstallationOrder() {
 		if (installationOrder < 0) {
 			installationOrder = installationOrder(this);
@@ -185,7 +185,7 @@ public class InternalEventBusSkill extends BuiltinSkill implements InternalEvent
 	 * @deprecated see {@link #registerEventListener(Object, boolean, Function1, Object[])}.
 	 */
 	@Override
-	@Deprecated
+	@Deprecated(since = "0.6", forRemoval = true)
 	public void registerEventListener(Object listener) {
 		registerEventListener(listener, true, null);
 	}
@@ -215,7 +215,7 @@ public class InternalEventBusSkill extends BuiltinSkill implements InternalEvent
 	 * @deprecated see {@link #unregisterEventListener(Object, boolean)}.
 	 */
 	@Override
-	@Deprecated
+	@Deprecated(since = "0.8", forRemoval = true)
 	public void unregisterEventListener(Object listener) {
 		unregisterEventListener(listener, true);
 	}
@@ -370,7 +370,6 @@ public class InternalEventBusSkill extends BuiltinSkill implements InternalEvent
 			return this.aid;
 		}
 
-		@SuppressWarnings("synthetic-access")
 		@Override
 		public void receiveEvent(Event event) {
 			final Class<? extends Event> eventType = event.getClass();
@@ -410,7 +409,6 @@ public class InternalEventBusSkill extends BuiltinSkill implements InternalEvent
 
 		}
 
-		@SuppressWarnings("synthetic-access")
 		void fireEnqueuedEvents(InternalEventBusSkill skill) {
 			final Queue<Event> queue = this.buffer;
 			if (queue != null && !queue.isEmpty()) {
@@ -421,7 +419,6 @@ public class InternalEventBusSkill extends BuiltinSkill implements InternalEvent
 			}
 		}
 
-		@SuppressWarnings("synthetic-access")
 		boolean killOwner(InternalEventBusSkill skill) {
 			return skill.spawnService.killAgent(this.aid);
 		}

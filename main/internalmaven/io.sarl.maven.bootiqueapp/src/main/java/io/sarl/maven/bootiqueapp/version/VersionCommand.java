@@ -29,7 +29,7 @@ import io.bootique.command.CommandWithMetadata;
 import io.bootique.log.BootLogger;
 import io.bootique.meta.application.CommandMetadata;
 
-import io.sarl.lang.SARLVersion;
+import io.sarl.lang.core.SARLVersion;
 
 /**
  * Command for showing the sarlc version.

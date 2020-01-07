@@ -50,6 +50,7 @@ import org.eclipse.xtext.xtext.generator.model.GuiceModuleAccess.Binding;
  * @mavengroupid $GroupId$
  * @mavenartifactid $ArtifactId$
  */
+@SuppressWarnings("restriction")
 @Beta
 public class InjectionRecommender2 extends AbstractXtextGeneratorFragment {
 

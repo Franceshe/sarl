@@ -58,6 +58,7 @@ import org.eclipse.xtext.xbase.typesystem.references.LightweightTypeReference;
  * @since 0.9
  */
 @Singleton
+@SuppressWarnings("restriction")
 public class ObjectAndPrimitiveBasedCastOperationCandidateSelector implements ICastOperationCandidateSelector {
 
 	@Override

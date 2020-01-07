@@ -53,6 +53,7 @@ import org.eclipse.xtext.ui.IImageHelper.IImageDescriptorHelper;
  * @mavenartifactid $ArtifactId$
  */
 @Singleton
+@SuppressWarnings("restriction")
 public class SARLDiagnosticLabelDecorator extends BaseLabelProvider implements ILabelDecorator {
 
 	private static final Method GET_NODE_METHOD;

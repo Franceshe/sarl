@@ -40,6 +40,7 @@ import org.eclipse.xtext.common.types.JvmVisibility;
  * @mavengroupid $GroupId$
  * @mavenartifactid $ArtifactId$
  */
+@SuppressWarnings("restriction")
 public class DefaultVisibilityProvider implements IDefaultVisibilityProvider {
 
 	private final Method visiblityMethod;

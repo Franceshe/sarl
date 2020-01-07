@@ -97,7 +97,7 @@ import io.sarl.lang.util.Utils;
  * @mavenartifactid $ArtifactId$
  * @since 0.6
  */
-@SuppressWarnings("checkstyle:classfanoutcomplexity")
+@SuppressWarnings({"restriction", "checkstyle:classfanoutcomplexity"})
 public class PyExpressionGenerator extends AbstractExpressionGenerator {
 
 	@Inject

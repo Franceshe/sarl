@@ -37,7 +37,7 @@ import io.sarl.lang.core.Scope;
 import io.sarl.lang.core.Skill;
 import io.sarl.lang.core.Space;
 import io.sarl.lang.core.SpaceID;
-import io.sarl.lang.util.ClearableReference;
+import io.sarl.lang.core.util.ClearableReference;
 import io.sarl.util.Scopes;
 
 /**
@@ -87,7 +87,7 @@ public class DefaultContextInteractionsSkill extends BuiltinSkill implements Def
 	 * @deprecated since 0.10
 	 */
 	@Override
-	@Deprecated
+	@Deprecated(since = "0.10", forRemoval = true)
 	public int getInstallationOrder() {
 		if (installationOrder < 0) {
 			installationOrder = installationOrder(this);
@@ -143,7 +143,7 @@ public class DefaultContextInteractionsSkill extends BuiltinSkill implements Def
 	/** {@inheritDoc}.
 	 * @deprecated see {@link #willReceive(UUID, Event)}
 	 */
-	@Deprecated
+	@Deprecated(since = "0.10", forRemoval = true)
 	@Override
 	public void receive(UUID receiverID, Event event) {
 		willReceive(receiverID, event);
@@ -159,7 +159,7 @@ public class DefaultContextInteractionsSkill extends BuiltinSkill implements Def
 	 * @deprecated See {@link Lifecycle} capacity.
 	 */
 	@Override
-	@Deprecated
+	@Deprecated(since = "0.10", forRemoval = true)
 	public UUID spawn(Class<? extends Agent> agentType, Object... params) {
 		return getLifecycleSkill().spawnInContext(agentType, this.parentContext, params);
 	}

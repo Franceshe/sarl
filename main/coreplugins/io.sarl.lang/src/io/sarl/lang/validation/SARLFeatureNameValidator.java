@@ -33,6 +33,7 @@ import io.sarl.lang.util.Utils;
  * @mavengroupid $GroupId$
  * @mavenartifactid $ArtifactId$
  */
+@SuppressWarnings("restriction")
 public class SARLFeatureNameValidator extends LogicalContainerAwareFeatureNameValidator {
 
 	/** Construct a validator for the feature's names.

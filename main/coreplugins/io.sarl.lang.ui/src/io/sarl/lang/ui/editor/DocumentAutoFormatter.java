@@ -69,7 +69,6 @@ public class DocumentAutoFormatter implements IDocumentAutoFormatter {
 					//
 				}
 
-				@SuppressWarnings("synthetic-access")
 				@Override
 				public void documentChanged(DocumentEvent event) {
 					if (!Strings.isEmpty(event.getText())

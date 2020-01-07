@@ -54,6 +54,7 @@ import io.sarl.lang.util.Utils;
  * @see SARLOperationHelper
  */
 @Singleton
+@SuppressWarnings("restriction")
 public class SARLExpressionHelper extends XtendExpressionHelper {
 
 	@Inject

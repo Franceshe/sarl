@@ -71,7 +71,7 @@ import io.sarl.eclipse.SARLEclipseConfig;
 import io.sarl.eclipse.buildpath.SARLClasspathContainerInitializer;
 import io.sarl.eclipse.util.Utilities;
 import io.sarl.lang.SARLConfig;
-import io.sarl.lang.SARLVersion;
+import io.sarl.lang.core.SARLVersion;
 import io.sarl.lang.ui.preferences.SARLPreferences;
 import io.sarl.m2e.utils.M2EUtilities;
 
@@ -82,6 +82,7 @@ import io.sarl.m2e.utils.M2EUtilities;
  * @mavengroupid $GroupId$
  * @mavenartifactid $ArtifactId$
  */
+@SuppressWarnings("restriction")
 public class SARLProjectConfigurator extends AbstractProjectConfigurator implements IJavaProjectConfigurator {
 
 	private static final String SARL_LANG_BUNDLE_NAME = "io.sarl.lang.core"; //$NON-NLS-1$

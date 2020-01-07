@@ -39,7 +39,7 @@ import org.eclipse.xtext.common.types.JvmTypeReference;
 import org.eclipse.xtext.common.types.util.AnnotationLookup;
 import org.eclipse.xtext.xbase.validation.UIStrings;
 
-import io.sarl.lang.annotation.DefaultValue;
+import io.sarl.lang.core.annotation.DefaultValue;
 import io.sarl.lang.services.SARLGrammarKeywordAccess;
 
 /**
@@ -55,6 +55,7 @@ import io.sarl.lang.services.SARLGrammarKeywordAccess;
  * @since 0.5
  */
 @Singleton
+@SuppressWarnings("restriction")
 public class SARLUIStrings extends UIStrings {
 
 	/**

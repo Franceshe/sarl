@@ -28,8 +28,8 @@ import java.util.concurrent.locks.ReadWriteLock;
 import io.janusproject.services.DependentService;
 
 import io.sarl.lang.core.AgentContext;
-import io.sarl.lang.util.SynchronizedCollection;
-import io.sarl.lang.util.SynchronizedSet;
+import io.sarl.lang.core.util.SynchronizedCollection;
+import io.sarl.lang.core.util.SynchronizedSet;
 
 /**
  * This service enables to store the contexts and to manage the spaces in the janus platform.

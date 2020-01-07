@@ -47,6 +47,7 @@ import org.eclipse.xtext.xbase.validation.IssueCodes;
  * @mavenartifactid $ArtifactId$
  * @since 0.9
  */
+@SuppressWarnings("restriction")
 public class SuspiciousOverloadedCastOperatorLinkingCandidate implements ISuspiciouslyOverloadedCandidate, ICastOperatorLinkingCandidate {
 
 	private final CastOperatorLinkingCandidate rejectedCandidate;

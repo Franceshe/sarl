@@ -54,6 +54,7 @@ import org.eclipse.xtext.validation.SeverityConverter;
  * @since 0.5
  */
 @Singleton
+@SuppressWarnings("restriction")
 public class ConfigurableIssueSeveritiesProvider extends IssueSeveritiesProvider implements IConfigurableIssueSeveritiesProvider {
 
 	private final Map<String, Severity> overridingSeverities = Collections.synchronizedMap(new HashMap<>());

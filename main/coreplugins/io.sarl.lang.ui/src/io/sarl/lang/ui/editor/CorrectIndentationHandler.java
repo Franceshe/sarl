@@ -44,6 +44,7 @@ import org.eclipse.xtext.ui.editor.utils.EditorUtils;
  * @mavenartifactid $ArtifactId$
  * @since 0.7
  */
+@SuppressWarnings("restriction")
 public class CorrectIndentationHandler extends AbstractHandler {
 
 	@Inject

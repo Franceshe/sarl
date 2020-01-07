@@ -793,7 +793,7 @@ capacity DefaultContextInteractions {
 	 * @param event the event to emit.
 	 * @deprecated see {@link #willReceive(UUID, Event)}
 	 */
-	@Deprecated
+	@Deprecated(since = "0.4", forRemoval = true)
 	@Inline(value = "willReceive($1, $2)")
 	def receive(receiver : UUID, ^event : Event)
 	
@@ -893,7 +893,7 @@ capacity DefaultContextInteractions {
 	 * @fires AgentSpawned in DefaultSpace
 	 * @deprecated See the {@link Lifecycle} capacity.
 	 */
-	@Deprecated
+	@Deprecated(since = "0.4", forRemoval = true)
 	def spawn(agentType : Class<? extends Agent>, params : Object*) : UUID fires AgentSpawned
 
 }
@@ -917,7 +917,7 @@ capacity Logging {
 	 * @param message the elements to display.
 	 * @deprecated Use {@link #info(Object,Object...)}.
 	 */
-	@Deprecated
+	@Deprecated(since = "0.2", forRemoval = true)
 	def println(message : Object)
 	
 	/** Print the given message at error logging level.

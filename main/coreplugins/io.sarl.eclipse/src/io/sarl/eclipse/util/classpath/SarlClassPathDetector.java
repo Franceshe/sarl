@@ -82,6 +82,7 @@ import io.sarl.lang.SARLConfig;
  * @since 0.10
  * @see ClassPathDetector
  */
+@SuppressWarnings("restriction")
 public class SarlClassPathDetector implements IResourceProxyVisitor {
 
 	private final SarlDefaultClassPathProvider defaultCPProvider;

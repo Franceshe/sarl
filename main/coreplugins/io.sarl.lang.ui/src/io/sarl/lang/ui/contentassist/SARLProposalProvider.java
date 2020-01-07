@@ -99,7 +99,7 @@ import io.sarl.lang.util.Utils;
  * @mavengroupid $GroupId$
  * @mavenartifactid $ArtifactId$
  */
-@SuppressWarnings("checkstyle:classfanoutcomplexity")
+@SuppressWarnings({"restriction", "checkstyle:classfanoutcomplexity"})
 public class SARLProposalProvider extends AbstractSARLProposalProvider {
 
 	@Inject

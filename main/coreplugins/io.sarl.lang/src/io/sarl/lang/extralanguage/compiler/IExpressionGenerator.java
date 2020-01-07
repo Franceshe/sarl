@@ -33,6 +33,7 @@ import org.eclipse.xtext.xbase.typesystem.references.LightweightTypeReference;
  * @mavenartifactid $ArtifactId$
  * @since 0.6
  */
+@SuppressWarnings("restriction")
 public interface IExpressionGenerator {
 
 	/** Generate the code for the given XExpression.

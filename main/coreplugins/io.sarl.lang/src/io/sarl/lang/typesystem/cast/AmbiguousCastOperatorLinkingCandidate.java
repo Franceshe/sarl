@@ -41,6 +41,7 @@ import org.eclipse.xtext.xbase.typesystem.internal.AbstractPendingLinkingCandida
  * @mavenartifactid $ArtifactId$
  * @since 0.9
  */
+@SuppressWarnings("restriction")
 public class AmbiguousCastOperatorLinkingCandidate extends AbstractAmbiguousLinkingCandidate<CastOperatorLinkingCandidate>
 		implements ICastOperatorLinkingCandidate {
 

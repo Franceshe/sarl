@@ -27,7 +27,7 @@ import org.eclipse.xtend.lib.annotations.AccessorsProcessor;
 import org.eclipse.xtext.common.types.JvmType;
 import org.eclipse.xtext.xbase.typesystem.util.CommonTypeComputationServices;
 
-import io.sarl.lang.annotations.SarlAccessorsProcessor;
+import io.sarl.lang.core.annotations.SarlAccessorsProcessor;
 
 /** Processor for the {@code @Accessors} active annotations.
  *
@@ -42,6 +42,7 @@ import io.sarl.lang.annotations.SarlAccessorsProcessor;
  * @mavenartifactid $ArtifactId$
  * @since 0.9
  */
+@SuppressWarnings("restriction")
 public class SarlProcessorInstanceForJvmTypeProvider extends ProcessorInstanceForJvmTypeProvider {
 
 	@Inject

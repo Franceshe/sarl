@@ -34,6 +34,7 @@ import io.sarl.lang.sarl.SarlAction;
  * @mavengroupid $GroupId$
  * @mavenartifactid $ArtifactId$
  */
+@SuppressWarnings("restriction")
 public interface ISarlEarlyExitComputer extends IEarlyExitComputer {
 
 	/** Replies if the given event is an event that causes an early exit of the

@@ -68,6 +68,7 @@ import io.sarl.lang.services.SARLGrammarKeywordAccess;
  * @mavenartifactid $ArtifactId$
  * @since 0.5
  */
+@SuppressWarnings("restriction")
 public class SARLHoverSignatureProvider extends XtendHoverSignatureProvider {
 
 	@Inject

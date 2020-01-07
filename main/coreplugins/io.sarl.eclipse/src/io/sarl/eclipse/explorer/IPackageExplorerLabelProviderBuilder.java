@@ -35,6 +35,7 @@ import org.eclipse.jdt.internal.ui.packageview.PackageExplorerLabelProvider;
  * @since 0.6
  */
 @ImplementedBy(DefaultPackageExplorerLabelProviderBuilder.class)
+@SuppressWarnings("restriction")
 public interface IPackageExplorerLabelProviderBuilder {
 
 	/** Create a label provider for the package explorer.

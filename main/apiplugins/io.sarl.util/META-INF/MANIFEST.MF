@@ -5,7 +5,7 @@ Automatic-Module-Name: io.sarl.util
 Bundle-Version: 0.11.0.qualifier
 Bundle-Vendor: %Bundle-Vendor
 Bundle-Name: %Bundle-Name
-Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Bundle-RequiredExecutionEnvironment: JavaSE-11
 Export-Package: io.sarl.eventdispatching,
  io.sarl.sarlspecification,
  io.sarl.util,

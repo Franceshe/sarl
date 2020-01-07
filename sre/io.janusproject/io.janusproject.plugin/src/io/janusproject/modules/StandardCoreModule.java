@@ -190,25 +190,19 @@ public class StandardCoreModule extends AbstractModule {
 		@Override
 		public void injectMembers(T instance) {
 			if (this.field != null) {
-				final boolean accessible = this.field.isAccessible();
 				try {
 					this.field.setAccessible(true);
 					this.field.set(instance, this.rootLogger);
 				} catch (IllegalArgumentException | IllegalAccessException e) {
 					throw new RuntimeException(e);
-				} finally {
-					this.field.setAccessible(accessible);
 				}
 			}
 			if (this.method != null) {
-				final boolean accessible = this.method.isAccessible();
 				try {
 					this.method.setAccessible(true);
 					this.method.invoke(instance, this.rootLogger);
 				} catch (IllegalArgumentException | IllegalAccessException | InvocationTargetException e) {
 					throw new RuntimeException(e);
-				} finally {
-					this.method.setAccessible(accessible);
 				}
 			}
 		}

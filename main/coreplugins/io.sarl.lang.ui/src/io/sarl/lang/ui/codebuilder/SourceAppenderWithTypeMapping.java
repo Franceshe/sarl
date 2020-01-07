@@ -36,6 +36,7 @@ import io.sarl.lang.services.SARLGrammarKeywordAccess;
  * @mavenartifactid $ArtifactId$
  * @since 0.6
  */
+@SuppressWarnings("restriction")
 class SourceAppenderWithTypeMapping implements ISourceAppender {
 
 	private final ISourceAppender source;

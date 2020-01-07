@@ -41,6 +41,7 @@ import org.eclipse.xtext.ui.editor.outline.impl.EStructuralFeatureNode;
  * @mavengroupid $GroupId$
  * @mavenartifactid $ArtifactId$
  */
+@SuppressWarnings("restriction")
 public class SARLOutlinePage extends XtendOutlinePage {
 
 	@Override

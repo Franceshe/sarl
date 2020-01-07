@@ -40,6 +40,7 @@ import org.eclipse.xtext.xbase.validation.ReadAndWriteTracking;
  * @since 0.7
  */
 @Singleton
+@SuppressWarnings("restriction")
 public class SARLReadAndWriteTracking extends ReadAndWriteTracking {
 
 	private static final Adapter ASSIGNMENT_MARKER = new Adapter() {

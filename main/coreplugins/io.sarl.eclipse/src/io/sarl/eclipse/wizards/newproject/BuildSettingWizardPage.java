@@ -75,7 +75,7 @@ import io.sarl.eclipse.SARLEclipseConfig;
 import io.sarl.eclipse.SARLEclipsePlugin;
 import io.sarl.eclipse.natures.SARLProjectConfigurator;
 import io.sarl.eclipse.util.classpath.SarlClassPathDetector;
-import io.sarl.lang.util.OutParameter;
+import io.sarl.lang.core.util.OutParameter;
 
 /**
  * The second page of the SARL new project wizard.
@@ -87,7 +87,7 @@ import io.sarl.lang.util.OutParameter;
  * @mavengroupid $GroupId$
  * @mavenartifactid $ArtifactId$
  */
-@SuppressWarnings("checkstyle:classdataabstractioncoupling")
+@SuppressWarnings({"restriction", "checkstyle:classdataabstractioncoupling"})
 public class BuildSettingWizardPage extends JavaCapabilityConfigurationPage {
 
 	private static final String FILENAME_PROJECT = ".project"; //$NON-NLS-1$
@@ -660,7 +660,6 @@ public class BuildSettingWizardPage extends JavaCapabilityConfigurationPage {
 		}
 
 		final IRunnableWithProgress op = new IRunnableWithProgress() {
-			@SuppressWarnings("synthetic-access")
 			@Override
 			public void run(IProgressMonitor monitor) throws InvocationTargetException, InterruptedException {
 				doRemoveProject(monitor);
@@ -736,7 +735,6 @@ public class BuildSettingWizardPage extends JavaCapabilityConfigurationPage {
 			return this.infoStatus;
 		}
 
-		@SuppressWarnings("synthetic-access")
 		@Override
 		public void run(IProgressMonitor monitor) throws InvocationTargetException, InterruptedException {
 			try {

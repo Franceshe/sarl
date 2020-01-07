@@ -112,7 +112,7 @@ import io.sarl.eclipse.runtime.ISREInstall;
 import io.sarl.eclipse.runtime.SREConfigurationBlock;
 import io.sarl.eclipse.util.classpath.SarlDefaultClassPathProvider;
 import io.sarl.lang.SARLConfig;
-import io.sarl.lang.SARLVersion;
+import io.sarl.lang.core.SARLVersion;
 
 /**
  * The first page of the SARL new project wizard. Most part of the code of this class
@@ -128,6 +128,7 @@ import io.sarl.lang.SARLVersion;
  * @mavengroupid $GroupId$
  * @mavenartifactid $ArtifactId$
  */
+@SuppressWarnings("restriction")
 public class MainProjectWizardPage extends WizardPage implements SarlDefaultClassPathProvider {
 
 	private static final IWorkingSet[] EMPTY_WORKING_SET_ARRAY = new IWorkingSet[0];
@@ -149,7 +150,6 @@ public class MainProjectWizardPage extends WizardPage implements SarlDefaultClas
 	/**
 	 * Creates a new {@link MainProjectWizardPage}.
 	 */
-	@SuppressWarnings("synthetic-access")
 	public MainProjectWizardPage() {
 		super(Messages.SARLProjectNewWizard_3);
 		setPageComplete(false);
@@ -665,7 +665,6 @@ public class MainProjectWizardPage extends WizardPage implements SarlDefaultClas
 			return this.useDefaults.isSelected();
 		}
 
-		@SuppressWarnings("synthetic-access")
 		public void setLocation(IPath path) {
 			this.useDefaults.setSelection(path == null);
 			if (path != null) {
@@ -676,7 +675,6 @@ public class MainProjectWizardPage extends WizardPage implements SarlDefaultClas
 			fireEvent();
 		}
 
-		@SuppressWarnings("synthetic-access")
 		@Override
 		public void changeControlPressed(DialogField field) {
 			final DirectoryDialog dialog = new DirectoryDialog(getShell());
@@ -709,7 +707,6 @@ public class MainProjectWizardPage extends WizardPage implements SarlDefaultClas
 			}
 		}
 
-		@SuppressWarnings("synthetic-access")
 		@Override
 		public void dialogFieldChanged(DialogField field) {
 			if (field == this.useDefaults) {
@@ -812,7 +809,6 @@ public class MainProjectWizardPage extends WizardPage implements SarlDefaultClas
 			this.useEEJRE.setDialogFieldListener(this);
 		}
 
-		@SuppressWarnings("synthetic-access")
 		public Control createControl(Composite composite) {
 			this.group = new Group(composite, SWT.NONE);
 			this.group.setFont(composite.getFont());
@@ -993,7 +989,6 @@ public class MainProjectWizardPage extends WizardPage implements SarlDefaultClas
 			updateEnableState();
 		}
 
-		@SuppressWarnings("synthetic-access")
 		private void updateEnableState() {
 			final boolean detect = MainProjectWizardPage.this.detectGroup.mustDetect();
 			this.useDefaultJRE.setEnabled(!detect);
@@ -1014,7 +1009,6 @@ public class MainProjectWizardPage extends WizardPage implements SarlDefaultClas
 			widgetDefaultSelected(event);
 		}
 
-		@SuppressWarnings("synthetic-access")
 		@Override
 		public void widgetDefaultSelected(SelectionEvent event) {
 			final String jreID = BuildPathSupport.JRE_PREF_PAGE_ID;
@@ -1037,7 +1031,6 @@ public class MainProjectWizardPage extends WizardPage implements SarlDefaultClas
 			fillExecutionEnvironments(this.eeCombo);
 		}
 
-		@SuppressWarnings("synthetic-access")
 		@Override
 		public void dialogFieldChanged(DialogField field) {
 			updateEnableState();
@@ -1237,7 +1230,6 @@ public class MainProjectWizardPage extends WizardPage implements SarlDefaultClas
 			return composite;
 		}
 
-		@SuppressWarnings("synthetic-access")
 		public void handlePossibleJVMChange() {
 
 			if (JavaRuntime.getDefaultVMInstall() == null) {
@@ -1293,7 +1285,6 @@ public class MainProjectWizardPage extends WizardPage implements SarlDefaultClas
 
 		}
 
-		@SuppressWarnings("synthetic-access")
 		private boolean computeDetectState() {
 			if (MainProjectWizardPage.this.locationGroup.isUseDefaultSelected()) {
 				final String name = MainProjectWizardPage.this.nameGroup.getName();
@@ -1340,7 +1331,6 @@ public class MainProjectWizardPage extends WizardPage implements SarlDefaultClas
 			widgetDefaultSelected(event);
 		}
 
-		@SuppressWarnings("synthetic-access")
 		@Override
 		public void widgetDefaultSelected(SelectionEvent event) {
 			final String jreID = BuildPathSupport.JRE_PREF_PAGE_ID;
@@ -1369,7 +1359,6 @@ public class MainProjectWizardPage extends WizardPage implements SarlDefaultClas
 	 */
 	private final class Validator implements Observer {
 
-		@SuppressWarnings("synthetic-access")
 		@Override
 		public void update(Observable observable, Object arg) {
 			try {
@@ -1460,7 +1449,6 @@ public class MainProjectWizardPage extends WizardPage implements SarlDefaultClas
 		 * @return the project path.
 		 * @throws ValidationException if the location has invalid syntax.
 		 */
-		@SuppressWarnings("synthetic-access")
 		private IPath checkLocationSyntax(String location) throws ValidationException {
 			// check whether location is empty
 			if (location.length() == 0) {

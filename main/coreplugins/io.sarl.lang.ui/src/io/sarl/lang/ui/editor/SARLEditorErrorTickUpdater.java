@@ -58,6 +58,7 @@ import io.sarl.lang.ui.internal.LangActivator;
  * @mavenartifactid $ArtifactId$
  * @since 0.8.6
  */
+@SuppressWarnings("restriction")
 public class SARLEditorErrorTickUpdater extends XtendEditorErrorTickUpdater {
 
 	private static final String MARKER_TYPE = "org.eclipse.xtext.ui.editor.error"; //$NON-NLS-1$

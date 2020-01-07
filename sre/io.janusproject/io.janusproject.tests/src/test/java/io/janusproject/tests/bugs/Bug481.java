@@ -31,10 +31,10 @@ import io.janusproject.tests.testutils.AbstractJanusRunTest;
 
 import io.sarl.core.DefaultContextInteractions;
 import io.sarl.core.Lifecycle;
-import io.sarl.lang.SARLVersion;
-import io.sarl.lang.annotation.PerceptGuardEvaluator;
-import io.sarl.lang.annotation.SarlSpecification;
 import io.sarl.lang.core.Event;
+import io.sarl.lang.core.SARLVersion;
+import io.sarl.lang.core.annotation.PerceptGuardEvaluator;
+import io.sarl.lang.core.annotation.SarlSpecification;
 
 /**
  * Unit test for the issue #481: Spawn more than one agent at the same time.

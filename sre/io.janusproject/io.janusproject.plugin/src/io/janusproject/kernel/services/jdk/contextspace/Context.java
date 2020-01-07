@@ -41,8 +41,8 @@ import io.sarl.lang.core.EventSpace;
 import io.sarl.lang.core.Space;
 import io.sarl.lang.core.SpaceID;
 import io.sarl.lang.core.SpaceSpecification;
-import io.sarl.lang.util.SynchronizedCollection;
-import io.sarl.lang.util.SynchronizedIterable;
+import io.sarl.lang.core.util.SynchronizedCollection;
+import io.sarl.lang.core.util.SynchronizedIterable;
 import io.sarl.util.concurrent.Collections3;
 
 /**

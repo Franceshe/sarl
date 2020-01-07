@@ -28,11 +28,11 @@ import org.junit.Test;
 import io.janusproject.Bootstrap;
 import io.janusproject.tests.testutils.AbstractJanusRunTest;
 
-import io.sarl.bootstrap.SRE;
-import io.sarl.bootstrap.SREBootstrap;
 import io.sarl.core.Schedules;
-import io.sarl.lang.SARLVersion;
-import io.sarl.lang.annotation.SarlSpecification;
+import io.sarl.lang.core.SARLVersion;
+import io.sarl.lang.core.annotation.SarlSpecification;
+import io.sarl.lang.core.bootstrap.SRE;
+import io.sarl.lang.core.bootstrap.SREBootstrap;
 
 /**
  * @author $Author: sgalland$

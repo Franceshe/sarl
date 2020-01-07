@@ -65,9 +65,9 @@ import org.eclipse.xtext.xbase.typesystem.util.CommonTypeComputationServices;
 import org.eclipse.xtext.xbase.ui.contentassist.ReplacingAppendable;
 import org.eclipse.xtext.xbase.ui.document.DocumentSourceAppender.Factory.OptionalParameters;
 
-import io.sarl.lang.annotation.FiredEvent;
-import io.sarl.lang.annotation.Generated;
-import io.sarl.lang.annotation.SyntheticMember;
+import io.sarl.lang.core.annotation.FiredEvent;
+import io.sarl.lang.core.annotation.Generated;
+import io.sarl.lang.core.annotation.SyntheticMember;
 import io.sarl.lang.jvmmodel.SarlJvmModelAssociations;
 import io.sarl.lang.sarl.actionprototype.FormalParameterProvider;
 import io.sarl.lang.sarl.actionprototype.IActionPrototypeProvider;
@@ -87,7 +87,7 @@ import io.sarl.lang.util.Utils;
  * @mavengroupid $GroupId$
  * @mavenartifactid $ArtifactId$
  */
-@SuppressWarnings("checkstyle:classfanoutcomplexity")
+@SuppressWarnings({"restriction", "checkstyle:classfanoutcomplexity"})
 public final class MissedMethodAddModification extends SARLSemanticModification {
 
 	@Inject

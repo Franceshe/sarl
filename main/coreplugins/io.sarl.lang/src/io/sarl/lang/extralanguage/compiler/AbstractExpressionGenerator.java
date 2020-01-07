@@ -71,6 +71,7 @@ import io.sarl.lang.extralanguage.compiler.ExtraLanguageFeatureNameConverter.Con
  * @mavenartifactid $ArtifactId$
  * @since 0.6
  */
+@SuppressWarnings("restriction")
 public abstract class AbstractExpressionGenerator implements IExpressionGenerator {
 
 	private static final String TYPE_CONVERTER_INSTANCE = "typeConverterInstance"; //$NON-NLS-1$

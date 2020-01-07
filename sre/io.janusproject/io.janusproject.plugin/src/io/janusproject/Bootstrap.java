@@ -30,10 +30,10 @@ import com.google.common.util.concurrent.Service;
 
 import io.janusproject.kernel.Kernel;
 
-import io.sarl.bootstrap.SREBootstrap;
-import io.sarl.lang.annotation.PrivateAPI;
 import io.sarl.lang.core.Agent;
 import io.sarl.lang.core.AgentContext;
+import io.sarl.lang.core.annotation.PrivateAPI;
+import io.sarl.lang.core.bootstrap.SREBootstrap;
 
 /**
  * Represents an access point to the SARL run-time environment (SRE).

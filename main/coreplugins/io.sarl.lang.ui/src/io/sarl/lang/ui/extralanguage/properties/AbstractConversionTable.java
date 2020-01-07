@@ -79,7 +79,7 @@ import io.sarl.lang.ui.extralanguage.preferences.ExtraLanguagePreferenceAccess;
  * @mavenartifactid $ArtifactId$
  * @since 0.6
  */
-@SuppressWarnings({"checkstyle:classdataabstractioncoupling", "checkstyle:classfanoutcomplexity"})
+@SuppressWarnings({"restriction", "checkstyle:classdataabstractioncoupling", "checkstyle:classfanoutcomplexity"})
 public abstract class AbstractConversionTable extends AbstractExtraControl {
 
 	/** Propery name for the source column.
@@ -226,7 +226,6 @@ public abstract class AbstractConversionTable extends AbstractExtraControl {
 		column.setText(getSourceColumnLabel());
 		if (!this.isSortedElements) {
 			column.addSelectionListener(new SelectionAdapter() {
-				@SuppressWarnings("synthetic-access")
 				@Override
 				public void widgetSelected(SelectionEvent event) {
 					sortBySourceColumn();
@@ -240,7 +239,6 @@ public abstract class AbstractConversionTable extends AbstractExtraControl {
 		column.setText(getTargetColumnLabel());
 		if (!this.isSortedElements) {
 			column.addSelectionListener(new SelectionAdapter() {
-				@SuppressWarnings("synthetic-access")
 				@Override
 				public void widgetSelected(SelectionEvent event) {
 					sortByTargetColumn();
@@ -258,7 +256,6 @@ public abstract class AbstractConversionTable extends AbstractExtraControl {
 		this.list.addSelectionChangedListener(evt -> enableButtons());
 
 		this.table.addKeyListener(new KeyAdapter() {
-			@SuppressWarnings("synthetic-access")
 			@Override
 			public void keyPressed(KeyEvent event) {
 				if (event.character == SWT.DEL && event.stateMask == 0) {
@@ -584,7 +581,6 @@ public abstract class AbstractConversionTable extends AbstractExtraControl {
 			}
 		} else {
 			display.syncExec(new Runnable() {
-				@SuppressWarnings("synthetic-access")
 				@Override
 				public void run() {
 					if (!AbstractConversionTable.this.list.isBusy()) {
@@ -885,7 +881,6 @@ public abstract class AbstractConversionTable extends AbstractExtraControl {
 			//
 		}
 
-		@SuppressWarnings("synthetic-access")
 		@Override
 		public Object[] getElements(Object input) {
 			return AbstractConversionTable.this.conversions.toArray();
@@ -986,7 +981,6 @@ public abstract class AbstractConversionTable extends AbstractExtraControl {
 
 		private String value;
 
-		@SuppressWarnings("synthetic-access")
 		TypeConversionIterator() {
 			this.iterator = AbstractConversionTable.this.conversions.iterator();
 		}

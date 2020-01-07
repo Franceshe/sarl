@@ -46,6 +46,7 @@ import io.sarl.m2e.SARLMavenEclipsePlugin;
  * @mavengroupid $GroupId$
  * @mavenartifactid $ArtifactId$
  */
+@SuppressWarnings("restriction")
 public class MavenProjectSREProviderFactory implements ProjectSREProviderFactory {
 
 	/** Construct the factory.

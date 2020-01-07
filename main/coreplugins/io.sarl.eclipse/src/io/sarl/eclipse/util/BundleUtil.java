@@ -72,6 +72,7 @@ import io.sarl.lang.SARLConfig;
  * @mavengroupid $GroupId$
  * @mavenartifactid $ArtifactId$
  */
+@SuppressWarnings("restriction")
 public final class BundleUtil {
 
 	/** OS-independent paths of the bin folders.
@@ -1075,7 +1076,6 @@ public final class BundleUtil {
 				return this.current != null;
 			}
 
-			@SuppressWarnings("synthetic-access")
 			@Override
 			public BundleDependency next() {
 				if (this.current == null) {

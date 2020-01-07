@@ -34,6 +34,7 @@ import io.sarl.lang.sarl.SarlConstructor;
  * @mavengroupid $GroupId$
  * @mavenartifactid $ArtifactId$
  */
+@SuppressWarnings("restriction")
 public class ConstructorComparator implements Comparator<SarlConstructor>, Serializable {
 	private static final long serialVersionUID = 1517387787287634067L;
 

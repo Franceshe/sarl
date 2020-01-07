@@ -87,7 +87,7 @@ import io.sarl.lang.services.SARLGrammarKeywordAccess;
  * @mavenartifactid $ArtifactId$
  * @see FormatterFacade
  */
-@SuppressWarnings("checkstyle:classfanoutcomplexity")
+@SuppressWarnings({"restriction", "checkstyle:classfanoutcomplexity"})
 public class SARLFormatter extends XtendFormatter {
 
 	/** Name to use for injected comments.

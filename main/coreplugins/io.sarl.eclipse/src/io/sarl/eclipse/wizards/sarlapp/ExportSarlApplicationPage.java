@@ -67,6 +67,7 @@ import io.sarl.eclipse.launching.runner.AbstractSARLLaunchConfigurationDelegate;
  * @mavenartifactid $ArtifactId$
  * @since 0.8
  */
+@SuppressWarnings("restriction")
 public class ExportSarlApplicationPage extends FixedFatJarExportPage  {
 
 	@Inject

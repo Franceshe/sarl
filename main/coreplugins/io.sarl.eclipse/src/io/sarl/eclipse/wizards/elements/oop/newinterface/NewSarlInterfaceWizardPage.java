@@ -43,6 +43,7 @@ import io.sarl.lang.codebuilder.builders.ISarlInterfaceBuilder;
  * @mavengroupid $GroupId$
  * @mavenartifactid $ArtifactId$
  */
+@SuppressWarnings("restriction")
 public class NewSarlInterfaceWizardPage extends AbstractNewSarlElementWizardPage {
 
 	private static final String IMAGE_HEADER =

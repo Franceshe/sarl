@@ -77,7 +77,7 @@ import io.sarl.lang.sarl.SarlScript;
  * @mavenartifactid $ArtifactId$
  * @since 0.7
  */
-@SuppressWarnings("checkstyle:classfanoutcomplexity")
+@SuppressWarnings({"restriction", "checkstyle:classfanoutcomplexity"})
 public abstract class AbstractSarlScriptInteractiveSelector<ET extends EObject, JT> {
 
 	/** Mapping from storage resource to URI.

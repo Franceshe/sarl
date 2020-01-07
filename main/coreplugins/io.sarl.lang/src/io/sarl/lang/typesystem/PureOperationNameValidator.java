@@ -42,6 +42,7 @@ import org.eclipse.xtext.common.types.JvmOperation;
  * @since 0.6
  */
 @Singleton
+@SuppressWarnings("restriction")
 public class PureOperationNameValidator implements IPureOperationNameValidator {
 
 	/** Regular expression patterns that matches the names of functions usually

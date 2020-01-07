@@ -436,7 +436,7 @@ public class ZeroMQNetworkService extends AbstractNetworkingExecutionThreadServi
                     if (signaled > 0) {
                         for (int i = 0; i < this.poller.getSize(); i++) {
                             if (this.poller.pollin(i)) {
-                                this.logger.getKernelLogger().fine(MessageFormat.format(Messages.ZeroMQNetworkService_11, new Integer(i)));
+                                this.logger.getKernelLogger().fine(MessageFormat.format(Messages.ZeroMQNetworkService_11, Integer.valueOf(i)));
                                 final EventEnvelope ev = extractEnvelope(this.poller.getSocket(i));
                                 assert ev != null;
 
@@ -663,7 +663,6 @@ public class ZeroMQNetworkService extends AbstractNetworkingExecutionThreadServi
             //
         }
 
-        @SuppressWarnings("synthetic-access")
         private void magicConnect(URI peer, Collection<SpaceID> spaceIDs, Collection<BufferedSpace> ibufferedSpaces, Space space) {
             if (space != null) {
                 try {
@@ -689,7 +688,6 @@ public class ZeroMQNetworkService extends AbstractNetworkingExecutionThreadServi
             }
         }
 
-        @SuppressWarnings("synthetic-access")
         @Override
         public void spaceCreated(Space space, boolean isLocalCreation) {
             synchronized (ZeroMQNetworkService.this) {
@@ -728,7 +726,6 @@ public class ZeroMQNetworkService extends AbstractNetworkingExecutionThreadServi
             }
         }
 
-        @SuppressWarnings("synthetic-access")
         @Override
         public void spaceDestroyed(Space space, boolean isLocalDestruction) {
             synchronized (ZeroMQNetworkService.this) {
@@ -751,7 +748,6 @@ public class ZeroMQNetworkService extends AbstractNetworkingExecutionThreadServi
             }
         }
 
-        @SuppressWarnings("synthetic-access")
         @Override
         public void kernelDiscovered(URI peerURI) {
             synchronized (ZeroMQNetworkService.this) {
@@ -773,7 +769,6 @@ public class ZeroMQNetworkService extends AbstractNetworkingExecutionThreadServi
             }
         }
 
-        @SuppressWarnings("synthetic-access")
         @Override
         public void kernelDisconnected(URI peerURI) {
             synchronized (ZeroMQNetworkService.this) {

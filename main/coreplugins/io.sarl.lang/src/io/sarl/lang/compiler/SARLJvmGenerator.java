@@ -63,6 +63,7 @@ import io.sarl.lang.util.Utils;
  * @mavenartifactid $ArtifactId$
  * @since 0.4
  */
+@SuppressWarnings("restriction")
 public class SARLJvmGenerator extends XtendGenerator {
 
 	@Inject

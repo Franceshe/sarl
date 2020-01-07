@@ -63,6 +63,7 @@ import org.eclipse.xtext.xtext.generator.model.TypeReference;
  * @mavengroupid $GroupId$
  * @mavenartifactid $ArtifactId$
  */
+@SuppressWarnings("restriction")
 public class AbstractBuilderBuilderFragment extends AbstractSubCodeBuilderFragment {
 
 	@Override

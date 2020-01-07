@@ -39,6 +39,7 @@ import org.eclipse.xtext.common.types.JvmOperation;
  * @since 0.6
  */
 @ImplementedBy(PureOperationNameValidator.class)
+@SuppressWarnings("restriction")
 public interface IPureOperationNameValidator {
 
 	/** Replies if the given operation has a name which is assumed to be for a pure function by default.

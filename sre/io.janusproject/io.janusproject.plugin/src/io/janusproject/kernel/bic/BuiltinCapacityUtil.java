@@ -26,7 +26,7 @@ import io.sarl.core.InnerContextAccess;
 import io.sarl.lang.core.Agent;
 import io.sarl.lang.core.AgentContext;
 import io.sarl.lang.core.SREutils;
-import io.sarl.lang.util.SynchronizedIterable;
+import io.sarl.lang.core.util.SynchronizedIterable;
 
 /**
  * Utilities that are dedicated to the built-in capacities.

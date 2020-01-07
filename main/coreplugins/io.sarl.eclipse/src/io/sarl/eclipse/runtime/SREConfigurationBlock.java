@@ -60,6 +60,7 @@ import io.sarl.eclipse.preferences.SREsPreferencePage;
  * @mavengroupid $GroupId$
  * @mavenartifactid $ArtifactId$
  */
+@SuppressWarnings("restriction")
 public class SREConfigurationBlock {
 
 	/** Property name for the SRE configuration.
@@ -251,7 +252,6 @@ public class SREConfigurationBlock {
 					MessageFormat.format(
 							Messages.SREConfigurationBlock_1, wideSystemSRELabel), 3);
 			this.systemSREButton.addSelectionListener(new SelectionAdapter() {
-				@SuppressWarnings("synthetic-access")
 				@Override
 				public void widgetSelected(SelectionEvent event) {
 					if (SREConfigurationBlock.this.systemSREButton.getSelection()) {
@@ -269,7 +269,6 @@ public class SREConfigurationBlock {
 				1,
 				new String[0]);
 		this.runtimeEnvironmentCombo.addSelectionListener(new SelectionAdapter() {
-			@SuppressWarnings("synthetic-access")
 			@Override
 			public void widgetSelected(SelectionEvent event) {
 				firePropertyChange();
@@ -293,7 +292,6 @@ public class SREConfigurationBlock {
 					MessageFormat.format(
 							Messages.SREConfigurationBlock_3, Messages.SREConfigurationBlock_0), 3);
 			this.projectSREButton.addSelectionListener(new SelectionAdapter() {
-				@SuppressWarnings("synthetic-access")
 				@Override
 				public void widgetSelected(SelectionEvent event) {
 					if (SREConfigurationBlock.this.projectSREButton.getSelection()) {
@@ -326,7 +324,6 @@ public class SREConfigurationBlock {
 			this.specificSREButton = SWTFactory.createRadioButton(group,
 					Messages.SREConfigurationBlock_2, 1);
 			this.specificSREButton.addSelectionListener(new SelectionAdapter() {
-				@SuppressWarnings("synthetic-access")
 				@Override
 				public void widgetSelected(SelectionEvent event) {
 					if (SREConfigurationBlock.this.specificSREButton.getSelection()) {
@@ -700,7 +697,6 @@ public class SREConfigurationBlock {
 			//
 		}
 
-		@SuppressWarnings("synthetic-access")
 		@Override
 		public void sreRemoved(ISREInstall sre) {
 			int index = indexOf(sre);
@@ -716,7 +712,6 @@ public class SREConfigurationBlock {
 			}
 		}
 
-		@SuppressWarnings("synthetic-access")
 		@Override
 		public void sreChanged(org.eclipse.jdt.launching.PropertyChangeEvent event) {
 			if (!PROPERTY_NAME.equals(event.getProperty()) && !PROPERTY_MAINCLASS.equals(event.getProperty())) {
@@ -741,7 +736,7 @@ public class SREConfigurationBlock {
 			}
 		}
 
-		@SuppressWarnings({"synthetic-access", "checkstyle:variabledeclarationusagedistance"})
+		@SuppressWarnings("checkstyle:variabledeclarationusagedistance")
 		@Override
 		public void sreAdded(ISREInstall sre) {
 			if (sre.getValidity().isOK()) {

@@ -50,6 +50,7 @@ import io.sarl.lang.validation.SARLValidator;
  * @mavengroupid $GroupId$
  * @mavenartifactid $ArtifactId$
  */
+@SuppressWarnings("restriction")
 public class SARLRuntimeModule extends io.sarl.lang.AbstractSARLRuntimeModule {
 
 	/** Provider of {@link ConfigurableIssueSeveritiesProvider}.

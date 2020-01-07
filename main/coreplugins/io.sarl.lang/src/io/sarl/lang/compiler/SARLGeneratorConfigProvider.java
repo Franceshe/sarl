@@ -39,6 +39,7 @@ import org.eclipse.xtext.xbase.compiler.GeneratorConfigProvider;
  * @mavenartifactid $ArtifactId$
  * @since 0.4
  */
+@SuppressWarnings("restriction")
 public class SARLGeneratorConfigProvider extends GeneratorConfigProvider {
 
 	@Inject

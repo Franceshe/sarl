@@ -33,7 +33,7 @@ import org.eclipse.xtext.xbase.formatting2.BlankLineKey;
  * @mavengroupid $GroupId$
  * @mavenartifactid $ArtifactId$
  */
-
+@SuppressWarnings("restriction")
 public class SARLFormatterPreferenceKeys extends XtendFormatterPreferenceKeys {
 
 	/** Blank line between inner class declarations.

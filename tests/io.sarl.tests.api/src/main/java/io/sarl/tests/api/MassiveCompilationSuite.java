@@ -188,7 +188,6 @@ public class MassiveCompilationSuite extends Suite {
 			protected AnnotatedBuilder annotatedBuilder() {
 				// Avoid infinite loop by running the tests with the current suite.
 				return new AnnotatedBuilder(this) {
-					@SuppressWarnings("synthetic-access")
 					@Override
 					public Runner runnerForClass(Class<?> testClass) throws Exception {
 						Class<?> currentTestClass = testClass.getSuperclass();

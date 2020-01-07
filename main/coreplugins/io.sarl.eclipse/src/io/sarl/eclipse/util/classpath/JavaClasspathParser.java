@@ -75,7 +75,7 @@ import org.xml.sax.SAXException;
  * @mavengroupid $GroupId$
  * @mavenartifactid $ArtifactId$
  */
-@SuppressWarnings("checkstyle:classdataabstractioncoupling")
+@SuppressWarnings({"restriction", "checkstyle:classdataabstractioncoupling"})
 public final class JavaClasspathParser {
 
     /**

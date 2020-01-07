@@ -46,6 +46,7 @@ import io.sarl.lang.ui.editor.SARLSourceViewerPreferenceAccess;
  * @mavenartifactid $ArtifactId$
  * @since 0.7
  */
+@SuppressWarnings("restriction")
 public class SarlEditorPreferencePage extends PreferencePage implements IWorkbenchPreferencePage {
 
 	/**

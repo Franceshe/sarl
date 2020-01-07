@@ -35,7 +35,7 @@ import io.sarl.lang.core.EventSpace
  * @mavenartifactid $ArtifactId$
  * @deprecated
  */
-@Deprecated
+@Deprecated(since = "0.6", forRemoval = true)
 interface OpenEventSpace extends EventSpace {
 
 	/**

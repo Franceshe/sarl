@@ -45,6 +45,7 @@ import org.eclipse.xtext.xbase.annotations.xAnnotations.XAnnotation;
  * @mavenartifactid $ArtifactId$
  */
 @Singleton
+@SuppressWarnings("restriction")
 public class DefaultProgrammaticWarningSuppressor implements IProgrammaticWarningSuppressor {
 
 	private static final String ALL_WARNINGS = "all"; //$NON-NLS-1$
@@ -125,7 +126,6 @@ public class DefaultProgrammaticWarningSuppressor implements IProgrammaticWarnin
 			this.ignoredWarnings = codes;
 		}
 
-		@SuppressWarnings("synthetic-access")
 		@Override
 		public Severity getSeverity(String code) {
 			if (this.delegate == null || this.ignoredAll) {

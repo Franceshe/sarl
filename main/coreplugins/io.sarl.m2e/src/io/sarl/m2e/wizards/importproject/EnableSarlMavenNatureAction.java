@@ -57,6 +57,7 @@ import io.sarl.m2e.SARLMavenEclipsePlugin;
  * @mavenartifactid $ArtifactId$
  * @since 0.9
  */
+@SuppressWarnings("restriction")
 public class EnableSarlMavenNatureAction implements IObjectActionDelegate, IExecutableExtension {
 
 	/** Identifier of the action.

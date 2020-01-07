@@ -44,7 +44,7 @@ import io.sarl.lang.core.AgentContext;
 import io.sarl.lang.core.SREutils;
 import io.sarl.lang.core.Skill;
 import io.sarl.lang.core.Skill.UninstallationStage;
-import io.sarl.lang.util.ClearableReference;
+import io.sarl.lang.core.util.ClearableReference;
 
 /**
  * Implementation of the agent's cycle.
@@ -213,7 +213,7 @@ class AgentLifeCycleSupport implements SpawnServiceListener {
 	 * @mavenartifactid $ArtifactId$
 	 * @deprecated since 0.10
 	 */
-	@Deprecated
+	@Deprecated(since = "0.10", forRemoval = true)
 	private static class OrderComparator implements Comparator<BuiltinSkill> {
 
 		/** Constructor.
@@ -239,7 +239,7 @@ class AgentLifeCycleSupport implements SpawnServiceListener {
 	 * @mavenartifactid $ArtifactId$
 	 * @deprecated since 0.10
 	 */
-	@Deprecated
+	@Deprecated(since = "0.10", forRemoval = true)
 	private static class ReverseOrderComparator implements Comparator<BuiltinSkill> {
 
 		/** Constructor.

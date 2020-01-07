@@ -49,6 +49,7 @@ import io.sarl.lang.ui.internal.LangActivator;
  * @mavengroupid $GroupId$
  * @mavenartifactid $ArtifactId$
  */
+@SuppressWarnings("restriction")
 public final class SARLPreferences {
 
 	/** Define the configuration entry for project specific entries.

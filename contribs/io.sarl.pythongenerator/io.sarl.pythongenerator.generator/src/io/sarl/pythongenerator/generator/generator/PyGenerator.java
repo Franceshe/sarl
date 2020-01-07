@@ -98,7 +98,7 @@ import io.sarl.pythongenerator.generator.configuration.PyOutputConfigurationProv
  * @mavenartifactid $ArtifactId$
  * @since 0.6
  */
-@SuppressWarnings("checkstyle:classfanoutcomplexity")
+@SuppressWarnings({"restriction", "checkstyle:classfanoutcomplexity"})
 public class PyGenerator extends AbstractExtraLanguageGenerator {
 
 	/** Header for a Python file.

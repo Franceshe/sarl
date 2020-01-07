@@ -47,7 +47,7 @@ import org.eclipse.m2e.core.MavenPlugin;
 import org.eclipse.m2e.core.internal.IMavenConstants;
 import org.eclipse.m2e.core.ui.internal.wizards.MavenProjectWizard;
 
-import io.sarl.lang.SARLVersion;
+import io.sarl.lang.core.SARLVersion;
 
 /**
  * Wizard for creating a maven-based SARL project.
@@ -58,6 +58,7 @@ import io.sarl.lang.SARLVersion;
  * @mavenartifactid $ArtifactId$
  * @since 0.8
  */
+@SuppressWarnings("restriction")
 public final class NewMavenSarlProjectWizard extends MavenProjectWizard {
 
 	private static final String SARL_VERSION_PROPERTY = "sarl.version"; //$NON-NLS-1$

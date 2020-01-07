@@ -238,7 +238,6 @@ public class HazelcastKernelDiscoveryService extends AbstractDependentService
 			//
 		}
 
-		@SuppressWarnings("synthetic-access")
 		@Override
 		public void memberRemoved(MembershipEvent membershipEvent) {
 			final InetSocketAddress socketAddress = membershipEvent.getMember().getSocketAddress();
@@ -303,7 +302,6 @@ public class HazelcastKernelDiscoveryService extends AbstractDependentService
 			//
 		}
 
-		@SuppressWarnings("synthetic-access")
 		@Override
 		public void running() {
 			// Outside the synchronizing statement to avoid deadlock

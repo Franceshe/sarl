@@ -57,15 +57,15 @@ import io.sarl.core.Initialize;
 import io.sarl.core.Lifecycle;
 import io.sarl.core.Schedules;
 import io.sarl.core.Time;
-import io.sarl.lang.SARLVersion;
-import io.sarl.lang.annotation.PerceptGuardEvaluator;
-import io.sarl.lang.annotation.SarlSpecification;
 import io.sarl.lang.core.Agent;
 import io.sarl.lang.core.Behavior;
 import io.sarl.lang.core.BuiltinCapacitiesProvider;
+import io.sarl.lang.core.SARLVersion;
 import io.sarl.lang.core.SREutils;
 import io.sarl.lang.core.Skill;
 import io.sarl.lang.core.Skill.UninstallationStage;
+import io.sarl.lang.core.annotation.PerceptGuardEvaluator;
+import io.sarl.lang.core.annotation.SarlSpecification;
 import io.sarl.tests.api.Nullable;
 import io.sarl.util.concurrent.NoReadWriteLock;
 

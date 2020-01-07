@@ -50,7 +50,7 @@ import io.janusproject.util.TwoStepConstruction;
 
 import io.sarl.lang.core.Agent;
 import io.sarl.lang.core.AgentContext;
-import io.sarl.lang.util.SynchronizedSet;
+import io.sarl.lang.core.util.SynchronizedSet;
 
 /**
  * This class represents the Kernel of the Janus platform.
@@ -338,7 +338,6 @@ public class Kernel {
 			return t;
 		}
 
-		@SuppressWarnings("synthetic-access")
 		@Override
 		public void run() {
 			final Logger logger = getLogger();

@@ -34,6 +34,7 @@ import org.eclipse.xtext.xtext.generator.util.GrammarUtil2;
  * @mavenartifactid $ArtifactId$
  * @since 0.8
  */
+@SuppressWarnings("restriction")
 public class ValidatorFragment2 extends org.eclipse.xtext.xtext.generator.validation.ValidatorFragment2 {
 
 	private static final String XTEND_GRAMMAR = "org.eclipse.xtend.core.Xtend"; //$NON-NLS-1$

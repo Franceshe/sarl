@@ -50,6 +50,7 @@ import io.sarl.lang.core.Agent;
  * @mavengroupid $GroupId$
  * @mavenartifactid $ArtifactId$
  */
+@SuppressWarnings("restriction")
 public class NewSarlAgentWizardPage extends AbstractNewSarlElementWizardPage {
 
 	/** Construct a wizard page.

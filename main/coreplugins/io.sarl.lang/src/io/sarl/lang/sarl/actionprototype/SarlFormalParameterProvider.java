@@ -38,6 +38,7 @@ import io.sarl.lang.sarl.SarlFormalParameter;
 * @mavengroupid $GroupId$
 * @mavenartifactid $ArtifactId$
 */
+@SuppressWarnings("restriction")
 class SarlFormalParameterProvider implements FormalParameterProvider {
 
 	private final TypeReferences references;

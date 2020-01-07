@@ -38,6 +38,7 @@ import org.eclipse.xtend.core.macro.declaration.CompilationUnitImpl;
  * @since 0.9
  */
 @Singleton
+@SuppressWarnings("restriction")
 public class SarlCompilationUnitProvider implements Provider<CompilationUnitImpl> {
 
 	@Inject

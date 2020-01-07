@@ -1,11 +1,11 @@
 Manifest-Version: 1.0
+Automatic-Module-Name: io.sarl.eclipse
 Bundle-ManifestVersion: 2
 Bundle-Name: %Bundle-Name
 Bundle-Vendor: %Bundle-Vendor
 Bundle-Version: 0.11.0.qualifier
 Bundle-SymbolicName: io.sarl.eclipse;singleton:=true
-Automatic-Module-Name: io.sarl.eclipse
-Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Bundle-RequiredExecutionEnvironment: JavaSE-11
 Bundle-ActivationPolicy: lazy
 Require-Bundle: io.sarl.lang.ui;bundle-version="0.11.0";visibility:=reexport,
  org.eclipse.xtend.core;bundle-version="2.20.0",

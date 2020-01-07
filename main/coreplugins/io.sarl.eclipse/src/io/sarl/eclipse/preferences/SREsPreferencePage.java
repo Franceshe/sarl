@@ -97,7 +97,7 @@ import io.sarl.eclipse.wizards.sreinstall.EditSREInstallWizard;
  * @mavengroupid $GroupId$
  * @mavenartifactid $ArtifactId$
  */
-@SuppressWarnings({"checkstyle:classfanoutcomplexity", "checkstyle:classdataabstractioncoupling",
+@SuppressWarnings({"restriction", "checkstyle:classfanoutcomplexity", "checkstyle:classdataabstractioncoupling",
 		"checkstyle:methodcount"})
 public class SREsPreferencePage extends PreferencePage implements IWorkbenchPreferencePage, ISelectionProvider {
 
@@ -168,7 +168,6 @@ public class SREsPreferencePage extends PreferencePage implements IWorkbenchPref
 			}
 		} else {
 			display.syncExec(new Runnable() {
-				@SuppressWarnings("synthetic-access")
 				@Override
 				public void run() {
 					if (!SREsPreferencePage.this.sresList.isBusy()) {
@@ -237,7 +236,6 @@ public class SREsPreferencePage extends PreferencePage implements IWorkbenchPref
 		TableColumn column = new TableColumn(this.sreTable, SWT.NULL);
 		column.setText(Messages.SREsPreferencePage_2);
 		column.addSelectionListener(new SelectionAdapter() {
-			@SuppressWarnings("synthetic-access")
 			@Override
 			public void widgetSelected(SelectionEvent event) {
 				sortByName();
@@ -249,7 +247,6 @@ public class SREsPreferencePage extends PreferencePage implements IWorkbenchPref
 		column = new TableColumn(this.sreTable, SWT.NULL);
 		column.setText(Messages.SREsPreferencePage_3);
 		column.addSelectionListener(new SelectionAdapter() {
-			@SuppressWarnings("synthetic-access")
 			@Override
 			public void widgetSelected(SelectionEvent event) {
 				sortByLocation();
@@ -264,7 +261,6 @@ public class SREsPreferencePage extends PreferencePage implements IWorkbenchPref
 		this.sresList.setUseHashlookup(true);
 
 		this.sresList.addSelectionChangedListener(new ISelectionChangedListener() {
-			@SuppressWarnings("synthetic-access")
 			@Override
 			public void selectionChanged(SelectionChangedEvent evt) {
 				enableButtons();
@@ -283,7 +279,6 @@ public class SREsPreferencePage extends PreferencePage implements IWorkbenchPref
 		});
 
 		this.sresList.addDoubleClickListener(new IDoubleClickListener() {
-			@SuppressWarnings("synthetic-access")
 			@Override
 			public void doubleClick(DoubleClickEvent event) {
 				if (!SREsPreferencePage.this.sresList.getSelection().isEmpty()) {
@@ -292,7 +287,6 @@ public class SREsPreferencePage extends PreferencePage implements IWorkbenchPref
 			}
 		});
 		this.sreTable.addKeyListener(new KeyAdapter() {
-			@SuppressWarnings("synthetic-access")
 			@Override
 			public void keyPressed(KeyEvent event) {
 				if (event.character == SWT.DEL && event.stateMask == 0) {
@@ -923,7 +917,6 @@ public class SREsPreferencePage extends PreferencePage implements IWorkbenchPref
 			return null;
 		}
 
-		@SuppressWarnings("synthetic-access")
 		private boolean isValid(Object element) {
 			if (element instanceof ISREInstall) {
 				final ISREInstall sre = (ISREInstall) element;
@@ -991,7 +984,6 @@ public class SREsPreferencePage extends PreferencePage implements IWorkbenchPref
 			//
 		}
 
-		@SuppressWarnings("synthetic-access")
 		@Override
 		public Object[] getElements(Object input) {
 			return SREsPreferencePage.this.sreArray.toArray();
@@ -1026,7 +1018,6 @@ public class SREsPreferencePage extends PreferencePage implements IWorkbenchPref
 			//
 		}
 
-		@SuppressWarnings("synthetic-access")
 		@Override
 		public void sreAdded(ISREInstall sre) {
 			if (!SREsPreferencePage.this.sreArray.contains(sre)) {
@@ -1035,7 +1026,6 @@ public class SREsPreferencePage extends PreferencePage implements IWorkbenchPref
 			}
 		}
 
-		@SuppressWarnings("synthetic-access")
 		@Override
 		public void sreRemoved(ISREInstall sre) {
 			if (SREsPreferencePage.this.sreArray.contains(sre)) {
@@ -1044,7 +1034,6 @@ public class SREsPreferencePage extends PreferencePage implements IWorkbenchPref
 			}
 		}
 
-		@SuppressWarnings("synthetic-access")
 		@Override
 		public void sreChanged(PropertyChangeEvent event) {
 			if (ISREInstallChangedListener.PROPERTY_NAME.equals(event.getProperty())) {

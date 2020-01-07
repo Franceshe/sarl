@@ -31,10 +31,10 @@ import org.eclipse.xtext.xbase.testing.CompilationTestHelper;
 import org.eclipse.xtext.xbase.testing.CompilationTestHelper.Result;
 import org.junit.Test;
 
-import io.sarl.lang.SARLVersion;
 import io.sarl.lang.compiler.GeneratorConfig2;
 import io.sarl.lang.compiler.GeneratorConfigProvider2;
 import io.sarl.lang.compiler.IGeneratorConfigProvider2;
+import io.sarl.lang.core.SARLVersion;
 import io.sarl.lang.sarl.SarlPackage;
 import io.sarl.tests.api.AbstractSarlTest;
 

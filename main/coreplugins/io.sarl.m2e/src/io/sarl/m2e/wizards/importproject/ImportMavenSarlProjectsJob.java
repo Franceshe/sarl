@@ -59,6 +59,7 @@ import org.eclipse.ui.IWorkingSet;
  * @since 0.8
  * @see ImportMavenProjectsJob
  */
+@SuppressWarnings("restriction")
 class ImportMavenSarlProjectsJob extends WorkspaceJob {
 
 	private final List<IWorkingSet> workingSets;
@@ -113,7 +114,6 @@ class ImportMavenSarlProjectsJob extends WorkspaceJob {
 	 */
 	protected AbstractCreateMavenProjectsOperation createOperation() {
 		return new AbstractCreateMavenProjectsOperation() {
-			@SuppressWarnings("synthetic-access")
 			@Override
 			protected List<IProject> doCreateMavenProjects(IProgressMonitor progressMonitor) throws CoreException {
 				final SubMonitor monitor = SubMonitor.convert(progressMonitor, 101);

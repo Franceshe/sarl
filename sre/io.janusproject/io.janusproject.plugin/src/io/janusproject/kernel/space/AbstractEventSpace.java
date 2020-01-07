@@ -40,8 +40,8 @@ import io.sarl.lang.core.Event;
 import io.sarl.lang.core.EventListener;
 import io.sarl.lang.core.Scope;
 import io.sarl.lang.core.SpaceID;
-import io.sarl.lang.util.SynchronizedCollection;
-import io.sarl.lang.util.SynchronizedSet;
+import io.sarl.lang.core.util.SynchronizedCollection;
+import io.sarl.lang.core.util.SynchronizedSet;
 import io.sarl.util.Scopes;
 import io.sarl.util.concurrent.Collections3;
 

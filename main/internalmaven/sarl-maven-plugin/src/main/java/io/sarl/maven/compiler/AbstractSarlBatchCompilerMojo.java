@@ -132,6 +132,13 @@ public abstract class AbstractSarlBatchCompilerMojo extends AbstractSarlMojo {
 	 */
 	protected abstract String getSourceVersion();
 
+	/** Replies the version of the class files.
+	 *
+	 * @return the target version.
+	 * @since 0.11
+	 */
+	protected abstract String getTargetVersion();
+
 	/** Replies the encoding of the source.
 	 *
 	 * @return the encoding.
@@ -245,6 +252,7 @@ public abstract class AbstractSarlBatchCompilerMojo extends AbstractSarlMojo {
 		compiler.setOptimizationLevel(getOptimization());
 		compiler.setClassOutputPath(classOutputPath);
 		compiler.setJavaSourceVersion(getSourceVersion());
+		compiler.setJavaTargetVersion(getTargetVersion());
 		compiler.setBasePath(baseDir);
 		compiler.setTempDirectory(getTempDirectory());
 		compiler.setCleaningPolicy(CleaningPolicy.NO_CLEANING);

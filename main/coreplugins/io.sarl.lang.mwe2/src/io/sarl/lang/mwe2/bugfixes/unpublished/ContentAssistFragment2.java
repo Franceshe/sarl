@@ -33,6 +33,7 @@ import org.eclipse.xtext.xtext.generator.model.TypeReference;
  * @mavengroupid $GroupId$
  * @mavenartifactid $ArtifactId$
  */
+@SuppressWarnings("restriction")
 public class ContentAssistFragment2 extends org.eclipse.xtext.xtext.generator.ui.contentAssist.ContentAssistFragment2 {
 
 	private static final String XTEND_GRAMMAR_NAME = "Xtend"; //$NON-NLS-1$

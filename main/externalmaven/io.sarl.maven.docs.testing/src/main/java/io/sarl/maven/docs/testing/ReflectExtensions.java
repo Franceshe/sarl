@@ -56,9 +56,9 @@ import org.w3c.dom.Element;
 import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
 
-import io.sarl.lang.annotation.DefaultValue;
-import io.sarl.lang.annotation.SarlSourceCode;
-import io.sarl.lang.annotation.SyntheticMember;
+import io.sarl.lang.core.annotation.DefaultValue;
+import io.sarl.lang.core.annotation.SarlSourceCode;
+import io.sarl.lang.core.annotation.SyntheticMember;
 import io.sarl.lang.util.Utils;
 
 /** Functions that are based on Java reflection, for building the documentation.

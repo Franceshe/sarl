@@ -100,8 +100,9 @@ import org.eclipse.xtext.xtype.XFunctionTypeRef;
 import org.eclipse.xtext.xtype.XtypeFactory;
 import org.osgi.framework.Version;
 
-import io.sarl.lang.SARLVersion;
-import io.sarl.lang.annotation.EarlyExit;
+import io.sarl.lang.core.SARLVersion;
+import io.sarl.lang.core.annotation.EarlyExit;
+import io.sarl.lang.core.util.OutParameter;
 import io.sarl.lang.sarl.SarlAction;
 import io.sarl.lang.sarl.SarlFormalParameter;
 import io.sarl.lang.sarl.actionprototype.ActionParameterTypes;
@@ -117,7 +118,7 @@ import io.sarl.lang.services.SARLGrammarKeywordAccess;
  * @mavengroupid $GroupId$
  * @mavenartifactid $ArtifactId$
  */
-@SuppressWarnings("checkstyle:classfanoutcomplexity")
+@SuppressWarnings({"restriction", "checkstyle:classfanoutcomplexity"})
 public final class Utils {
 
 	/** Character for hidden features.
@@ -1182,7 +1183,7 @@ public final class Utils {
 	 *     is too old.
 	 * @deprecated see {@link #getSARLLibraryVersionOnClasspath(TypeReferences, Notifier, OutParameter)}
 	 */
-	@Deprecated
+	@Deprecated(since = "0.10", forRemoval = true)
 	public static String getSARLLibraryVersionOnClasspath(TypeReferences typeReferences, Notifier context) {
 		final OutParameter<String> version = new OutParameter<>();
 		final SarlLibraryErrorCode code = getSARLLibraryVersionOnClasspath(typeReferences, context, version);

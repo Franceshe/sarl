@@ -60,6 +60,7 @@ import org.eclipse.xtext.xtext.generator.model.TypeReference;
  * @mavengroupid $GroupId$
  * @mavenartifactid $ArtifactId$
  */
+@SuppressWarnings("restriction")
 public class AbstractAppenderBuilderFragment extends AbstractSubCodeBuilderFragment {
 
 	private static final String SCOPE_PROVIDER_NAME =

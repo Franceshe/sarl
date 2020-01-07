@@ -68,7 +68,7 @@ import org.eclipse.xtext.xbase.lib.IterableExtensions;
 import org.eclipse.xtext.xbase.typesystem.util.CommonTypeComputationServices;
 import org.eclipse.xtext.xbase.ui.contentassist.ReplacingAppendable;
 
-import io.sarl.lang.annotation.DefaultValueUse;
+import io.sarl.lang.core.annotation.DefaultValueUse;
 import io.sarl.lang.sarl.SarlAction;
 import io.sarl.lang.sarl.SarlAgent;
 import io.sarl.lang.sarl.SarlBehavior;
@@ -106,7 +106,7 @@ import io.sarl.lang.validation.SyntaxIssueCodes;
  * @mavenartifactid $ArtifactId$
  * @see "https://www.eclipse.org/Xtext/documentation/304_ide_concepts.html#quick-fixes"
  */
-@SuppressWarnings({"static-method", "checkstyle:methodcount", "checkstyle:classfanoutcomplexity"})
+@SuppressWarnings({"restriction", "static-method", "checkstyle:methodcount", "checkstyle:classfanoutcomplexity"})
 public class SARLQuickfixProvider extends XtendQuickfixProvider {
 
 	@Inject
@@ -159,7 +159,7 @@ public class SARLQuickfixProvider extends XtendQuickfixProvider {
 
 	@Override
 	protected Predicate<Method> getFixMethodPredicate(final String issueCode) {
-		return new Predicate<Method>() {
+		return new Predicate<>() {
 			@Override
 			public boolean apply(Method input) {
 				final Fix annotation = input.getAnnotation(Fix.class);

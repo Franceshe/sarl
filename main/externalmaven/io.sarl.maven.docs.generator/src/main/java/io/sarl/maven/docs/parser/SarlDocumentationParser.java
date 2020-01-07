@@ -55,8 +55,8 @@ import org.eclipse.xtext.Constants;
 import org.eclipse.xtext.xbase.lib.Functions.Function2;
 import org.eclipse.xtext.xbase.lib.Procedures.Procedure1;
 
+import io.sarl.lang.core.util.OutParameter;
 import io.sarl.lang.sarl.actionprototype.IActionPrototypeProvider;
-import io.sarl.lang.util.OutParameter;
 import io.sarl.maven.docs.testing.ReflectExtensions;
 import io.sarl.maven.docs.testing.ScriptExecutor;
 

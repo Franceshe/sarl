@@ -34,6 +34,7 @@ import io.sarl.lang.sarl.SarlField;
  * @mavengroupid $GroupId$
  * @mavenartifactid $ArtifactId$
  */
+@SuppressWarnings("restriction")
 public class AttributeComparator implements Comparator<SarlField>, Serializable {
 	private static final long serialVersionUID = 4577741984021468692L;
 

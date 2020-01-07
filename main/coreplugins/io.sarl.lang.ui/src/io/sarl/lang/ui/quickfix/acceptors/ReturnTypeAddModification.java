@@ -46,6 +46,7 @@ import io.sarl.lang.ui.quickfix.SARLQuickfixProvider;
  * @mavengroupid $GroupId$
  * @mavenartifactid $ArtifactId$
  */
+@SuppressWarnings("restriction")
 public final class ReturnTypeAddModification extends SARLSemanticModification {
 
 	private final String expectedType;

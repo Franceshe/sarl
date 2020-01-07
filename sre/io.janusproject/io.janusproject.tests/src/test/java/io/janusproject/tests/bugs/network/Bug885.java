@@ -32,15 +32,15 @@ import io.janusproject.tests.testutils.AbstractJanusRunTest;
 
 import io.sarl.core.DefaultContextInteractions;
 import io.sarl.core.Logging;
-import io.sarl.lang.SARLVersion;
-import io.sarl.lang.annotation.PerceptGuardEvaluator;
-import io.sarl.lang.annotation.SarlElementType;
-import io.sarl.lang.annotation.SarlSpecification;
 import io.sarl.lang.core.Address;
 import io.sarl.lang.core.Event;
+import io.sarl.lang.core.SARLVersion;
 import io.sarl.lang.core.Scope;
+import io.sarl.lang.core.annotation.PerceptGuardEvaluator;
+import io.sarl.lang.core.annotation.SarlElementType;
+import io.sarl.lang.core.annotation.SarlSpecification;
+import io.sarl.lang.core.util.SerializableProxy;
 import io.sarl.lang.sarl.SarlPackage;
-import io.sarl.lang.util.SerializableProxy;
 
 /** Tests for issue #885: Guards are not evaluated when the event is fired across multiple kernels.
  *

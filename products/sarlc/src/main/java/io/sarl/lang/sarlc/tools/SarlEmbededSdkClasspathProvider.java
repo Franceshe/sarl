@@ -41,7 +41,7 @@ import org.eclipse.core.runtime.IPath;
 import org.eclipse.core.runtime.Path;
 import org.slf4j.Logger;
 
-import io.sarl.lang.SARLVersion;
+import io.sarl.lang.core.SARLVersion;
 import io.sarl.maven.bootiqueapp.utils.SystemPath;
 
 /**

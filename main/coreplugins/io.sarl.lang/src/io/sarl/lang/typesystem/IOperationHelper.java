@@ -45,6 +45,7 @@ import io.sarl.lang.sarl.actionprototype.InferredPrototype;
  * @since 0.6
  */
 @ImplementedBy(SARLOperationHelper.class)
+@SuppressWarnings("restriction")
 public interface IOperationHelper {
 
 	/** Check if the given operation could be annoted with "@Pure".

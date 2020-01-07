@@ -52,6 +52,7 @@ import io.sarl.lang.core.Skill;
  * @mavengroupid $GroupId$
  * @mavenartifactid $ArtifactId$
  */
+@SuppressWarnings("restriction")
 public class NewSarlSkillWizardPage extends AbstractNewSarlElementWizardPage {
 
 	/** Construct a wizard page for creating a SARL skill.

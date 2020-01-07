@@ -52,6 +52,7 @@ import org.eclipse.xtext.ui.resource.IResourceSetProvider;
  * @mavengroupid $GroupId$
  * @mavenartifactid $ArtifactId$
  */
+@SuppressWarnings("restriction")
 public class SARLFileRenameParticipant extends AbstractProcessorBasedRenameParticipant {
 
 	@Inject

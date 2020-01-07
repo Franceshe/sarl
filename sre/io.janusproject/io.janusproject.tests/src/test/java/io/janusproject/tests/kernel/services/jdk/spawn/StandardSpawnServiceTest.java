@@ -70,7 +70,7 @@ import io.sarl.lang.core.EventSpace;
 import io.sarl.lang.core.Scope;
 import io.sarl.lang.core.Skill;
 import io.sarl.lang.core.SpaceID;
-import io.sarl.lang.util.SynchronizedSet;
+import io.sarl.lang.core.util.SynchronizedSet;
 import io.sarl.sarlspecification.SarlSpecificationChecker;
 import io.sarl.tests.api.ManualMocking;
 import io.sarl.tests.api.Nullable;

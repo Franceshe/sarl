@@ -54,6 +54,7 @@ import io.sarl.lang.validation.IConfigurableIssueSeveritiesProvider;
  * @since 0.5
  */
 @Singleton
+@SuppressWarnings("restriction")
 public class UIConfigurableIssueSeveritiesProvider extends XbaseIssueSeveritiesProvider implements IConfigurableIssueSeveritiesProvider {
 
 	private final Map<String, Severity> overridingSeverities = Collections.synchronizedMap(new HashMap<>());

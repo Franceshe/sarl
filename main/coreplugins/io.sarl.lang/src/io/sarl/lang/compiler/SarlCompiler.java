@@ -99,6 +99,7 @@ import org.eclipse.xtext.xbase.typesystem.references.LightweightTypeReference;
 import org.eclipse.xtext.xbase.util.XExpressionHelper;
 
 import io.sarl.lang.controlflow.ISarlEarlyExitComputer;
+import io.sarl.lang.core.util.SerializableProxy;
 import io.sarl.lang.jvmmodel.Messages;
 import io.sarl.lang.jvmmodel.SARLJvmModelInferrer;
 import io.sarl.lang.sarl.SarlAssertExpression;
@@ -107,7 +108,6 @@ import io.sarl.lang.sarl.SarlCastedExpression;
 import io.sarl.lang.sarl.SarlContinueExpression;
 import io.sarl.lang.typesystem.SARLExpressionHelper;
 import io.sarl.lang.util.ContextAwareTreeAppendable;
-import io.sarl.lang.util.SerializableProxy;
 import io.sarl.lang.util.Utils;
 
 
@@ -144,7 +144,7 @@ import io.sarl.lang.util.Utils;
  * @mavenartifactid $ArtifactId$
  * @since 0.4
  */
-@SuppressWarnings("checkstyle:classfanoutcomplexity")
+@SuppressWarnings({"restriction", "checkstyle:classfanoutcomplexity"})
 public class SarlCompiler extends XtendCompiler {
 
 	private static final String INLINE_VARIABLE_PREFIX = "$"; //$NON-NLS-1$

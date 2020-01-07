@@ -48,6 +48,7 @@ import org.eclipse.xtext.xtext.generator.model.TypeReference;
  * @mavengroupid $GroupId$
  * @mavenartifactid $ArtifactId$
  */
+@SuppressWarnings("restriction")
 public class BindingFactory {
 
 	private static final String CONFIGURE_PREFIX = "configure"; //$NON-NLS-1$
@@ -367,14 +368,9 @@ public class BindingFactory {
 			// But it's for having something working!
 			try {
 				final Field field = module.getClass().getDeclaredField("bindings"); //$NON-NLS-1$
-				final boolean accessible = field.isAccessible();
-				try {
-					field.setAccessible(true);
-					final Collection<?> hiddenBindings = (Collection<?>) field.get(module);
-					hiddenBindings.removeAll(this.removableBindings);
-				} finally {
-					field.setAccessible(accessible);
-				}
+				field.setAccessible(true);
+				final Collection<?> hiddenBindings = (Collection<?>) field.get(module);
+				hiddenBindings.removeAll(this.removableBindings);
 			} catch (Exception exception) {
 				throw new IllegalStateException(exception);
 			}

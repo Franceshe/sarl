@@ -21,7 +21,7 @@
 
 package io.sarl.lang.core;
 
-import io.sarl.lang.util.ClearableReference;
+import io.sarl.lang.core.util.ClearableReference;
 
 /**
  * A behavior maps a collection of perceptions represented by events to a collection of a task.

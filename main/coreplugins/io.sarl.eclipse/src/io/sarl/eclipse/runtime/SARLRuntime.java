@@ -97,7 +97,7 @@ import io.sarl.eclipse.SARLEclipsePlugin;
  * @mavenartifactid $ArtifactId$
  * @noinstantiate This class is not intended to be instantiated by clients.
  */
-@SuppressWarnings({"checkstyle:classfanoutcomplexity", "checkstyle:classdataabstractioncoupling"})
+@SuppressWarnings({"restriction", "checkstyle:classfanoutcomplexity", "checkstyle:classdataabstractioncoupling"})
 public final class SARLRuntime {
 
 	/**

@@ -39,6 +39,7 @@ import org.eclipse.xtext.util.Strings;
  * @mavengroupid $GroupId$
  * @mavenartifactid $ArtifactId$
  */
+@SuppressWarnings("restriction")
 public class SarlEventImplCustom extends SarlEventImpl {
 
 	/**

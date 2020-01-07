@@ -40,6 +40,7 @@ import org.eclipse.xtext.xtext.generator.CodeConfig;
  * @mavengroupid $GroupId$
  * @mavenartifactid $ArtifactId$
  */
+@SuppressWarnings("restriction")
 public abstract class AbstractXmlHighlightingFragment2 extends AbstractExternalHighlightingFragment2<IXmlStyleAppendable> {
 
 	@Override

@@ -61,7 +61,7 @@ public interface EventSpace extends Space {
 	 * @param scope the definition of the list of receivers of the event.
 	 * @deprecated see {@link #emit(UUID, Event, Scope)}, since 0.6
 	 */
-	@Deprecated
+	@Deprecated(since = "0.6", forRemoval = true)
 	@Inline(value = "emit(null, $1, $2)")
 	default void emit(Event event, Scope<Address> scope) {
 		emit(null, event, scope);
@@ -81,7 +81,7 @@ public interface EventSpace extends Space {
 	 * @deprecated see {@link #emit(UUID, Event)}, since 0.6
 	 */
 	@Inline(value = "emit(null, $1, null)")
-	@Deprecated
+	@Deprecated(since = "0.6", forRemoval = true)
 	default void emit(Event event) {
 		emit(null, event, null);
 	}

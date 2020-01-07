@@ -23,7 +23,7 @@ package io.sarl.lang.core.tests.scoping.extensions.numbers.comparison.byteobject
 
 import org.junit.runner.RunWith;
 
-import io.sarl.lang.SARLVersion;
+import io.sarl.lang.core.SARLVersion;
 import io.sarl.lang.sarl.SarlPackage;
 import io.sarl.tests.api.AbstractSarlTest;
 import io.sarl.tests.api.MassiveCompilationSuite;

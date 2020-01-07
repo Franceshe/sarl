@@ -33,10 +33,10 @@ import org.eclipse.jdt.launching.IRuntimeClasspathEntry;
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
 
-import io.sarl.bootstrap.SRE;
 import io.sarl.eclipse.runtime.AbstractSREInstall;
 import io.sarl.eclipse.runtime.ISREInstall;
 import io.sarl.eclipse.runtime.ProjectSREProvider;
+import io.sarl.lang.core.bootstrap.SRE;
 
 /** Implementation of a project SRE provider based on the Java service definitions.
  * This provider is reading the JRE service definitions.

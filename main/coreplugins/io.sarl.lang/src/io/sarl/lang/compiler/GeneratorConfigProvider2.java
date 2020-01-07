@@ -46,6 +46,7 @@ import org.eclipse.xtext.xbase.lib.Pure;
  * @mavenartifactid $ArtifactId$
  * @since 0.4
  */
+@SuppressWarnings("restriction")
 public class GeneratorConfigProvider2 implements IGeneratorConfigProvider2 {
 
 	@Inject

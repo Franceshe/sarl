@@ -5,7 +5,7 @@ Automatic-Module-Name: io.sarl.examples.plugin
 Bundle-Version: 0.11.0.qualifier
 Bundle-Vendor: %Bundle-Vendor
 Bundle-Name: %Bundle-Name
-Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Bundle-RequiredExecutionEnvironment: JavaSE-11
 Bundle-ActivationPolicy: lazy
 Bundle-Activator: io.sarl.examples.SARLExamplePlugin
 Require-Bundle: io.sarl.eclipse;bundle-version="0.11.0",

@@ -57,6 +57,7 @@ import org.eclipse.xtext.xbase.lib.util.ReflectExtensions;
  * @mavenartifactid $ArtifactId$
  * @since 0.6
  */
+@SuppressWarnings("restriction")
 public class SARLPackageExplorerPart extends PackageExplorerPart {
 
 	/**

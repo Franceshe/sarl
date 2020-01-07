@@ -38,7 +38,7 @@ import org.eclipse.xtext.xbase.XClosure;
 import org.eclipse.xtext.xbase.jvmmodel.ILogicalContainerProvider;
 import org.eclipse.xtext.xbase.lib.InputOutput;
 
-import io.sarl.lang.annotation.PrivateAPI;
+import io.sarl.lang.core.annotation.PrivateAPI;
 import io.sarl.lang.typesystem.SARLAnnotationUtil;
 import io.sarl.lang.util.Utils;
 
@@ -49,6 +49,7 @@ import io.sarl.lang.util.Utils;
  * @mavengroupid $GroupId$
  * @mavenartifactid $ArtifactId$
  */
+@SuppressWarnings("restriction")
 public class DefaultFeatureCallValidator implements IFeatureCallValidator {
 
 	@Inject

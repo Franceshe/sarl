@@ -52,7 +52,7 @@ public class JdkUncaughtExceptionHandler implements UncaughtExceptionHandler {
 	 * @param logger the logging service that must be used for output the errors.
 	 * @deprecated Since 0.9; Use the default constructor and {@link #setLogService(LogService)}.
 	 */
-	@Deprecated
+	@Deprecated(since = "0.9", forRemoval = true)
 	public JdkUncaughtExceptionHandler(LogService logger) {
 		assert logger != null;
 		this.logger = logger;

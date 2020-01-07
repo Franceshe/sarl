@@ -71,6 +71,7 @@ import io.sarl.m2e.wizards.importproject.MavenImportUtils;
  * @mavenartifactid $ArtifactId$
  * @since 0.6
  */
+@SuppressWarnings("restriction")
 public class SarlExampleInstallerWizard extends ExampleInstallerWizard {
 
 	private ConfigurationPage configurationPage;
